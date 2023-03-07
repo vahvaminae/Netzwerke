@@ -1,0 +1,1025 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_03_hardware_004.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_002.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_03_hardware_004.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_002.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navh">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navh">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navh">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navh">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navnav">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navnav">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navnav">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navnav">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navnav">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navnav">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navnav">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navnav">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navnav">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navnav">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navnav">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navnav">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navnav">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navnav">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navnav">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navnav">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navnav">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navnav">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navnav">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navnav">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navnav">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main">
+                                                <p class="anleser"><em><span class="ckursiv">Jeder wandle für sich und wisse nichts von dem andern.<br>Wandern nur beide gerad&#8217;, finden sich beide gewiss.<br>&#8211; Johann Wolfgang Goethe/Friedrich Schiller, Xenien</span></em></p><a id="d602e742-24c8-42ee-8a56-56dc37698ce6" name="d602e742-24c8-42ee-8a56-56dc37698ce6"></a><h1 class="t1"><span class="cfett">4</span><span class="cfett"> Netzwerkgrundlagen</span><a href="#449de289-2c4f-4783-8b8a-1a195df70708"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h1>
+                                                <p>Internet und lokale Netzwerke haben die Bedeutung des Computers in den letzten Jahren
+                                                   revolutioniert. Viele Anwendungsprogramme kooperieren über das Netzwerk miteinander.
+                                                   Der Datenaustausch in und zwischen Unternehmen erfolgt fast ausschließlich per Vernetzung,
+                                                   und immer mehr Geschäftsabläufe werden online getätigt. Da die Netzwerkfähigkeit zudem
+                                                   eine Grundfunktionalität aller modernen Betriebssysteme geworden ist, steht diese
+                                                   Einführung noch vor dem Kapitel über allgemeine Systemkonzepte.
+                                                </p>
+                                                <p>Nach einer historischen und technischen Einführung erfahren Sie in diesem Kapitel
+                                                   das Wichtigste über gängige Netzwerkhardware; somit wird die Betrachtung der Hardware
+                                                   aus dem vorigen Kapitel hier vervollständigt. Anschließend werden die Netzwerkprotokolle
+                                                   mit dem Hauptaugenmerk auf die seit Jahren dominierenden Internetprotokolle (TCP/IP)
+                                                   beleuchtet.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="449de289-2c4f-4783-8b8a-1a195df70708" name="449de289-2c4f-4783-8b8a-1a195df70708"></a><h2 class="t2"><span class="cfett">4.1</span><span class="cfett"> Grundlagen</span><a href="#7498c051-50b6-4fe4-9a66-3c8c1c948d2d"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#d602e742-24c8-42ee-8a56-56dc37698ce6"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h2>
+                                                <p>In diesem Abschnitt erfahren Sie zunächst einmal, was Netzwerke eigentlich sind und
+                                                   was verschiedene Netzwerktypen voneinander unterscheidet. Anschließend wird die Entstehungsgeschichte
+                                                   lokaler Netze, der Datenfernübertragung und des Internets betrachtet.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="7498c051-50b6-4fe4-9a66-3c8c1c948d2d" name="7498c051-50b6-4fe4-9a66-3c8c1c948d2d"></a><h3 class="t3"><span class="cfett">4.1.1</span><span class="cfett"> Was ist ein Netzwerk?</span><a href="#364c6cbb-83ad-482c-978c-75fffecc19c5"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#449de289-2c4f-4783-8b8a-1a195df70708"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p>Ein <a class="indexterm" id="fb4193cb-18ce-4c28-9c00-28e9eed9ae9c"></a>Netzwerk ist eine Verbindung mehrerer Computer zum Zweck des Datenaustauschs, für
+                                                   verteilte Anwendungen oder auch für die Kommunikation zwischen ihren Benutzern.
+                                                </p>
+                                                <p>Im Lauf der Computergeschichte haben sich viele verschiedene Möglichkeiten der Verkabelung
+                                                   und der Kommunikationsstrukturen sowie zahlreiche Anwendungsgebiete entwickelt:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Die <a class="indexterm" id="c7b49bb3-c59b-42b0-9d4a-bcce4589d715"></a>Verkabelung oder allgemein die Hardwaregrundlage <a class="indexterm" id="81ed3d4e-d146-4251-ac5c-535523ea7a45"></a>reicht von der Verwendung gewöhnlicher Telefonleitungen mit besonderen Verbindungsgeräten,
+                                                      den Modems, über speziell für die Anwendung in lokalen Netzwerken entwickelte Netzwerkkarten
+                                                      und Netzwerkkabel bis hin zu Hochgeschwindigkeitsnetzen, etwa über Glasfaserkabel.
+                                                      Auch die diversen Möglichkeiten der drahtlosen Übertragung werden immer wichtiger.
+                                                   </li>
+                                                   <li>Kommunikationsstrukturen, definiert durch sogenannte <a class="indexterm" id="76887473-23a7-4dfc-ab1d-35d0d532900d"></a><a class="indexterm" id="33e6322f-5d9a-4008-875b-747b6a1c1c53"></a>Netzwerkprotokolle, gibt es unzählige. Viele sind von einem bestimmten Hersteller,
+                                                      einer Plattform oder einem Betriebssystem abhängig, andere &#8211; wie die Internet-Protokollfamilie
+                                                      TCP/IP &#8211; sind offen, unabhängig und weitverbreitet.
+                                                   </li>
+                                                   <li>Was die <a class="indexterm" id="d9d340e5-9ad0-461b-9318-ddf6edef24d4"></a>Anwendungsgebiete angeht, so reichen diese vom einfachen Dateiaustausch in Arbeitsgruppen
+                                                      über die gemeinsame Nutzung teurer Hard- und Software bis hin zu hochkomplexen, spezialisierten
+                                                      und verteilten Anwendungen.
+                                                   </li>
+                                                </ul>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">
+                                                               
+                                                               
+                                                               
+                                                               Paketvermittelte Datenübertragung
+                                                               
+                                                               </span></td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Ein wesentliches Merkmal der meisten Netzwerkformen ist die Übertragung von Daten
+                                                               mit Hilfe sogenannter <span class="cbegriff">Datenpakete</span>.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Um die <span class="cbegriff">Paketvermittlung</span> (Packet Switching) zu verstehen, sollten Sie zunächst ihr Gegenteil, die <span class="cbegriff">Schaltkreisvermittlung</span> (Circuit Switching) der herkömmlichen Telefonleitungen, betrachten. (Hinweis: Inzwischen
+                                                               gilt dies nicht mehr zwingend; durch die Einführung neuer Technik laufen auch immer
+                                                               mehr Telefonverbindungen hinter den Kulissen paketvermittelt ab &#8211; per <span class="cbegriff">Voice over IP</span> (VoIP) sogar bis zum Endkunden. Durch geeignete Kommunikationsprotokolle wird aber
+                                                               dafür gesorgt, dass die Nutzer dies nicht bemerken.) <a class="indexterm" id="3974b171-d1a0-4e7e-b5d9-c136de15136e"></a><a class="indexterm" id="52f4b10d-d9b1-47b9-b767-bfef0473cfd1"></a><a class="indexterm" id="8829df12-fc07-45a2-92bd-a867a75e87dd"></a><a class="indexterm" id="bd088fcd-f1e6-47ad-a018-473e80898579"></a>Durch das Wählen einer bestimmten Rufnummer (oder früher durch die Handvermittlung)
+                                                               werden bestimmte Schalter geschlossen, die für die gesamte Dauer des Telefongesprächs
+                                                               eine feste Punkt-zu-Punkt-Verbindung zwischen beiden Stellen herstellen. Über diese
+                                                               dauerhafte Leitung können Sprache oder Daten in Echtzeit und in der korrekten Reihenfolge
+                                                               ohne Unterbrechung übertragen werden. Nachdem die Übertragung beendet ist, wird die
+                                                               Verbindung wieder abgebaut, und die betroffenen Leitungen stehen für andere Verbindungen
+                                                               zur Verfügung.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p><a class="indexterm" id="c51b35b6-8106-4290-bb18-0e72756536a7"></a><a class="indexterm" id="98250637-1ee7-484a-a177-e0511743f4f5"></a><a class="indexterm" id="84b8fb15-3524-4872-8254-64ab4cd3ed7d"></a>Ganz anders sieht es bei der Paketvermittlung aus: Zu keinem Zeitpunkt der Datenübertragung
+                                                               wird eine direkte Verbindung zwischen den beiden beteiligten Stellen hergestellt.
+                                                               Stattdessen sind beide nur indirekt über ein loses Netz von Vermittlungsstellen, <span class="cbegriff">Router</span> genannt, miteinander verbunden. Damit auf diesem Weg Daten übertragen werden können,
+                                                               wird folgender Mechanismus verwendet:
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li><a class="indexterm" id="9adf3b83-b513-496c-a207-3599792f13e0"></a>Die Daten werden in kleinere Einheiten unterteilt, die <span class="cbegriff">Datenpakete</span>.
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li>Jedes einzelne Datenpaket wird mit der Absender- und der Empfängeradresse versehen.</li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li>Der Absender übergibt jedes Datenpaket an den nächstgelegenen Router.</li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li>Jeder beteiligte Router versucht, das Paket anhand der Empfängerangabe an den günstigsten
+                                                                     Router weiterzuleiten, damit es letztendlich an seinem Ziel ankommt.
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li>Der Empfänger nimmt die Datenpakete entgegen und interpretiert sie je nach Daten-
+                                                                     und Übertragungsart auf irgendeine zwischen den beiden Stellen vereinbarte Art und
+                                                                     Weise.
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Zur reinen Paketvermittlung gehört zunächst einmal kein Mechanismus, der die vollständige
+                                                               Auslieferung aller Datenpakete garantiert. Es wird standardmäßig weder der Erfolg
+                                                               noch das Ausbleiben einer Paketlieferung gemeldet. Im Übrigen wird auch keine verbindliche
+                                                               Reihenfolge festgelegt. Da jedes einzelne Paket einen beliebigen Weg durch das Netzwerk
+                                                               nehmen kann, kommt mitunter ein später abgesendetes Paket noch vor einem früher versandten
+                                                               beim Empfänger an.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Um die potentiell unsichere Datenübertragung per Paketvermittlung für bestimmte Anwendungen
+                                                               zuverlässiger zu machen, wird zusätzlich eine Erfolgskontrolle implementiert. Außerdem
+                                                               werden die Pakete oft durchnummeriert, um die korrekte Reihenfolge wiederherzustellen.
+                                                               Allerdings haben solche Maßnahmen nichts mit der eigentlichen Paketvermittlung zu
+                                                               tun und müssen in diesem Zusammenhang nicht beachtet werden. In der Regel sind die
+                                                               Softwarekomponenten, die sich um die Übertragung der Datenpakete kümmern, gar nicht
+                                                               in der Lage, diese zusätzlichen Kontrollinformationen selbst auszuwerten.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="364c6cbb-83ad-482c-978c-75fffecc19c5" name="364c6cbb-83ad-482c-978c-75fffecc19c5"></a><h3 class="t3"><span class="cfett">4.1.2</span><span class="cfett"> Entstehung der Netzwerke</span><a href="#5ce94bf5-d7a2-4308-9581-0080b5cf0476"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#7498c051-50b6-4fe4-9a66-3c8c1c948d2d"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="0fb1a1c4-86bf-413b-94d6-648a0f21329d"></a>Wenn Sie sich die Geschichte der Computer anschauen, die in Kapitel 1, »Einführung«,
+                                                   skizziert wurde, fällt auf, dass die Verwendung von Netzwerken anfangs keinen Sinn
+                                                   ergeben hätte: Bei den frühen Großrechnern gab es keine standardisierte Software,
+                                                   die miteinander hätte kommunizieren können. Darüber hinaus wurden sie zunächst über
+                                                   Schalttafeln und später über Lochkarten bedient. Es gab also keine Echtzeit-Interaktion
+                                                   zwischen Benutzer und Programm, so dass es erst recht abwegig war, verschiedene Computer
+                                                   miteinander interagieren zu lassen. Frühestens, als der Dialogbetrieb über Terminals
+                                                   (siehe Kapitel 3, »Hardware«, und Kapitel 5, »Betriebssystemgrundlagen«) eingeführt
+                                                   wurde, war an eine Vernetzung zu denken.
+                                                </p><a id="5ce94bf5-d7a2-4308-9581-0080b5cf0476" name="5ce94bf5-d7a2-4308-9581-0080b5cf0476"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Geschichte des Internets</span></h4>
+                                                <p><a class="indexterm" id="a78950b6-19e9-4d0e-a385-99cb1b7dcf32"></a>Der Anstoß für die Entwicklung eines Computernetzwerks kam aus einer eher unerwarteten
+                                                   Richtung: Die atomare Bedrohung des Kalten Krieges schürte die Angst der Verantwortlichen
+                                                   in Politik und Militär in den USA, im Fall eines Atomkrieges handlungsunfähig zu werden,
+                                                   weil die Übermittlung von Informationen nicht mehr funktionieren könnte. Es war schlichtweg
+                                                   zu riskant, sich auf einen einzigen Zentralcomputer mit Terminals zu verlassen. Deshalb
+                                                   begann 1969 der Betrieb eines experimentellen Netzes aus vier Computern an verschiedenen
+                                                   US-amerikanischen Universitäten. Federführend für das Projekt war die <a class="indexterm" id="0fd37d47-69f4-419a-8488-7ca918f8f96f"></a><a class="indexterm" id="9806dbc3-75b5-4edc-86ed-ebaa0eac367b"></a>(Defense Department&#8217;s) Advanced Research Projects Agency (ARPA, später auch DARPA),
+                                                   eine Forschungskommission des amerikanischen Verteidigungsministeriums, die 1957 als
+                                                   Reaktion auf den ersten sowjetischen Satelliten Sputnik gegründet worden war. Die
+                                                   USA wollten den Anschluss auf verschiedenen wichtigen Gebieten der Wissenschaft nicht
+                                                   verpassen &#8211; und neben der Raumfahrt gehörte auch die Computertechnik zu diesen Gebieten.
+                                                   Folgerichtig hieß dieses erste Netzwerk <a class="indexterm" id="fd989f3a-6ead-4b4f-8729-052d4702901e"></a><a class="indexterm" id="413f976f-9067-4597-a2b0-b8e579687aed"></a>ARPANET.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> ARPANET-Anwendung und -Technik</span></h4>
+                                                <p>Allgemein sind bei der Betrachtung von Netzwerken immer mindestens zwei Ebenen zu
+                                                   unterscheiden: zum einen der Anwendungszweck des Netzwerks, zum anderen dessen technische
+                                                   Realisierung. Bei näherem Hinsehen sind sogar noch weitere solcher Ebenen auszumachen;
+                                                   diese sogenannten Schichtenmodelle werden im Abschnit »Funktionsebenen von Netzwerken«
+                                                   ab Seite 176 besprochen. Interessanterweise stellt sich im Entwicklungsverlauf von Netzwerken
+                                                   manchmal heraus, dass der gewünschte Anwendungszweck technisch anders realisierbar
+                                                   ist, aber auch oft, dass eine bestimmte technische Realisation völlig anderen Anwendungen
+                                                   als der ursprünglich geplanten dienlich sein kann. Besonders in der Geschichte des
+                                                   Internets, dessen Vorläufer das ARPANET war, ist dies oft festzustellen.
+                                                </p>
+                                                <p><a class="indexterm" id="d5de8481-9904-4689-9c68-0171d0cf450e"></a>Die ursprüngliche Anwendung dieses Netzes bestand lediglich darin, Datenbestände auf
+                                                   den unterschiedlichen angeschlossenen Computern automatisch zu synchronisieren, d.
+                                                   h. einfach aus Sicherheitsgründen den gleichen Informationsbestand auf mehreren Rechnern
+                                                   bereitzuhalten.<span class="footnote"><a id="d19db9c8-af66-457a-9330-b1a2c3e5ece7" title="Auch heutige Serversysteme vervielfältigen wichtige Daten auf diese Weise automatisch. Das Verfahren wird  genannt und kommt insbesondere bei Datenbank- oder Verzeichnisdienstservern zum Einsatz. In Kapitel 12, »Datenbanken«, wird es am Beispiel von MySQL beschrieben.">[12]</a></span></p>
+                                                <p><a class="indexterm" id="d53b0954-0c41-400a-b041-4c1378165b92"></a>Grundgedanke der Vernetzung selbst war dabei besonders die Fähigkeit jedes beteiligten
+                                                   Computers, Daten, die nicht für ihn selbst bestimmt waren, sinnvoll weiterzuleiten.
+                                                   Hieraus ergeben sich zwei unschätzbare organisatorische und technische Vorteile:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Ein Computer muss nicht direkt mit demjenigen verbunden sein, mit dem er Daten austauschen
+                                                      soll.
+                                                   </li>
+                                                   <li>Der Ausfall oder die Überlastung eines bestimmten Verbindungsweges kann durch Alternativen
+                                                      kompensiert werden.
+                                                   </li>
+                                                </ul>
+                                                <p>Auf diese Weise konnte das ursprüngliche Ziel, nämlich die Angriffs- und Ausfallsicherheit
+                                                   des Netzes zu gewährleisten, erreicht werden.
+                                                </p>
+                                                <p><a class="indexterm" id="eb6f0ac3-768f-4675-9908-72bc83ad9d4e"></a>Schon unmittelbar nach der Einrichtung des ARPANETs begann die oben erwähnte Weiterentwicklung.
+                                                   Man stellte schnell fest, dass die technische Infrastruktur dieses Netzes für weit
+                                                   mehr Anwendungen zu nutzen war als das vergleichsweise langweilige automatische Synchronisieren
+                                                   von Datenbeständen. So kam bald eine benutzerorientierte Möglichkeit des Dateiaustauschs
+                                                   hinzu. Außerdem war es schon für gewöhnliche Konfigurationsaufgaben unerlässlich,
+                                                   einem entfernten Computer unmittelbar Anweisungen erteilen zu können. Dies war der
+                                                   Ausgangspunkt für die Entwicklung der Terminalemulation, also der Benutzung des eigenen
+                                                   Terminals für einen Computer, an den es nicht unmittelbar, sondern nur indirekt über
+                                                   das Netzwerk angeschlossen ist. Auch wenn diese Anwendungen noch nicht sofort ihre
+                                                   späteren Namen &#8211; FTP und Telnet &#8211; erhielten und die technischen Details ihrer Implementierung
+                                                   sich noch weiterentwickelten, sind sie dennoch nach wie vor wichtige Nutzungsschwerpunkte
+                                                   des Internets.
+                                                </p>
+                                                <p>Alles in allem wurde dieses Netzwerk schnell populär. Zwei Jahre nach seiner Einrichtung,
+                                                   im Jahr 1971, waren bereits 40 Computer an verschiedenen Universitäten und anderen
+                                                   staatlichen Forschungseinrichtungen angeschlossen, und es war bei weitem nicht nur
+                                                   die militärische Nutzung von Interesse. Auch akademisch hatte das Netz viel zu bieten:
+                                                   Wissenschaftler sind darauf angewiesen, Daten auszutauschen; hier ergab sich eine
+                                                   Möglichkeit, dies sehr schnell und effektiv zu tun.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Erfindung der E?Mail</span></h4>
+                                                <p><a class="indexterm" id="a222730e-925d-41b9-abd1-3db9fefae211"></a>1972 wurde dann der bis dahin bedeutendste Dienst dieses Netzes erfunden: Ray Tomlinson,
+                                                   ein Mitarbeiter eines Ingenieurbüros in Kalifornien, verschickte die erste <a class="indexterm" id="da32bdca-7488-455a-8a67-c8b560b7663d"></a>E-Mail. Bis heute zählt die E-Mail zu den erfolgreichsten und verbreitetsten Anwendungen
+                                                   des Netzes; sie kann sich nach dem viel jüngeren World Wide Web noch immer auf einem
+                                                   guten zweiten Platz in puncto Beliebtheit von Internetdiensten halten, und es ist
+                                                   auch nicht zu sehen, warum sich dies in absehbarer Zeit ändern sollte.
+                                                </p>
+                                                <p>Das ursprüngliche ARPANET wuchs immer weiter. Zudem wurden nach dem gleichen Prinzip
+                                                   andere, ähnliche Netze konstruiert. Dies ist nicht zuletzt der Tatsache zu verdanken,
+                                                   dass alle Schritte, die zur Entwicklung des Netzes beigetragen haben, von Anfang an
+                                                   sorgfältig dokumentiert und der Öffentlichkeit zugänglich gemacht wurden. Dieser Dokumentationsstil
+                                                   ist bis heute beibehalten worden; die entsprechenden Dokumente heißen <a class="indexterm" id="c6e71427-91c3-44e0-8311-fb94b96afb56"></a><a class="indexterm" id="df109848-e54d-4ead-ba40-c2fa298299aa"></a><a class="indexterm" id="b8919997-e7bd-452b-831d-8a135154921d"></a><a class="indexterm" id="d2cc15d3-d662-450c-b5e1-41c14c2d7912"></a><a class="indexterm" id="2b23c87e-6c41-44dd-b4ff-9e474935d982"></a><a class="indexterm" id="a947cbd3-2c71-48f3-bb97-581fa589eda8"></a><span class="cbegriff">RFC</span> (Request For Comments, etwa »Bitte um Kommentare«).
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> RFC-Dokumente</span></h4>
+                                                <p>Es gibt bis heute über 6 .300 solcher RFC-Dokumente, die alle online zur Verfügung
+                                                   stehen, zum Beispiel unter http://www.rfc-editor.org/rfc-index2.html. Die meisten sind technische Beschreibungen von Entwürfen, Protokollen und Verfahrensweisen;
+                                                   nur wenige (in der Regel mit dem Datum 1. April) nehmen sich nicht ganz so ernst &#8211;
+                                                   zum Beispiel <a class="indexterm" id="143e47ec-5263-4cb2-9ff0-11725413a961"></a>RFC 2324, in dem das Protokoll HTCPCP zur Steuerung vernetzter Kaffeemaschinen vorgeschlagen
+                                                   wird, oder <a class="indexterm" id="77141829-9a26-4017-9513-6c26f12495fd"></a>RFC 1300, ein nettes Gedicht über Namen und Begriffe, die im Zuge der Computer- und
+                                                   Netzwerkentwicklung ihre ursprüngliche Bedeutung verändert haben.
+                                                </p>
+                                                <p>Alle Personen, Institutionen und Unternehmen, die etwas Entscheidendes zum ARPANET
+                                                   und späteren Internet beigetragen haben, haben dies in solchen Dokumenten erläutert.
+                                                   Dies ermöglicht es jedem beliebigen Hersteller von Hard- oder Software, mit seinen
+                                                   Produkten diese Standards zu unterstützen, denn sie gehören keinem einzelnen Hersteller
+                                                   und keiner bestimmten Person, und niemand kann den Zugriff darauf beschränken oder
+                                                   Lizenzgebühren fordern &#8211; ein entscheidender Grund dafür, warum die Protokolle des
+                                                   Internets heute vom Personal Computer bis zum Großrechner überall dominieren.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> ARPANET + NSFNet= Internet</span></h4>
+                                                <p>In den 1980er Jahren schließlich wurde der militärisch genutzte Teil des ARPANETs
+                                                   als <a class="indexterm" id="7886bd8d-bdcd-4451-be93-eb2825e20b46"></a>MilNet von ihm abgetrennt, und das restliche <a class="indexterm" id="f5740b14-8052-4268-b072-310634e4c51d"></a>ARPANET wurde mit dem <a class="indexterm" id="44da740d-ca80-4dc5-8fd0-71965716e088"></a>NSFNet, dem Netz der National Science Foundation, und einigen anderen Netzwerken zum
+                                                   <a class="indexterm" id="dfa89cd4-4b88-41c7-8c5c-59383d5dee49"></a>Internet zusammengeschlossen. Die kommerzielle Nutzung, heute Hauptverwendungsgebiet
+                                                   des Internets, ließ danach aber noch fast 15 Jahre auf sich warten. Denn die Anwendungen
+                                                   des Internets waren zwar robust und wenig störanfällig, aber alles andere als benutzerfreundlich.
+                                                   Abgesehen davon waren die ersten Personal Computer, die in der zweiten Hälfte der
+                                                   1970er Jahre auftauchten, weder konzeptionell noch von der Leistung her in der Lage,
+                                                   mit den Internetprotokollen etwas anzufangen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> DFÜ</span></h4>
+                                                <p>Recht früh wurde dagegen die Datenfernübertragung (DFÜ), also der Datenaustausch über
+                                                   Telefonleitungen, für Home- und Personal Computer eingeführt. Seit Ende der 1970er
+                                                   Jahre wurden sogenannte<a class="indexterm" id="82b58af4-422d-430c-96bb-0d899557b847"></a><a class="indexterm" id="9eadeaa0-b488-41a3-b71b-3e99adc3d222"></a> Akustikkoppler verwendet: Geräte, die an den Computer angeschlossen wurden und auf
+                                                   die einfach der Telefonhörer gelegt werden musste. Diese langsamen und störanfälligen
+                                                   Apparate wurden bald durch Modems ersetzt, die eine direkte Verbindung zwischen Computer
+                                                   und Telefonleitung zuließen und im Laufe der Jahre allmählich schneller und zuverlässiger
+                                                   wurden. Hauptanwendungsgebiete waren auf der einen Seite die sogenannten<a class="indexterm" id="38a7b302-cb39-466c-bf60-1cc1da078f4d"></a> Mailboxen, also Informations- und Datenangebote für Computer, die eine direkte Telefonverbindung
+                                                   zum Mailboxrechner herstellten. Auf der anderen Seite entstanden in den 1980er Jahren
+                                                   die meisten kommerziellen<a class="indexterm" id="590502f5-cef0-49f6-9d4c-8e8cb16f9186"></a><a class="indexterm" id="fbf56171-2e39-48d1-8666-72ffbd3f9728"></a> Onlinedienste wie CompuServe, AOL oder in Deutschland BTX (Vorläufer von T-Online),
+                                                   das zunächst über spezielle Terminals statt über PCs mit einer bestimmten Software
+                                                   genutzt wurde.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Das WWW</span></h4>
+                                                <p><a class="indexterm" id="b73776c9-13be-41c6-9a5c-f591745ee3fc"></a>Die Entwicklung des Internets vom exklusiven Wissenschaftler-Netz zum Massenmedium
+                                                   nahm ihren Anfang erst 1989 in der Schweiz, am Europäischen Forschungsinstitut für
+                                                   Kernphysik (CERN) in Genf. Dort machte sich der britische Informatiker <a class="indexterm" id="8c0fc549-3733-41dd-a721-932fed70f511"></a>Tim Berners-Lee Gedanken darüber, wie man Netzwerke, besonders das Internet, für den
+                                                   einfachen und effizienten Zugriff auf wissenschaftliche Dokumente nutzen könnte. Ergebnis
+                                                   dieser Arbeit war die Grundidee des World Wide Webs, eines hypertextbasierten Informationssystems,
+                                                   das die Infrastruktur des Internets zur Datenübermittlung nutzen sollte.
+                                                </p>
+                                                <p><a class="indexterm" id="1a4352b2-fd11-4298-a9bb-06565bc54272"></a><span class="cbegriff">Hypertext</span> ist nichts anderes als Text mit integrierten Querverweisen, die automatisch funktionieren.
+                                                   Mit anderen Worten: Durch Betätigen des Querverweises, der in diesem Zusammenhang
+                                                   <span class="cbegriff">Hyperlink</span> heißt, stellt der Text selbst &#8211; beziehungsweise das System, das diesen darstellt
+                                                   &#8211; die Verbindung mit dem verknüpften Dokument her.
+                                                </p>
+                                                <p>Nun war Hypertext 1989 gewiss nichts Neues. Versuche damit reichen zurück bis in die
+                                                   1950er Jahre, in Hilfesystemen war er in den 1980er Jahren bereits Alltag. Neu war
+                                                   nur seine Nutzung über ein Netzwerk, genauer gesagt über das Internet.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> WWW-Bestandteile</span></h4>
+                                                <p>So entstand ein äußerst effektives Informationssystem für Wissenschaftler, die auf
+                                                   diese Weise ihre Forschungsergebnisse miteinander austauschten. Der Prototyp dieses
+                                                   Systems, das World Wide Web heißen sollte, umfasste im Einzelnen die folgenden Bestandteile:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li><a class="indexterm" id="203da152-5cfb-44b9-bd9f-f2100287a148"></a>ein spezielles neues Anwendungsprotokoll, das Hypertext Transfer Protocol (HTTP)
+                                                   </li>
+                                                   <li>einen Serverdienst, der in der Lage ist, Anfragen, die in der Sprache des HTTP formuliert
+                                                      sind, auszuliefern
+                                                   </li>
+                                                   <li>eine neu geschaffene Formatierungs- und Beschreibungssprache für solche Hypertext-Dokumente,
+                                                      die Hypertext Markup Language (HTML)
+                                                   </li>
+                                                   <li>ein Anzeigeprogramm für entsprechend formatierte Dokumente, den Browser</li>
+                                                </ul>
+                                                <p>1991 wurde das System der Öffentlichkeit vorgestellt. Es wurde praktisch von Anfang
+                                                   an nicht nur zu ernsthaften wissenschaftlichen Zwecken genutzt, sondern allgemein
+                                                   zur Veröffentlichung von Text, Bildern und den verschiedensten Themen. Zunächst war
+                                                   die Nutzung des Systems beschränkt auf wissenschaftliches Personal sowie interessierte
+                                                   Studenten. Sie störten sich nicht am mangelnden Komfort der ersten Browser oder den
+                                                   geringen Layoutfähigkeiten der ersten HTML-Versionen. Als jedoch immer mehr private
+                                                   Benutzer dazukamen &#8211; was durch das allmähliche Entstehen kommerzieller Internetprovider
+                                                   und Browser für PC-Betriebssysteme wie Windows oder Mac OS gefördert wurde &#8211;, änderte
+                                                   sich dies. Der berühmt gewordene »Browserkrieg« zwischen Netscape und Microsoft schuf
+                                                   letztendlich Fakten, die niemand für möglich oder auch nur wünschenswert gehalten
+                                                   hätte, die jedoch bis heute das Wesen des World Wide Webs bestimmen.
+                                                </p>
+                                                <p>Zwei Merkmale sind hier besonders wichtig:</p>
+                                                <ul class="gp">
+                                                   <li>Die Seitenbeschreibungssprache HTML wurde immer mehr für die Definition des Seitenlayouts
+                                                      genutzt statt nur für die Struktur. Für Websites, die ein möglichst großes Publikum
+                                                      erreichen sollen, das weniger technisch und mehr inhaltlich interessiert ist, ist
+                                                      das Layout wichtiger als die Struktur. (Inzwischen kommt für das Layout allerdings
+                                                      praktisch nur noch CSS zum Einsatz, und HTML konzentriert sich wieder &#8211; wie ursprünglich
+                                                      angedacht &#8211; auf die Dokumentstruktur.)
+                                                   </li>
+                                                   <li>Der Anteil kommerzieller Websites am gesamten Bestand wurde immer größer und überwiegt
+                                                      heute bei weitem; das Angebot im Web ist den Rundfunkmedien wie etwa dem Fernsehen
+                                                      ähnlicher geworden. Während Tim Berners-Lee sich ursprünglich ein Netz vorgestellt
+                                                      hatte, in dem alle Teilnehmer sowohl Anbieter als auch Konsumenten von Inhalten sein
+                                                      sollten, wird das Web heutzutage von vielen weitgehend passiv als Medium genutzt.
+                                                      Erst die neu entstehenden »Web 2.0«-Tools wie Blogs, Wikis und andere kommen Berners-Lees
+                                                      eigentlichen Ideen näher, wobei die gleichzeitig zu beobachtende Kommerzialisierung
+                                                      samt Aufkauf der wichtigsten Sites durch große Medienkonzerne sicherlich nicht in
+                                                      seinem Sinne ist.
+                                                   </li>
+                                                </ul><a id="cf858bec-393c-4cab-8e55-a4295606274b" name="cf858bec-393c-4cab-8e55-a4295606274b"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Lokale Netze</span></h4>
+                                                <p>Einen vollkommen anderen Anstoß zur Entwicklung von Netzwerken gab das Aufkommen des
+                                                   sogenannten <a class="indexterm" id="8c623c1f-0b46-41ef-966a-b55ff8e75652"></a><span class="cbegriff">Outsourcings</span> in der Computertechnik, also der Verlagerung der Rechenleistung von einem Zentralcomputer
+                                                   auf den einzelnen Schreibtisch.
+                                                </p>
+                                                <p>Die fortschreitende Ausstattung von Büros mit Personal Computern führte mangels anderer
+                                                   Optionen zunächst zur Blüte des »Turnschuhnetzwerks«: Anwender liefen mit Datenträgern
+                                                   bewaffnet durch das ganze Gebäude, um Daten miteinander auszutauschen oder zum Beispiel
+                                                   einen speziellen Drucker zu verwenden. Auch zwischen verschiedenen Unternehmen erfreute
+                                                   sich der sogenannte <a class="indexterm" id="40eca4bf-7f1b-4cb8-9575-b8e4b1d5cd7b"></a>Datenträgeraustausch großer Beliebtheit: Die Datensätze von Geschäftsvorfällen wurden
+                                                   auf Disketten oder Magnetbändern zwischen den einzelnen Unternehmen hin und her gereicht.
+                                                </p>
+                                                <p><a class="indexterm" id="88f1a777-38e0-4df1-a8fa-97847faa8a52"></a>Lokale Firmennetzwerke wurden zwar bereits Mitte der 1970er Jahre bei XEROX PARC erfunden,
+                                                   aber erst Ende der 80er Jahre rückten sie stärker ins allgemeine Interesse. Es war
+                                                   ein Bedürfnis der Anwender von PCs, miteinander Daten auszutauschen, einfach deshalb,
+                                                   weil die meisten Vorgänge der Datenverarbeitung von mehreren Mitarbeitern erledigt
+                                                   werden. So entstanden viele verschiedene Arten der Netzwerkhardware. Neben dem bereits
+                                                   genannten Ethernet mit seinen vielfältigen Varianten gab es beispielsweise auch Token
+                                                   Ring von IBM, ARCnet oder auch einfache serielle Direktverbindungen zwischen Computern
+                                                   über die sogenannten Nullmodemkabel.
+                                                </p>
+                                                <p>Was die Software angeht, so wurden die eigentlich nicht dafür geeigneten PC-Betriebssysteme
+                                                   um Netzwerkfähigkeiten erweitert. Hinzu kamen spezielle Betriebssysteme für Server,
+                                                   also solche Rechner, die anderen im Netzwerk verschiedene Ressourcen zur Verfügung
+                                                   stellen. Bekannt sind hier etwa <a class="indexterm" id="7f3e36a9-c70d-4afe-95a0-74b801c36734"></a>Novell NetWare, IBM OS/2 oder später auch Windows NT Server.
+                                                </p>
+                                                <p>Wenn Sie in diesem Zusammenhang Linux und andere Unix-Varianten vermissen, dann liegt
+                                                   das daran, dass Unix als PC-Betriebssystem und als Serversystem für PC-Netzwerke erst
+                                                   einige Jahre später populär wurde. Ein gewisses Grundverständnis für Unix ist übrigens
+                                                   unerlässlich, um die Funktionsweise der Internetprotokolle nachvollziehen zu können.
+                                                   Einige Grundlagen dieses Systems werden in Kapitel 5, »Betriebssystemgrundlagen«,
+                                                   und 7, »Linux«, erläutert.
+                                                </p><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_001.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_03_hardware_004.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_002.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

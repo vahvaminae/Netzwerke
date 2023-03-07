@@ -1,0 +1,991 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_04_netzwerkgrundlagen_006.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_008.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_04_netzwerkgrundlagen_006.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_008.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navnav">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navnav">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navnav">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navnav">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navnav">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navnav">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navnav">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navnav">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navnav">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navnav">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navnav">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navnav">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navnav">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navnav">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navnav">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navnav">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navnav">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navnav">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navnav">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navnav">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navnav">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navh">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navh">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navh">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navh">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main"><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="ce57e096-95f8-44f8-bbf4-a83937a19b40" name="ce57e096-95f8-44f8-bbf4-a83937a19b40"></a><h2 class="t2"><span class="cfett">4.7</span><span class="cfett"> Andere Protokollstapel</span><a href="#cff687a2-d361-4238-9c0c-a57b018f93e3"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h2>
+                                                <p>Der Schwerpunkt in diesem Buch liegt eindeutig bei den Internetprotokollen. Das ist
+                                                   auch kein Zufall, denn diese Protokollfamilie dominiert seit einigen Jahren in allen
+                                                   Netzwerken vom kleinsten LAN bis (natürlich) zum Internet. Dennoch gibt es einige
+                                                   interessante Alternativen, die Sie sich ansehen sollten. Sie werden teilweise noch
+                                                   immer in homogenen Netzwerken eingesetzt, die nicht über eine Internetverbindung verfügen,
+                                                   oder etwa für ältere Netzwerkanwendungen, die noch kein TCP/IP verstehen.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="cff687a2-d361-4238-9c0c-a57b018f93e3" name="cff687a2-d361-4238-9c0c-a57b018f93e3"></a><h3 class="t3"><span class="cfett">4.7.1</span><span class="cfett"> Die AppleTalk-Protokollfamilie</span><a href="#a767a4cf-580f-429e-8a02-66b670ab61d5"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#ce57e096-95f8-44f8-bbf4-a83937a19b40"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="5cd7b18e-4091-4729-a2fa-f052822935ae"></a><a class="indexterm" id="857d656d-4fdf-402e-a9d6-d776f60a36cb"></a>Zu den bekanntesten Netzwerkprotokollen neben den Internetprotokollen gehört der in
+                                                   den 1980er Jahren von Apple entwickelte AppleTalk-Protokollstapel. Früher kam das
+                                                   Protokoll in reinen Macintosh-Netzen zum Einsatz, weil es eine sehr einfache und praktische
+                                                   Integration von Rechnern, Druckern und anderen Ressourcen im Netzwerk anbot. Der Konfigurationsaufwand
+                                                   für ein AppleTalk-Netz war erheblich geringer als der für ein TCP/IP-Netzwerk.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> AppleTalk-Hardware</span></h4>
+                                                <p>Für AppleTalk-Verbindungen existierten im Wesentlichen vier mögliche Hardwaregrundlagen:</p>
+                                                <ul class="gp">
+                                                   <li>verschiedene Formen von Ethernet; vornehmlich Twisted Pair (bei allen Macintosh-Rechnern
+                                                      neuerer Bauart ist ein solcher Anschluss bereits integriert)
+                                                   </li>
+                                                   <li>Wireless LAN (unter der Apple-eigenen Bezeichnung »AirPort« ebenfalls schon seit Jahren
+                                                      in alle Macs eingebaut)
+                                                   </li>
+                                                   <li>Einwahlverbindungen über Modem oder ISDN-Adapter</li>
+                                                   <li>die klassische LocalTalk-Vernetzung über die seriellen RS-422-Anschlüsse älterer Macs
+                                                      &#8211; sehr langsam, aber dafür extrem kostengünstig
+                                                   </li>
+                                                </ul>
+                                                <p>Ethernet, WLAN und Wählleitungen wurden in diesem Kapitel bereits beschrieben. Zur
+                                                   LocalTalk-Vernetzung soll kurz etwas gesagt werden: Bis zu den ersten G3-PowerMacs,
+                                                   den letzten im grauen Desktop-Gehäuse (»Pizzaschachtel«), wurde jeder Mac mit zwei
+                                                   integrierten seriellen Schnittstellen vom Typ RS-422 ausgeliefert. Diese dienten als
+                                                   Drucker- beziehungsweise Modemanschluss und wurden auch so bezeichnet. Über ein spezielles
+                                                   Anschluss-Kit, das im Prinzip einen dieser beiden Anschlüsse verdoppelte, wurde ein
+                                                   Kabel zum jeweils nächsten Rechner verlegt. Das Ganze ergab letztendlich ein busförmiges
+                                                   Netz, ähnlich Ethernet über Koaxialkabel. Auch hier mussten die ungenutzten Anschlüsse
+                                                   an den LocalTalk-Kits des ersten und des letzten Rechners jeweils durch einen Abschlusswiderstand
+                                                   terminiert werden (etwas teurere und zuverlässigere Anschluss-Kits erledigten das
+                                                   sogar automatisch).
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> LocalTalk</span></h4>
+                                                <p><a class="indexterm" id="9381b1a6-762e-47eb-90b8-633eaf76ff31"></a>Ein LocalTalk-Netzwerk ist sehr langsam, die maximale Übertragungsrate beträgt nur
+                                                   230,4 KBit/s. Allerdings wird das kollisionsfreie Netzzugangsverfahren CSMA/CA eingesetzt,
+                                                   das auch bei 802.11-WLANs Verwendung findet. Natürlich ist das nicht ausreichend,
+                                                   um die Geschwindigkeit von LocalTalk auch nur in die Nähe von 10BaseT-Ethernet zu
+                                                   rücken, aber immerhin funktioniert das Netz auf diese Weise ziemlich reibungslos.
+                                                   Abgesehen davon darf man nicht vergessen, dass die zu übertragenden Datenmengen bei
+                                                   der Einführung von LocalTalk nicht annähernd so umfangreich waren wie heute.
+                                                </p>
+                                                <p>Auf das jeweilige Übertragungsmedium werden die Protokolle der höheren AppleTalk-Schichten
+                                                   aufgesetzt. Tabelle 4.25 zeigt eine Übersicht über den gesamten AppleTalk-Protokollstapel.
+                                                </p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <caption class="tabunter">
+                                                      <p class="ptabellenunter"><strong>Tabelle 4.25   </strong>Der AppleTalk-Protokollstapel
+                                                      </p>
+                                                   </caption>
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf">
+                                                            
+                                                            
+                                                            
+                                                            <span class="cfett">OSI-Layer</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf" colspan="6"><span class="cfett">AppleTalk-Protokolle</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">7</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="6">Anwendungen
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">6</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="4">AFP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">PostScript
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">5</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">ASP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">ZIP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">PAP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">4</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">ATP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">RTMP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">AEP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">NBP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">3</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="3">DDP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="3">AARP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">2</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">LLAP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">ELAP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">PPP
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">1</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">LocalTalk
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">Ethernet
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" colspan="2">Token Ring
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Modem/ISDN
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table>
+                                                <h4 class="t4"><span class="cfett"> Der AppleTalk-Protokollstapel</span></h4>
+                                                <p><a class="indexterm" id="0888e2bd-398a-46f8-9604-b4e43d95ce4e"></a>Die wichtigsten dieser Protokolle haben die folgende Bedeutung:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>LLAP, ELAP und PPP sind die Netzzugangsprotokolle für die jeweiligen Arten der Netzwerkhardware.
+                                                      PPP wurde weiter oben im Abschnitt über Datenfernübertragung beschrieben; LLAP und
+                                                      ELAP sind einfach spezielle Protokolle, um über LocalTalk beziehungsweise Ethernet
+                                                      auf AppleTalk-Dienste der höheren Schichten zuzugreifen.
+                                                   </li>
+                                                   <li>DDP (Data Delivery Protocol) ist ein verbindungsloses Vermittlungsprotokoll, dessen
+                                                      Aufgabe in etwa dem des IP-Protokolls entspricht.
+                                                   </li>
+                                                   <li>AARP (AppleTalk Address Resolution Protocol) erledigt im Grunde dieselbe Aufgabe wie
+                                                      das ARP der Internet-Protokollfamilie: Es wandelt die willkürlich (bei AppleTalk zufällig)
+                                                      vergebenen logischen Netzwerkadressen in die MAC<span class="footnote"><a id="0f3d192a-aaad-454c-8b17-0c0266c10d79" title="Auch wenn es in diesem Abschnitt um spezifische Protokolle für Apple-Macintosh-Rechner geht, ist mit MAC an dieser Stelle noch immer Media Access Control gemeint.">[19]</a></span>-Adressen der Netzwerkschnittstellen um.
+                                                   </li>
+                                                   <li>ATP (AppleTalk Transaction Protocol) ist ein verbindungsorientiertes Transportprotokoll,
+                                                      ähnlich TCP.
+                                                   </li>
+                                                   <li>RTMP (Routing Table Maintenance Protocol) dient der Kommunikation zwischen AppleTalk-Routern
+                                                      zur Übermittlung von Routing-Tabellen.
+                                                   </li>
+                                                   <li>AEP (AppleTalk Echo Protocol) dient wie ICMP oder ping der Internetprotokolle der Überprüfung, ob eine Station online ist.</li>
+                                                   <li>NBP (Name Binding Protocol) ordnet die logischen Netzwerkadressen den benutzerdefinierten
+                                                      Rechnernamen zu.
+                                                   </li>
+                                                   <li>ASP (AppleTalk Session Protocol) verwaltet die Steuerung der Kommunikation zwischen
+                                                      den beteiligten Anwendungen als zusammenhängende Sitzungen.
+                                                   </li>
+                                                   <li>ZIP (Zone Information Protocol) ordnet die logischen Zonenadressen den benutzerdefinierten
+                                                      Zonennamen zu.
+                                                   </li>
+                                                   <li>PAP (Printer Access Protocol) regelt den Zugriff auf AppleTalk-Netzwerkdrucker.</li>
+                                                   <li>AFP (AppleTalk Filing Protocol) ist die technische Grundlage des AppleShare-Dateidienstes,
+                                                      dient also der Freigabe eigener und dem Zugriff auf fremde Dateisysteme.
+                                                   </li>
+                                                   <li>PostScript ist die universelle Druckerbeschreibungssprache von Adobe. Drucker, die
+                                                      in AppleTalk-Netzen als zentrale Netzwerkdrucker betrieben werden, müssen sie beherrschen.
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> AppleTalk versus TCP/IP</span></h4>
+                                                <p><a class="indexterm" id="5f60dabd-8d70-47fa-98f1-573b5b4daeda"></a>Obgleich der AppleTalk-Protokollstapel komplexer aussieht als die Internetprotokolle,
+                                                   ist es aus Anwendersicht sehr leicht, ein AppleTalk-Netzwerk in Betrieb zu nehmen
+                                                   und zu nutzen. Da bei Macintosh-Rechnern Hardware, Betriebssystem und Netzwerkprotokolle
+                                                   vom gleichen Hersteller stammen, gibt es weder die von Windows oder Linux gewohnten
+                                                   Treiberprobleme noch die Komplexität der IP-Konfiguration. Dennoch wird auch auf Macs
+                                                   immer häufiger TCP/IP eingesetzt, weil sie zunehmend in heterogene Netzwerke integriert
+                                                   oder mit dem Internet verbunden werden.
+                                                </p>
+                                                <p>Ähnlich wie bei TCP/IP wird auch bei AppleTalk zwischen logischen Netzwerkadressen
+                                                   und Hardware-(MAC-)Adressen unterschieden. Diese Adressen werden den Rechnern beim
+                                                   Einschalten zufällig zugewiesen. Sie gliedern sich in eine 16 Bit große Teilnetz-(Zonen-)Adresse
+                                                   und eine 8 Bit große Rechner-(Node-)Adresse. Zonen werden einfach durch die erste
+                                                   Nennung ihres Namens auf einem Rechner angelegt; die Zuweisung der numerischen Zonenadresse
+                                                   erfolgt wiederum automatisch. Zwischen verschiedenen AppleTalk-Zonen können Router
+                                                   eingerichtet werden. Wegen der zufälligen Adressvergabe und des nicht besonders belastbaren
+                                                   Routing-Protokolls RTMP ist es allerdings vollkommen ausgeschlossen, große internationale
+                                                   Verbünde von AppleTalk-Netzen einzurichten, die auch nur entfernt dem Internet nahekommen.
+                                                </p>
+                                                <p>AppleTalk wird (beziehungsweise wurde) natürlich vornehmlich unter den beiden grundverschiedenen
+                                                   Mac OS-Versionen bis 9 beziehungsweise Mac OS X eingesetzt. Allerdings kommen zwei
+                                                   weitere wichtige Implementierungen zum Einsatz, um Macintosh-Rechnern Datei- und Druckdienste
+                                                   in heterogenen Netzen zur Verfügung zu stellen:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Windows NT- und Windows 2000-Server enthielten die »Services for Macintosh«, die AppleShare-Datei-
+                                                      und Druckdienste über AppleTalk oder TCP/IP anboten.
+                                                   </li>
+                                                   <li>Dieselben Dienstleistungen für Unix-Server bietet die Open-Source-Implementierung
+                                                      netatalk. Sie ist unter netatalk.sourceforge.net verfügbar, wird aber auch mit den meisten aktuellen Linux-Distributionen geliefert.
+                                                   </li>
+                                                </ul><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="a767a4cf-580f-429e-8a02-66b670ab61d5" name="a767a4cf-580f-429e-8a02-66b670ab61d5"></a><h3 class="t3"><span class="cfett">4.7.2</span><span class="cfett"> Novell IPX/SPX</span><a href="#0855aa7d-2091-4fcd-8728-8e29d9390f3d"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#cff687a2-d361-4238-9c0c-a57b018f93e3"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="f868aab1-85d5-4c3e-b4bc-c0d518703e6a"></a><a class="indexterm" id="3afdfff1-c826-43e9-9881-0dd237eb67ed"></a>Seit Ende der 1980er Jahre und in der ersten Hälfte der 1990er Jahre war Novell NetWare
+                                                   das führende Serversystem in PC-Netzwerken. Es definierte seinen eigenen Protokollstapel,
+                                                   der wie TCP/IP nach seiner Vermittlungs- und Transportkomponente benannt wird. Seit
+                                                   den Tagen von MS-DOS kann man unter allen Microsoft-Betriebssystemen die NetWare-Protokolle
+                                                   verwenden; zunächst mussten sie zusätzlich als NetWare-Client installiert werden,
+                                                   seit Windows für Workgroups (3.11) beziehungsweise Windows NT 3.x sind sie im Lieferumfang
+                                                   von Windows enthalten.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Novell-kompatible Hardware</span></h4>
+                                                <p>Die Novell-Protokollfamilie setzt auf viele verschiedene Arten von Hardware auf, dazu
+                                                   gehören Ethernet, Token Ring, FFDI oder serielle Wähl- und Standleitungen mit ihren
+                                                   jeweiligen Netzzugangsverfahren.
+                                                </p>
+                                                <p>Das wichtigste Protokoll der Vermittlungsschicht ist das IPX (Internet Packet Exchange).
+                                                   Genau wie bei IP hat der Name zunächst nichts mit dem heutigen Internet zu tun, sondern
+                                                   soll die Routing-Fähigkeit über mehrere Netze hinweg betonen. Die Adressierung erfolgt
+                                                   anhand der MAC-Adresse der Netzwerkhardware. Im Grunde ist das kein Problem, weil
+                                                   diese Adressen &#8211; wie bereits besprochen &#8211; weltweit einmalig sind. Dennoch hat dieses
+                                                   Vorgehen zwei Nachteile gegenüber den logischen Adressen von IP oder AppleTalk:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Die Hardwareadresse ist von außen eindeutig einem bestimmten physikalischen Rechner
+                                                      zuzuordnen, was ein größeres Sicherheitsrisiko mit sich bringt als eine logische Adresse,
+                                                      die nur innerhalb eines Teilnetzes in die MAC-Adresse aufgelöst wird.
+                                                   </li>
+                                                   <li>An der Adresse eines Hosts ist nicht zu erkennen, zu welchem Teilnetz er gehört. Dies
+                                                      macht die Verwaltung von Routing-Tabellen und andere Administrationsaufgaben ziemlich
+                                                      unhandlich.
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> Novell-Routing</span></h4>
+                                                <p>Das Routing wird mit Hilfe eines Protokolls namens RIP erledigt, das seinem gleichnamigen
+                                                   TCP/IP-Gegenstück ähnelt. Ein moderneres Routing-Protokoll ist NLSP (NetWare Link
+                                                   Services Protocol), das für größere Netze besser geeignet ist.
+                                                </p>
+                                                <p>Auf der Transportschicht kommt SPX (Sequenced Package Exchange) zum Einsatz, ein verbindungsorientiertes
+                                                   Protokoll, das TCP ähnelt. SPX wird vor allem von den NetWare-Serverdiensten RPRINTER
+                                                   für die Druckerfreigabe und RCONSOLE für die Fernwartung von Servern eingesetzt. Dagegen
+                                                   können gerade einige der wichtigsten NetWare-Dienste &#8211; zum Beispiel die Dateifreigabe
+                                                   &#8211; SPX umgehen und mit einem eigenen Streaming-Mechanismus direkt auf IPX zugreifen,
+                                                   wodurch der Transport effizienter wird.
+                                                </p>
+                                                <p>Die Bedeutung von IPX/SPX ist in den letzten Jahren erheblich zurückgegangen. Erstens
+                                                   wurde NetWare als beliebtestes Serversystem für PC-Netzwerke durch Windows NT und
+                                                   seine Nachfolger sowie Linux abgelöst, und zweitens verwendet der NetWare-Server bereits
+                                                   seit der Version 5, der vorletzten Version, TCP/IP als Standardprotokollstapel. IPX/SPX
+                                                   kommt insbesondere noch in älteren, vom Internet getrennten LANs sowie für einige
+                                                   ältere Netzwerkspiele ohne TCP/IP-Fähigkeit zum Einsatz.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="0855aa7d-2091-4fcd-8728-8e29d9390f3d" name="0855aa7d-2091-4fcd-8728-8e29d9390f3d"></a><h3 class="t3"><span class="cfett">4.7.3</span><span class="cfett"> NetBEUI/SMB</span><a href="#a767a4cf-580f-429e-8a02-66b670ab61d5"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="87a080d0-1dba-4e25-875d-fb088e410ef5"></a><a class="indexterm" id="4c0769ad-09a4-4e2f-8089-3277ffeec363"></a>Als Netzwerke in den 1980er Jahren in die Büros Einzug hielten, führten IBM und Microsoft
+                                                   ihre eigenen Protokolle für die typischen Bürodienste &#8211; insbesondere Datei- und Druckdienste
+                                                   &#8211; ein. Die erste Implementierung dieser Protokolle erfolgte über die Serversoftware
+                                                   LAN-Manager, wurde aber später auch in IBM OS/2 und Windows NT eingebaut.
+                                                </p>
+                                                <p><a class="indexterm" id="f5406071-9767-4eab-9268-935ec984e8c2"></a>Das grundlegende Netzwerkprotokoll ist NetBEUI (NetBIOS Extended User Interface).
+                                                   NetBEUI umfasst die OSI-Schichten 2 bis 4. Es entwickelte sich aus dem Protokoll NetBIOS
+                                                   (Network Basic Input/Output System), dessen Funktionen dabei in höhere Schichten des
+                                                   OSI-Modells verlegt wurden. Die wesentlichste Einschränkung von NetBEUI gegenüber
+                                                   Protokollen wie TCP/IP und IPX/SPX besteht darin, dass es nicht routingfähig ist.
+                                                   Es kann nur für kleine, in sich abgeschlossene LANs verwendet werden, ist dort aber
+                                                   aufgrund des geringen Verwaltungsaufwandes sehr schnell. Die Adressierung erfolgt
+                                                   wie bei IPX nur anhand der MAC-Adresse.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> SMB überTCP/IP</span></h4>
+                                                <p><a class="indexterm" id="b8686ff2-9d1d-4666-bedc-333bd430b1fb"></a>Das SMB-Protokoll (Server Message Blocks) arbeitet über NetBIOS. Mit Hilfe des SMB-Protokolls
+                                                   sind Windows-Rechner in der Lage, Datei- und Druckerzugriff als Freigaben bereitzustellen.
+                                                   Somit wurde NetBEUI als gemeinsames Protokoll der Schichten 2 bis 4 flächendeckend
+                                                   durch SMB ersetzt und hat mittlerweile in der Praxis sogar noch weniger Bedeutung
+                                                   als IPX/SPX. Windows XP und Vista bieten standardmäßig nicht einmal mehr die Möglichkeit,
+                                                   es zu installieren. Auch NetBIOS over SPX hat kaum noch Bedeutung; die einzig verbliebene
+                                                   wichtige Lösung ist NetBIOS over TCP. Übrigens verwendet Microsoft für SMB inzwischen
+                                                   meist die neuere Bezeichnung <a class="indexterm" id="de602ad3-8766-4210-92e6-faf81b86dceb"></a>CIFS (Common Internet File System).
+                                                </p>
+                                                <p>Interessant ist übrigens, wie ein SMB-Paket in die Protokolle der niedrigeren Schichten
+                                                   bis hinunter zum Ethernet-Frame verpackt wird. Schematisch betrachtet sieht dies so
+                                                   aus:
+                                                </p>
+                                                <div class="listing"><pre class="prettyprint">[ Ethernet-Frame [ IP [ TCP [ NetBIOS [ SMB ]]]] CRC-Prüfsumme ]<br></pre></div><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_007.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_04_netzwerkgrundlagen_006.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_008.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,942 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_04_netzwerkgrundlagen_002.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_004.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_04_netzwerkgrundlagen_002.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_004.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navnav">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navnav">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navnav">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navnav">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navnav">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navnav">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navnav">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navnav">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navh">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navh">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navh">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navh">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navnav">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navnav">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navnav">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navnav">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navnav">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navnav">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navnav">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navnav">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navnav">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navnav">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navnav">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navnav">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navnav">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main"><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="472620d2-f8fa-4448-8996-5a0266afc21f" name="472620d2-f8fa-4448-8996-5a0266afc21f"></a><h2 class="t2"><span class="cfett">4.3</span><span class="cfett"> Klassifizierung von Netzwerken</span><a href="#415ea361-b033-4d25-ae06-c74bfb07e564"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h2>
+                                                <p><a class="indexterm" id="87d3e38a-7799-47f7-b5e3-9c57cd427aae"></a>Nachdem Sie nun mit Hilfe der Schichtenmodelle eine Möglichkeit kennengelernt haben,
+                                                   unterschiedliche Netzwerke in ihren Funktionen miteinander zu vergleichen, sollten
+                                                   Sie auch verstehen, worin sie sich unterscheiden. Es gibt diverse Unterscheidungsmerkmale,
+                                                   die zwar nicht genau den Schichten der Modelle entsprechen, aber doch ebenfalls mehrere
+                                                   Aspekte der einzelnen Netzwerke betreffen. Es handelt sich um die Unterscheidung nach
+                                                   der Reichweite des Netzwerks, der physikalischen Grundstruktur oder Topologie und
+                                                   zuletzt nach der zentralen oder dezentralen Verwendung des jeweiligen Netzes.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="415ea361-b033-4d25-ae06-c74bfb07e564" name="415ea361-b033-4d25-ae06-c74bfb07e564"></a><h3 class="t3"><span class="cfett">4.3.1</span><span class="cfett"> Die Reichweite des Netzwerks</span><a href="#fb95a793-5ef0-4453-90f8-fbe78ad9cf52"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#472620d2-f8fa-4448-8996-5a0266afc21f"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p>Bei der Unterteilung der Netzwerke entsprechend der Reichweite &#8211; also nach der geografischen
+                                                   Größenordnung, die das Netzwerk überbrückt &#8211; werden insgesamt vier Stufen unterschieden:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li><a class="indexterm" id="afadd5e2-0efd-46d4-a4ba-4e1f8570e249"></a><a class="indexterm" id="67a06292-d191-42af-b51d-18c38a405b4d"></a><a class="indexterm" id="823b6b71-1e8b-45c3-bffb-aedbe77ff917"></a><a class="indexterm" id="151b1cea-92b5-41a9-88d1-b18f85292c10"></a>Das <span class="cbegriff">Local Area Network</span> (LAN) &#8211; lokales Netzwerk &#8211; beschreibt ein Netzwerk, das an ein einzelnes zusammenhängendes
+                                                      Areal gebunden ist, also etwa einen Raum, ein Gebäude oder maximal ein zusammenhängendes
+                                                      (Firmen-)Gelände. LANs sind heutzutage weitverbreitet in Wirtschaftsunternehmen, Schulen
+                                                      und Universitäten oder anderen Organisationen und Instituten.
+                                                   </li>
+                                                   <li><a class="indexterm" id="0d35bf92-f06a-40e0-9abe-e506b13775e9"></a><a class="indexterm" id="e550e8f7-145d-4465-89e2-fbd884461feb"></a><a class="indexterm" id="5d62e8e2-a72c-455d-b17a-0f31407df1bb"></a>Das <span class="cbegriff">Metropolitan Area Network </span>(MAN) &#8211; Stadtgebiets-Netzwerk &#8211; bezeichnet ein Netz, das eine Stadt oder Gemeinde
+                                                      umfasst. Ein Beispiel wären die verschiedenen eigenen Netze von NetCologne in Köln.
+                                                   </li>
+                                                   <li><a class="indexterm" id="554d39b8-ff9d-4ae6-bb4a-bfa1ddc3664d"></a><a class="indexterm" id="ae3ed632-03b5-4023-a8c1-188e503107a4"></a><a class="indexterm" id="91336ecc-4e77-411a-ad8f-af7971f6041b"></a>Das <span class="cbegriff">Wide Area Network</span> (WAN) &#8211; Fernnetzwerk &#8211; ist ein Netz, das mehrere Städte, eine ganze Region oder sogar
+                                                      ein ganzes Land umfasst. In Deutschland gibt es beispielsweise das Deutsche Forschungsnetz
+                                                      (DFN).
+                                                   </li>
+                                                   <li><a class="indexterm" id="9a2a8928-f529-4465-badc-393abcc4c6d5"></a><a class="indexterm" id="8bc75cca-c571-4b06-a94c-f833f94d9ac7"></a><a class="indexterm" id="a91495c0-14f7-4c4c-ba93-fd1f126f82f2"></a>Das <span class="cbegriff">Global Area Network</span> (GAN) &#8211; weltweites Netzwerk &#8211; ist über mehrere Länder, einen ganzen Kontinent oder
+                                                      sogar die ganze Welt verbreitet. Das bei weitem größte GAN ist heutzutage natürlich
+                                                      das Internet &#8211; im engeren Sinne ist ein GAN allerdings ein homogenes Netzwerk, während
+                                                      das Internet aus zahllosen Einzelnetzen mit unterschiedlichen Architekturen zusammengesetzt
+                                                      ist.
+                                                   </li>
+                                                </ul>
+                                                <p>Es sei noch angemerkt, dass die drei Netzwerkarten, die größere Entfernungen überbrücken
+                                                   &#8211; also MAN, WAN und GAN &#8211; oftmals einfach unter dem Sammelnamen WAN zusammengefasst
+                                                   werden. Dies umso mehr, als alle drei Typen von Fernnetzen im Wesentlichen die gleiche
+                                                   Art von Technologie verwenden &#8211; oder genauer gesagt: Alle Arten von Technologien für
+                                                   Fernnetze werden von allen drei Netzarten benutzt.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> WAN-Technologien</span></h4>
+                                                <p><a class="indexterm" id="c2ce9d28-0802-4eb2-98d3-0b369003bc4a"></a>Es gibt Fernnetze, die Wählleitungen, also einfache Telefonverbindungen, verwenden,
+                                                   sowohl das klassische Analog- als auch das digitale ISDN-Netz. Immer beliebter werden
+                                                   auch die neuen diversen DSL-Dienste, bei denen durch die Verwendung besonders hochfrequenter
+                                                   Signale über die normalen Kupferdrähte der Telefonleitungen wesentlich höhere Datenübertragungsraten
+                                                   erzielt werden. Zu einer besonderen Form der Wählleitung zählen Verbindungen über
+                                                   die digitalen GSM-Mobilfunknetze und deren Nachfolger GPRS und UMTS. Daneben existieren
+                                                   unterschiedliche Arten von Standleitungen, die für besonders häufig beanspruchte oder
+                                                   besonders zuverlässige Leitungen verwendet werden. Hierbei gibt es unter anderem spezielle
+                                                   DSL-Standleitungen oder Glasfasernetze. Auch drahtlose Übertragung, etwa über Funk-
+                                                   oder Satellitenverbindungen, spielt eine immer größere Rolle.
+                                                </p>
+                                                <p>Zu beachten ist allerdings, dass DSL, Wireless LAN und Mobilfunknetze im Wesentlichen
+                                                   die Technologien für den Zugang einzelner Hosts zu einem MAN oder WAN darstellen.
+                                                   Im Backbone-Bereich, also in der eigentlichen Netzwerkinfrastruktur, kommen vor allem
+                                                   Zeitmultiplexing-Verfahren über Glasfasernetze zum Einsatz. Sprache, Video und sonstige
+                                                   Daten werden dabei über Gigabit-Ethernet, SDH/SONET, ATM oder manchmal auch Frame-Relay
+                                                   übertragen. Eine zunehmende Bedeutung erlangten in den letzten Jahren auch DWDM-Verfahren
+                                                   (Dense Wavelength Division Multiplexing). Dabei werden über ein und denselben Lichtwellenleiter
+                                                   mehrere Signale mit unterschiedlicher Wellenlänge gleichzeitig versandt, was für extrem
+                                                   hohe Datenraten sorgt.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> LAN-Technologien</span></h4>
+                                                <p><a class="indexterm" id="75350325-121d-4c3c-a82c-4bb706947a83"></a>Lokale Netzwerke verwenden ebenfalls viele unterschiedliche technische Übertragungsarten.
+                                                   Allein für Ethernet, die häufigste Form der lokalen Vernetzung, werden unterschiedliche
+                                                   Arten von Koaxial-, Twisted-Pair- oder Glasfaserkabeln benutzt. Diese zeichnen sich
+                                                   durch verschiedene Übertragungsgeschwindigkeiten, mögliche maximale Entfernungen und
+                                                   natürlich auch unterschiedliche Kosten aus. Wireless LAN &#8211; der Betrieb von lokalen
+                                                   Netzwerken ohne Kabel über Funk, Infrarot oder Mikrowellen &#8211; erfreut sich auch zunehmender
+                                                   Beliebtheit. Abgesehen davon gibt es neben Ethernet viele andere Formen lokaler Netzwerke.
+                                                </p>
+                                                <p>Die technologischen Grundlagen der Verkabelung, der Signalübermittlung und des Netzzugangs
+                                                   werden im Abschnitt »Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren« ab Seite
+                                                   196 ausführlicher besprochen.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="fb95a793-5ef0-4453-90f8-fbe78ad9cf52" name="fb95a793-5ef0-4453-90f8-fbe78ad9cf52"></a><h3 class="t3"><span class="cfett">4.3.2</span><span class="cfett"> Die Netzwerktopologie</span><a href="#b83eff4e-8003-4395-b0e6-443b01459ea1"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#415ea361-b033-4d25-ae06-c74bfb07e564"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="98a0a8aa-fde4-48b5-8ad5-deef5194e935"></a><a class="indexterm" id="d70987d9-5f6b-4095-a8f0-88fb177a1003"></a><a class="indexterm" id="212f88de-d752-4018-8833-4f09dcb87977"></a>Die <span class="cbegriff">Topologie</span> eines Netzwerks beschreibt, in welcher physikalischen Grundform die einzelnen Geräte
+                                                   organisiert sind. Manche Arten von Netzwerkhardware setzen eine bestimmte Topologie
+                                                   voraus, andere überlassen dem Einrichtenden die Entscheidung zwischen mehreren Möglichkeiten.
+                                                   Topologie ist normalerweise eine Eigenschaft lokaler Netzwerke oder gar einzelner
+                                                   Netzsegmente. Die meisten Fernnetze verbinden ohnehin nicht einzelne Rechner, sondern
+                                                   ganze Netzwerke an unterschiedlichen Orten miteinander.
+                                                </p>
+                                                <p>Es werden im Wesentlichen folgende Grundformen unterschieden:</p>
+                                                <ul class="gp">
+                                                   <li><a class="indexterm" id="708aab0c-39ba-4f20-9a77-39469a5100fd"></a><a class="indexterm" id="66330fed-9b5b-4ee0-a117-04235c5fc04d"></a>Die <span class="cbegriff">Bus-Topologie</span> beschreibt ein Netzwerk, bei dem die einzelnen Knoten (Anschlüsse) hintereinander
+                                                      an einem einzelnen Kabelstrang angeschlossen sind, dessen Enden nicht miteinander
+                                                      verbunden werden dürfen (sonst würde es sich um eine Ring-Topologie handeln!). Häufig
+                                                      werden die beiden Enden des Kabelstrangs durch Abschlusswiderstände (Terminatoren)
+                                                      abgeschlossen. Ein Beispiel für echte busförmige Netzwerke ist Ethernet über Koaxialkabel.
+                                                   </li>
+                                                   <li><a class="indexterm" id="f508e2fc-6992-4da4-aae7-e146a06a5ad4"></a><a class="indexterm" id="167e56af-67ed-46fa-bbb4-0a61c41724f0"></a>Die <span class="cbegriff">Stern-Topologie</span> ist die Form eines Netzes, bei dem alle Knoten mit jeweils eigenem Kabel an einem
+                                                      zentralen Gerät miteinander verbunden werden. Dieses zentrale Bindeglied heißt, je
+                                                      nach seiner genauen Funktionsweise, <span class="cbegriff">Hub</span> oder <span class="cbegriff">Switch</span>. Die Stern-Topologie wird zum Beispiel von Ethernet über Twisted-Pair-Kabel verwendet.
+                                                   </li>
+                                                   <li><a class="indexterm" id="711a1ea6-9c34-4fb0-8bec-f5e15984045b"></a><a class="indexterm" id="3a5db584-1ff4-4d3d-9a72-8c2ec1bbeb2a"></a>Die <span class="cbegriff">Ring-Topologie </span>ähnelt der Bus-Topologie insofern, als auch hier alle Knoten an einem zentralen Strang
+                                                      aufgereiht sind. Dieser zentrale Kabelstrang bildet jedoch einen geschlossenen Ring.
+                                                      Daraus ergibt sich automatisch eine Datenstromrichtung, in die die Datenpakete grundsätzlich
+                                                      weitergereicht werden. Bekanntestes Beispiel der ringförmigen Vernetzung ist Token
+                                                      Ring.
+                                                   </li>
+                                                   <li><a class="indexterm" id="c76547b6-af52-4dcc-86d7-f2d7c9bd85a1"></a><a class="indexterm" id="cfb488da-d0cd-4abe-a924-4ddef363d8df"></a>Die <span class="cbegriff">Baum-Topologie</span> schließlich ist eher ein Standard für den Zusammenschluss verschiedener Netzsegmente.
+                                                      Von einem zentralen Kabelstrang, gewissermaßen dem »Stamm« des Baums, gehen nach beliebigen
+                                                      Richtungen einzelne Verästelungen ab, an denen entweder eine einzelne Station oder
+                                                      ein ganzes Netz hängt.
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> Physikalische versus logische Topologie</span></h4>
+                                                <p><a class="indexterm" id="ad2d49fc-adf5-41d2-b917-d552ea5ffdac"></a><a class="indexterm" id="60d4b7ae-a9f3-4630-ab0e-7da6ace9454e"></a>Wichtig ist zu guter Letzt, dass ein Unterschied zwischen einer physikalischen und
+                                                   einer logischen Topologie bestehen kann, denn die äußere Form der Verkabelung (physikalische
+                                                   Topologie) kann einfach aus praktischen Erwägungen heraus gewählt worden sein, obwohl
+                                                   von der Funktion her eine völlig andere Struktur herrscht, nämlich die logische Topologie.
+                                                </p>
+                                                <p>Ein gutes Beispiel für eine unterschiedliche physikalische und logische Struktur sind
+                                                   neuere Token-Ring-Varianten: Die eigentliche Vernetzung erfolgt sternförmig, logisch
+                                                   gesehen handelt es sich jedoch um einen Ring. Auch Ethernet über Twisted-Pair-Kabel
+                                                   verwendet physikalisch gesehen die Stern-Topologie, die logische Funktionsweise hängt
+                                                   von der Art des zentralen Verteilers ab: Ein Hub erzeugt letztlich die Funktion eines
+                                                   busförmigen Netzes, da es einen durchgehenden Strang enthält, an dem alle Stationen
+                                                   angeschlossen sind. Ein Switch dagegen stellt jeweils eine gesonderte Verbindung zwischen
+                                                   zwei Stationen her, die miteinander Daten austauschen; mithin handelt es sich hier
+                                                   auch logisch um die echte Sternform.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="b83eff4e-8003-4395-b0e6-443b01459ea1" name="b83eff4e-8003-4395-b0e6-443b01459ea1"></a><h3 class="t3"><span class="cfett">4.3.3</span><span class="cfett"> Der Zentralisierungsgrad des Netzwerks</span><a href="#eff79773-0bce-43fc-aacc-2093d1ea841b"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#fb95a793-5ef0-4453-90f8-fbe78ad9cf52"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="0400b722-3265-41c3-94c7-53845e5ec76a"></a>Ein weiteres wichtiges Kriterium bei der Einteilung von Netzwerken in unterschiedliche
+                                                   Gruppen ist die Frage nach der Arbeitsaufteilung in ihnen. Kleine Arbeitsgruppen,
+                                                   die jeweils mit ihren Arbeitsplatzrechnern untereinander Dateien austauschen möchten,
+                                                   haben hier sicherlich andere Bedürfnisse als riesige Organisationen, in denen Tausende
+                                                   von Anwendern auf bestimmte Datenbestände zugreifen müssen. Deshalb werden die sogenannten
+                                                   Client-Server-Netzwerke, in denen zentrale Dienstleistungsrechner, die Server, arbeiten,
+                                                   von den Peer-to-Peer-Netzwerken unterschieden, in denen die einzelnen Computer gleichberechtigt
+                                                   Ressourcen freigeben und verwenden können.
+                                                </p>
+                                                <ul class="gp">
+                                                   <li><a class="indexterm" id="d466a8c3-ecc9-4c70-b923-940d9c1a0452"></a>Das <span class="cbegriff">Client-Server-Netzwerk</span> unterscheidet generell zwei Arten von beteiligten Rechnern: Der Server (Dienstleister)
+                                                      ist ein Computer, der den Arbeitsstationen der einzelnen Anwender an zentraler Stelle
+                                                      Ressourcen und Funktionen zur Verfügung stellt; der Client (Kunde) nimmt diese Dienstleistungen
+                                                      in Anspruch. Die Dienste, die von Servern angeboten werden, sind sehr vielfältig:
+                                                      Sie reichen vom einfachen Dateiserver, der Dateien im Netzwerk verteilt oder Festplattenplatz
+                                                      für andere freigibt, über Druckserver, Mail- und andere Kommunikationsserver bis hin
+                                                      zu ganz speziellen Diensten wie Datenbank- oder Anwendungsserver.
+                                                   </li>
+                                                   <li><a class="indexterm" id="bf99e75a-6ce5-401b-895c-e6d6114adfb3"></a>Das <span class="cbegriff">Peer-to-Peer-Netzwerk</span> besteht aus prinzipiell gleichberechtigten Arbeitsplatzrechnern (<span class="cbegriff">peer</span> heißt etwa »Kollege«). Jeder Anwender ist in der Lage, Ressourcen seines eigenen
+                                                      Rechners an andere im Netzwerk freizugeben. Das heißt, dass alle Rechner im Netz bis
+                                                      zu einem gewissen Grad Serverdienste wahrnehmen.
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> Praxisfälle</span></h4>
+                                                <p>In der Praxis sind allerdings Mischformen häufiger anzutreffen als reine Client-Server-
+                                                   oder absolute Peer-to-Peer-Netze. Beispielsweise könnte man sich in einem Unternehmen
+                                                   die folgende Situation vorstellen: Aufgaben wie die direkte Kommunikation (E-Mail),
+                                                   der Zugang zum Internet (über einen Proxyserver oder einfach einen Router) oder Lösungen
+                                                   zum Backup (Datensicherung) werden durch zentrale Server zur Verfügung gestellt; der
+                                                   Zugang zu Dateien innerhalb der Abteilungen oder auf Drucker der Kollegen innerhalb
+                                                   eines Büros wird dagegen im Peer-to-Peer-Verfahren, unter Umgehung von Servern, geregelt.
+                                                </p>
+                                                <p>Wichtig ist außerdem, zu verstehen, dass die Begriffe »Client« und »Server« im engeren
+                                                   Sinne nicht unbedingt spezifische Rechner, sondern besondere Softwarekomponenten bezeichnen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Definition eines Servers</span></h4>
+                                                <p><a class="indexterm" id="bee48235-f106-4431-80e2-0e746f1382d6"></a><a class="indexterm" id="b067055a-f436-4b87-93a7-b8a0f6e322e9"></a>Ein <span class="cbegriff">Server</span> ist einfach ein Programm, das meist automatisch gestartet wird und im Hintergrund
+                                                   darauf »lauert«, irgendeine Dienstleistung zur Verfügung zu stellen. Allgemeiner werden
+                                                   solche Programme zum Beispiel im Unix-Umfeld als <span class="cbegriff">Daemon</span> bezeichnet, unter Windows NT und seinen Nachfolgern (Windows 2000, XP, Vista und
+                                                   Windows 7) heißen sie Dienst (<span class="cbegriff">Service</span>). Grundsätzlich kann ein solcher Serverdienst auf jedem beliebigen Rechner laufen
+                                                   &#8211; vorausgesetzt natürlich, er ist für die Hardwareplattform und das Betriebssystem
+                                                   dieses Rechners bestimmt. Der Grund für den Einsatz besonders leistungsfähiger Hardware
+                                                   (eben der Serverhardware) und spezialisierter Betriebssysteme liegt einfach in ihrer
+                                                   höheren Belastbarkeit, wenn viele Benutzer gleichzeitig diese Dienste benötigen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Definition eines Clients</span></h4>
+                                                <p><a class="indexterm" id="0e414f2c-e26c-4cd6-b24b-57730885eebf"></a><a class="indexterm" id="477bc5b7-c2e6-4080-a5e6-e3c49b0cfe4b"></a>Ein <span class="cbegriff">Client</span> ist zunächst eine Software, die in der Lage ist, mit der Serversoftware zu kommunizieren;
+                                                   üblicherweise stellt sie dem Benutzer auch eine Schnittstelle zur Verfügung, um diese
+                                                   Kommunikation in Anspruch zu nehmen. So ist beispielsweise ein Webbrowser ein Client
+                                                   für das HTTP-Anwendungsprotokoll, er kommuniziert also mit HTTP-Servern. Interessanterweise
+                                                   können Webserver und Browser auch beide auf demselben Rechner laufen. Dies ist nützlich,
+                                                   um Webanwendungen zunächst lokal auszuprobieren.
+                                                </p><a id="eff79773-0bce-43fc-aacc-2093d1ea841b" name="eff79773-0bce-43fc-aacc-2093d1ea841b"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Arten von Servern</span></h4>
+                                                <p><a class="indexterm" id="a5fc7d06-f9ec-4a9c-aba6-690bab8f5b20"></a>Im Folgenden sollen einige Serverarten genauer vorgestellt werden. Sie sollten auf
+                                                   jeden Fall das oben Gesagte im Hinterkopf behalten: Es spielt überhaupt keine Rolle
+                                                   für die allgemeine Funktion, ob ein Serverdienst, also die Software, die diesen Dienst
+                                                   zur Verfügung stellt,
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>mit anderen Diensten zusammen auf dem gleichen Rechner läuft,</li>
+                                                   <li>allein auf einem separaten Serverrechner ausgeführt wird oder</li>
+                                                   <li>sogar auf mehrere Server verteilt ist, weil ansonsten die Belastung zu groß wäre.</li>
+                                                </ul>
+                                                <p>Letzteres ist insbesondere im Bereich öffentlicher WWW-Server sehr häufig zu finden,
+                                                   da populäre Sites wie etwa Suchmaschinen oder große Webshops sehr viel Datenverkehr
+                                                   zu verkraften haben. Hier werden sogenannte Load-Balancing-Systeme eingesetzt, die
+                                                   die hereinstürmenden Anfragen automatisch möglichst gerecht auf mehrere physikalische
+                                                   Server verteilen.
+                                                </p>
+                                                <p>Im Wesentlichen gibt es die folgenden wichtigen Arten von Serverdiensten:</p>
+                                                <ul class="gp">
+                                                   <li>Fileserver</li>
+                                                   <li>Printserver</li>
+                                                   <li>Mailserver</li>
+                                                   <li>Webserver</li>
+                                                   <li>Verzeichnisdienst-Server</li>
+                                                   <li>Anwendungsserver und Serveranwendungen</li>
+                                                </ul>
+                                                <p>In den folgenden Unterabschnitten wird jeder dieser Servertypen kurz vorgestellt;
+                                                   in späteren Kapiteln lernen Sie auch konkrete Beispiele für viele von ihnen kennen.
+                                                </p><a id="66c18c73-25a2-4e9c-985e-35bab0d8e572" name="66c18c73-25a2-4e9c-985e-35bab0d8e572"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Fileserver</span></h4>
+                                                <p><a class="indexterm" id="5331a920-9915-412d-ac7a-a7188465da1c"></a><a class="indexterm" id="d6f47b7d-49f9-4c9a-bb13-a159f1ab20db"></a><a class="indexterm" id="fced421a-0974-4230-90a9-a867f6135ef0"></a><a class="indexterm" id="8dc6e574-01ee-45b4-b654-245fec1fb607"></a>Der Fileserver (Dateiserver) stellt anderen Rechnern im Netzwerk freigegebene Verzeichnisse
+                                                   zur Verfügung. Auf diese Weise können sich die Anwender über einen zentralen Austauschpunkt
+                                                   gegenseitig Dateien zukommen lassen. Der Fileserver ist relativ stark an ein bestimmtes
+                                                   Betriebssystem oder eine Plattform gebunden. Erst allmählich setzen sich neuere Möglichkeiten
+                                                   durch, die in der Lage sind, auch unterschiedliche Rechner gleichzeitig zu bedienen.
+                                                   Denn die Besonderheit eines Fileservers ist, dass die Benutzer ihn völlig transparent
+                                                   genau so benutzen können wie die lokalen Dateisysteme ihres Arbeitsplatzrechners.
+                                                   In einem idealen (lokalen) Netzwerk sollte es dem normalen Anwender vollkommen egal
+                                                   sein, ob seine Dateien am Arbeitsplatz oder auf einem Fileserver zu finden sind.
+                                                </p>
+                                                <p>Sehr wichtig ist im Zusammenhang mit Fileservern die Verwaltung von Zugriffsrechten,
+                                                   da nicht jede Datei für alle Benutzer gedacht ist.
+                                                </p>
+                                                <p>Der Internetdienst FTP (File Transfer Protocol) ist übrigens kein vollwertiger Fileserver,
+                                                   sondern dient lediglich der einfachen Dateiübertragung. Die Informationen über die
+                                                   Dateien des entfernten Rechners sind nicht vollständig genug, um das Äquivalent eines
+                                                   Dateisystems abzubilden.
+                                                </p>
+                                                <p>Informationen über Fileserver für die verschiedenen Systemplattformen finden Sie in
+                                                   den Kapiteln 6, »Windows«, 7, »Linux«, und 8, »Mac OS X«. FTP wird dagegen zusammen
+                                                   mit anderen Arten von Internetservern in Kapitel 14, »Weitere Internet-Serverdienste«,
+                                                   behandelt.
+                                                </p><a id="e3510af0-e2d9-4e70-af6c-f3e34a2e802a" name="e3510af0-e2d9-4e70-af6c-f3e34a2e802a"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Printserver</span></h4>
+                                                <p><a class="indexterm" id="3c1e8cb4-73ba-4e80-ac20-5bed0fecbd65"></a><a class="indexterm" id="ff2ad0b3-7146-4dcd-ab2b-237b82d81948"></a><a class="indexterm" id="9d92d7d3-745f-4c32-937b-1343a379bf40"></a><a class="indexterm" id="3ab47fbf-378f-4003-a136-b61cb855a4c3"></a>Der Printserver (oder Druckserver) erlaubt mehreren Anwendern beziehungsweise Arbeitsstationen
+                                                   den gemeinsamen Zugriff auf einen Drucker. Die größte Herausforderung besteht darin,
+                                                   den einzelnen Arbeitsstationen automatisch den passenden Druckertreiber für ihr jeweiliges
+                                                   Betriebssystem zur Verfügung zu stellen, so dass diese den Drucker einfach verwenden
+                                                   können, ohne dass der Treiber zuvor noch einmal lokal installiert werden müsste.
+                                                </p>
+                                                <p>Der Betrieb von Printservern ist besonders in Windows-Netzwerken weitverbreitet, da
+                                                   hier der Drucker gewöhnlich über ein USB-Kabel an einen einzelnen Rechner angeschlossen
+                                                   wird. Dieser Rechner wird dann so eingerichtet, dass er den Zugriff auf den Drucker
+                                                   auch den anderen Computern erlaubt.
+                                                </p>
+                                                <p>Bei anderen Plattformen gibt es das Problem in dieser Form seltener. In klassischen
+                                                   Macintosh-Netzwerken ist es beispielsweise üblich &#8211; und viel bedienungsfreundlicher
+                                                   &#8211;, den Drucker unmittelbar per Ethernet ans Netzwerk anzuschließen, denn damit ist
+                                                   er automatisch für alle freigegeben.
+                                                </p>
+                                                <p>In heterogenen Netzen war es bis vor wenigen Jahren verhältnismäßig schwierig, über
+                                                   Betriebssystemgrenzen hinweg gemeinsam auf einen Drucker zuzugreifen. Inzwischen ist
+                                                   jedoch beispielsweise das Drucksystem CUPS für alle Unix-Varianten verfügbar, das
+                                                   sogar Windows-Clients relativ problemlos bedienen kann.
+                                                </p>
+                                                <p>Da Druckserver, genau wie Dateiserver, an das jeweilige Betriebssystem gebunden sind,
+                                                   werden die wichtigsten Varianten in Kapitel 6, »Windows«, und Kapitel 7, »Linux«,
+                                                   beschrieben.
+                                                </p><a id="f60a0689-ff24-40c0-a67b-31c2893171ec" name="f60a0689-ff24-40c0-a67b-31c2893171ec"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Mailserver</span></h4>
+                                                <p><a class="indexterm" id="7619b9fb-5181-47b4-8240-ac17deb6b9f8"></a><a class="indexterm" id="24a145ca-4d9c-43f4-8acf-20e216eec28b"></a><a class="indexterm" id="d97b4a9e-ffd4-46e1-9804-6d308e963a06"></a>Ein Server für elektronische Post (E-Mail) muss nicht immer bei einem Internetprovider
+                                                   installiert sein, sondern kann auch im lokalen Netz seinen Dienst verrichten. Denn
+                                                   erstens ist es in Unternehmen oder Organisationen oft von Vorteil, wenn die Mitarbeiter
+                                                   untereinander per E-Mail kommunizieren können, und zweitens ist es manchmal schon
+                                                   allein deshalb erforderlich, einen internen Mailserver zu betreiben, weil der Zugang
+                                                   zum Internet aus Sicherheitsgründen stark eingeschränkt ist und etwa die Kommunikation
+                                                   eines Arbeitsplatzrechners mit einem externen Mailserver gar nicht zulässt.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Internet-E?Mail</span></h4>
+                                                <p>Obwohl im Lauf der Netzwerk-Entwicklungsgeschichte verschiedene Formen der elektronischen Post entstanden sind, gibt es heute eigentlich keine Alternative mehr zu Internet-E-Mail. Diese verwendet verschiedene Serverdienste zum Senden und Empfangen der E?Mail: Das SMTP-Protokoll (Simple Mail Transport Protocol) bestimmt, wie zu versendende E-Mails zu transportieren sind; POP3 (Post Office Protocol<span class="cbegriff"> </span>Version<span class="cbegriff"> </span>3) oder das modernere, komfortablere IMAP (Internet Message Access Protocol) beschreiben
+                                                   ein Benutzerkonto (Postfach) für eingehende E-Mails sowie den Vorgang der »Abholung«.
+                                                </p>
+                                                <p>Rein theoretisch kann Internet-E-Mail direkt zum einzelnen Host gesendet werden. Das
+                                                   ist aber insofern problematisch, als normale Arbeitsplatzrechner manchmal ausgeschaltet
+                                                   werden und private Einzelplatzrechner meist nur temporär über Wählleitungen mit dem
+                                                   Internet verbunden sind. Dies ist überhaupt der wichtigste Grund dafür, warum sich
+                                                   Posteingangsserver etabliert haben, auf denen die Mail für einen bestimmten Anwender
+                                                   im Prinzip vorgehalten wird, bis dieser sie abruft.
+                                                </p>
+                                                <p>Da die gewöhnliche Form der E-Mail auf den Standard-Internetprotokollen aufsetzt,
+                                                   gibt es übrigens kein Problem, sie plattform- und betriebssystemübergreifend zu verwenden.
+                                                </p><a id="dd933cce-c564-4a06-9890-127bf5187980" name="dd933cce-c564-4a06-9890-127bf5187980"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Webserver</span></h4>
+                                                <p><a class="indexterm" id="1752085a-5e73-4dd2-9758-c33601158694"></a><a class="indexterm" id="efb5eda4-e96e-410f-a710-ce391df133d7"></a><a class="indexterm" id="5996734d-1d9d-4d6a-b459-55375ac726f3"></a><a class="indexterm" id="b466204a-8eb1-424a-b87f-104a185b706e"></a>Ein Webserver (die exakte Bezeichnung ist eigentlich »HTTP-Server«) liefert auf Anfrage
+                                                   Webseiten über ein Netzwerk aus. In der Regel ist dieses Netzwerk das Internet. In
+                                                   den lokalen Netzen von Unternehmen und Institutionen setzt sich diese Form der Informationsübermittlung
+                                                   aber auch immer mehr durch. Ein solches lokales Netz, das Technologien und Dienste
+                                                   der Internetprotokolle verwendet, wird <span class="cbegriff">Intranet</span> genannt. Der Anwender verwendet ein Anzeigeprogramm für Webseiten, den sogenannten
+                                                   <span class="cbegriff">Browser</span>, um Webseiten anzufordern, anzusehen und auch, um die enthaltenen Hyperlinks &#8211; also
+                                                   Verknüpfungen zu anderen Dokumenten auf dem gleichen oder einem anderen Server &#8211; per
+                                                   Mausklick zu folgen.
+                                                </p>
+                                                <p>Webseiten sind prinzipiell Textdokumente, die in der Strukturierungssprache HTML geschrieben werden. Viele dieser Dokumente liegen statisch auf dem Server und werden einfach auf Anfrage ausgeliefert. Eine wachsende Anzahl solcher Dokumente wird aber auch aus Vorlagen und dynamischen Daten, etwa aus einer Datenbank, kombiniert und dann an den anfragenden Host geschickt. Diese Entwicklung ist für Websites mit umfangreichem, schnell wechselndem Inhalt, etwa Online-Tageszeitungen oder die Kataloge in E?Commerce-Sites, unvermeidlich.</p>
+                                                <p>Webserver sind im Übrigen schon von ihrer Grundidee her dafür gedacht, Clients unter
+                                                   vielen verschiedenen Betriebssystemen zu bedienen. Falls es Inkompatibilitäten geben
+                                                   sollte, liegt das höchstens daran, dass bei der Erstellung des HTML-Codes Steuerbefehle
+                                                   verwendet wurden, die nicht jeder Browser versteht.
+                                                </p>
+                                                <p>Der praktische Einsatz eines Webservers wird in Kapitel 13, »Server für Webanwendungen«,
+                                                   am wichtigsten Beispiel Apache beschrieben; die Kapitel 17 bis 19 kümmern sich dagegen
+                                                   um die Erstellung von Webinhalten und -anwendungen.
+                                                </p><a id="602aaa30-65e9-46b6-b460-ad02a4a6e3c5" name="602aaa30-65e9-46b6-b460-ad02a4a6e3c5"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Verzeichnisdienst-Server</span></h4>
+                                                <p>Verzeichnisdienste (Directory Services) gewinnen in der IT seit längerer Zeit stark an Bedeutung. Ein Verzeichnis ist in
+                                                   diesem Zusammenhang kein Dateisystem, sondern ein datenbankähnlicher, standardisierter
+                                                   Katalog von Benutzern, Computern, Peripheriegeräten und Rechten in einem Netzwerk.
+                                                   Durch den Eintrag in das Verzeichnis können diese Informationen netzwerkweit abgerufen
+                                                   werden, so dass Verzeichnisdienste eine praktische Grundlage für zahlreiche Dienste
+                                                   legen, die in einer größeren Netzwerkumgebung die Arbeit der Administratoren und das
+                                                   Leben der Anwender erleichtern. Hier nur einige Beispiele:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>automatisierte Softwareverteilung und -installation</li>
+                                                   <li>mobile Benutzerprofile (Roaming User Profiles)</li>
+                                                   <li>zentralisierte Anmeldedienste (Single-Sign-on)</li>
+                                                   <li>rechner-, benutzer- und eigenschaftsbasierte Rechtekontrolle</li>
+                                                </ul>
+                                                <p>In Kapitel 14, »Weitere Internet-Serverdienste«, wird OpenLDAP als Praxisbeispiel
+                                                   für einen Verzeichnisdienst vorgestellt.
+                                                </p><a id="e0ca825c-ea0a-4a8c-b7c9-aca34fe6759d" name="e0ca825c-ea0a-4a8c-b7c9-aca34fe6759d"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Anwendungsserver und Serveranwendungen</span></h4>
+                                                <p><a class="indexterm" id="7969d000-1c90-4849-8141-3f98be055043"></a><a class="indexterm" id="0d037cd1-1c2f-4135-a9e3-7d4d79bc9550"></a><a class="indexterm" id="82b081b6-beb5-4e65-80da-27fff436e26f"></a><a class="indexterm" id="972e226c-5ad0-4feb-a0d5-9e3ac7cb9284"></a>Ein Anwendungsserver (Application Server) erlaubt den Benutzern die Verwendung von Anwendungsprogrammen, die sich eigentlich
+                                                   auf dem Server befinden, über das Netzwerk.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Einfache Anwendungsdienste</span></h4>
+                                                <p>Bei der einfachsten Form des Anwendungsservers liegt der Datenbestand der Anwendung
+                                                   auf den Datenträgern des Servers, die Anwendung wird über das Netzwerk in den Arbeitsspeicher
+                                                   des Clients geladen und dort lokal ausgeführt. Der Unterschied zum Fileserver ist
+                                                   hier minimal: Es muss der Anwendung lediglich klar sein, dass eventuell notwendige
+                                                   Zusatzkomponenten oder Konfigurationsdaten nicht auf dem Rechner liegen, auf dem sie
+                                                   ausgeführt wird, sondern auf der Maschine, von der sie geladen wurde.
+                                                </p>
+                                                <p>Bei vielen normalen Einzelplatz-Anwendungsprogrammen kann eine solche Einstellung
+                                                   vorgenommen werden. Diese Verwendung von Software hat vor allem zwei Vorteile: Erstens
+                                                   kann es weniger Arbeit bedeuten, ein Programm einmal auf dem Server statt auf mehreren
+                                                   Arbeitsplatzrechnern zu installieren, und zweitens können Kosten gespart werden &#8211;
+                                                   die meisten Softwarelizenzen gelten jeweils pro Rechner, auf dem das jeweilige Programm
+                                                   installiert ist. Wird eine Anwendung auf mehreren Rechnern genutzt, aber nicht gleichzeitig,
+                                                   so kann die Software auf dem Server installiert werden; damit werden die Lizenzgebühren
+                                                   dann nur einmal fällig.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Echte Client-Server-Anwendungen</span></h4>
+                                                <p>Bei komplexeren Formen von Anwendungsservern werden Teile des Programms &#8211; oder unter
+                                                   Umständen auch das ganze Programm &#8211; direkt auf dem Server ausgeführt. Die möglichen
+                                                   Gründe hierfür sind im Einzelfall genauso vielfältig wie die verschiedenen Formen
+                                                   der Verwirklichung. Beispielsweise ist es bei großen Datenbanken üblich, dass der
+                                                   Datenbestand als solcher auf einem Server liegt, ebenso die grundlegende Datenverwaltungssoftware.
+                                                   Auf den Clients existieren dann in der Regel sogenannte <a class="indexterm" id="3828704c-3905-4145-8d52-b073e022eb57"></a><a class="indexterm" id="11b1608d-ccb5-4cb5-b81e-978e275fcd89"></a><span class="cbegriff">Frontends</span>, also Softwarekomponenten, die den Benutzern eine Bedienoberfläche für die eigentliche
+                                                   Datenbank bereitstellen. (Den Gegenbegriff zum Frontend bildet das <a class="indexterm" id="e979d3ad-6372-45a1-b784-90bf2681ed09"></a><a class="indexterm" id="3eec46bd-a09b-41f7-ab5a-d54b4b9854cb"></a><span class="cbegriff">Backend</span>, wobei es sich um einen nur für spezielle, angemeldete Benutzer zugänglichen Teil
+                                                   des Clients handelt, der der Verwaltung des Servers dient.)
+                                                </p>
+                                                <p>Noch einen Schritt weiter gehen die sogenannten <a class="indexterm" id="aa82d098-8fa9-40fd-8e04-efd34d17a2ac"></a><a class="indexterm" id="c3955db8-196e-4c05-91fc-3c501f713899"></a><a class="indexterm" id="a82f15d7-27d8-41f0-9e1d-68901c825791"></a>verteilten Anwendungen oder Enterprise-Anwendungen. Sie basieren in der Regel auf
+                                                   einem oder mehreren Datenbankservern für den Datenbestand, einem Anwendungsserver
+                                                   für die Geschäftsabläufe und diversen Client-Frontends (sowohl native Programme für
+                                                   bestimmte Betriebssysteme als auch Webanwendungen).
+                                                </p>
+                                                <p>Eine andere Form der Serveranwendung existiert bei der Verwendung der sogenannten
+                                                   Terminalserver. Die einfachste Form, der Internetdienst Telnet, stellt dem Anwender
+                                                   eine Konsolenoberfläche zur Verfügung, über die sich von fern auf dem Server selbst
+                                                   mittels Kommandoeingabe arbeiten lässt. Das heißt, die Ein- und Ausgabe von zeilenorientierten
+                                                   Kommandos und Anwendungsprogrammen erfolgt auf dem Client, die eigentliche Ausführung
+                                                   auf dem Server &#8211; der eigene Rechner wird somit zu einem Terminal für den entfernten
+                                                   Server.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Der X-Server</span></h4>
+                                                <p>Eine sehr merkwürdige Form der Serversoftware ist in diesem Zusammenhang der aus dem
+                                                   Unix-Bereich stammende X-Window-Server oder einfach X-Server (siehe Kapitel 7, »Linux«).
+                                                   Die Bezeichnung »Server« für diese Software erscheint zunächst sehr irreführend, handelt
+                                                   es sich doch einfach um die Grundlage der grafischen Benutzeroberfläche (GUI) unter
+                                                   Unix. Der X-Server stellt den Anwendungsprogrammen seine Dienste zur Verfügung, die
+                                                   darauf zugreifen, um Fenster und andere Komponenten der GUI darzustellen.
+                                                </p>
+                                                <p>Die Tatsache, dass hier ein Dienst verfügbar gemacht wird, ist es übrigens, die den
+                                                   Begriff »Server« rechtfertigt. Dabei müssen Anwendung und X-Server auch nicht unbedingt
+                                                   auf dem gleichen Rechner laufen. Erstaunlicherweise läuft aber der X-Server auf dem
+                                                   Anwendungsclient! Denn da die Programmausführung auf dem entfernten Rechner stattfindet,
+                                                   aber die grafische Darstellung auf dem lokalen Rechner, muss hier dieser Dienst angeboten
+                                                   werden.
+                                                </p>
+                                                <p>Terminalserver gibt es auch unter Windows Server 2008 und anderen Microsoft-Systemen;
+                                                   auch hier läuft die eigentliche Anwendung auf dem Server, der Client erlaubt deren
+                                                   Bedienung und Anzeige. Das Angebot solcher Anwendungsdienste über das Internet wird
+                                                   allmählich beliebter. Ein ASP (Application Service Provider) lässt Anwendungen wie
+                                                   beispielsweise Bürosoftware auf seinen Servern laufen; über eine spezielle Clientsoftware
+                                                   oder sogar über einen Webbrowser kann der Kunde darauf zugreifen und die angebotene
+                                                   Software von der ganzen Welt aus benutzen. Eine wesentlich einfachere Form solcher
+                                                   Serveranwendungen, die über das Web verwendet werden und die Sie wahrscheinlich gut
+                                                   kennen, ist der weitverbreitete webbasierte E-Mail-Dienst mit diversen Zusatzfunktionen,
+                                                   wie ihn GMX, Google Mail oder web.de anbieten.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Thin Clients statt PCs?</span></h4>
+                                                <p>Die Quintessenz der Verwendung von Anwendungsservern ist die von einigen Firmen (Sun
+                                                   Microsystems, Oracle) seit Jahren angestrebte Abschaffung der gewöhnlichen Personal
+                                                   Computer und deren Ersatz durch sogenannte Thin Clients &#8211; Rechner ohne Festplatte,
+                                                   die ihr Betriebssystem und die Anwendungsprogramme vollständig aus dem Netzwerk oder
+                                                   aus dem Internet beziehen. Allerdings konnte sich das Konzept bisher nicht recht durchsetzen.
+                                                   Das Hauptargument der entsprechenden Unternehmen, nämlich die geringeren Kosten, lässt
+                                                   sich angesichts des massiven Preisverfalls bei den »ausgewachsenen« PCs nicht aufrechterhalten.
+                                                </p><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_003.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_04_netzwerkgrundlagen_002.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_004.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

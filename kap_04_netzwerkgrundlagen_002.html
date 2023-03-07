@@ -1,0 +1,1037 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_04_netzwerkgrundlagen_001.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_003.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_04_netzwerkgrundlagen_001.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_003.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navnav">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navnav">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navnav">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navnav">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navh">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navh">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navh">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navh">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navnav">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navnav">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navnav">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navnav">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navnav">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navnav">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navnav">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navnav">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navnav">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navnav">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navnav">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navnav">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navnav">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navnav">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navnav">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navnav">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navnav">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main"><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="f91fd842-4cf9-413d-ac2c-5e9dd89242a6" name="f91fd842-4cf9-413d-ac2c-5e9dd89242a6"></a><h2 class="t2"><span class="cfett">4.2</span><span class="cfett"> Funktionsebenen von Netzwerken</span><a href="#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h2>
+                                                <p><a class="indexterm" id="cddd662c-4e41-4d11-9484-a6b3b9bc0c9a"></a><a class="indexterm" id="e7f65cb5-9d06-4db8-9b72-bcde4c2ec1d0"></a><a class="indexterm" id="a9ef18c9-6e57-4ac0-9371-8df48447aaec"></a>Wie bereits in der Einleitung mehrfach angedeutet wurde, besteht ein gewisses Problem
+                                                   beim Verständnis von Netzwerken darin, dass einige sehr verschiedene Aspekte zu ihrem
+                                                   Funktionieren beitragen. Schon ganz zu Beginn haben Sie eine grobe Unterteilung in
+                                                   die drei Ebenen Verkabelung oder allgemeine Netzwerkhardware, Kommunikationsstrukturen
+                                                   oder Netzwerkprotokolle und schließlich Anwendungen eines Netzwerks kennengelernt.
+                                                </p>
+                                                <p>Eine so ungenaue Einteilung lässt die grundsätzliche Schwierigkeit erkennen, reicht
+                                                   aber nicht ganz aus, um Netzwerke in all ihren Bestandteilen zu begreifen, und schon
+                                                   gar nicht, um verschiedene Arten von Netzwerken miteinander zu vergleichen. Auch die
+                                                   Tatsache, dass ein und dieselbe Komponente auf einer bestimmten Ebene wahlweise mit
+                                                   mehreren unterschiedlichen Elementen einer anderen Funktionsebene zusammenarbeiten
+                                                   kann, wird so noch nicht transparent genug.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" name="f2ff62d9-1bbe-4380-8537-ee0e0201ffb3"></a><h3 class="t3"><span class="cfett">4.2.1</span><span class="cfett"> Das OSI-Referenzmodell</span><a href="#fb2f839e-311d-49bb-8905-549fb7d4728f"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#f91fd842-4cf9-413d-ac2c-5e9dd89242a6"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="7cbd8f38-9935-4999-9514-840a429b5a96"></a><a class="indexterm" id="c7f680b7-8392-4779-86dd-d73eb2f18249"></a><a class="indexterm" id="f662af34-82a0-45a5-803c-6667161b4c56"></a>Um die Ebenen, die ein Netzwerk ausmachen, ganz genau auseinanderhalten zu können,
+                                                   bedient man sich sogenannter <span class="cbegriff">Schichtenmodelle</span> (Layer Models). Das bekannteste und verbreitetste von ihnen ist das OSI-Referenzmodell
+                                                   der internationalen Standardisierungsorganisation ISO. OSI steht für »Open Systems
+                                                   Interconnect«, also etwa »Verbindung zwischen offenen Systemen«. Das Modell wurde
+                                                   1978 entworfen und besteht aus sieben übereinander angeordneten Schichten, die jeweils
+                                                   einen Aspekt der Netzwerkkommunikation beschreiben. Ganz unten ist die Hardware angesiedelt,
+                                                   ganz oben befindet sich die Anwendung des Netzes. Hier zunächst die Schichten des
+                                                   OSI-Modells im Überblick, die Beschreibung folgt danach:
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Die einzelnen OSI-Schichten</span></h4>
+                                                <ol class="paufz">
+                                                   <li>Bitübertragungsschicht (Physical Layer)</li>
+                                                   <li>Sicherungsschicht (Data Link Layer)</li>
+                                                   <li>Vermittlungsschicht (Network Layer)</li>
+                                                   <li>Transportschicht (Transport Layer)</li>
+                                                   <li>Kommunikationssteuerungsschicht (Session Layer)</li>
+                                                   <li>Darstellungsschicht (Presentation Layer)</li>
+                                                   <li>Anwendungsschicht (Application Layer)</li>
+                                                </ol>
+                                                <p>Die Bezeichnung »OSI-Referenzmodell« deutet bereits darauf hin, dass es sich nicht
+                                                   um einen Standard handelt, der konkrete Netzwerkprotokolle definiert. Das OSI-Modell
+                                                   definiert nur die Funktionen der einzelnen Schichten und ist somit ein Schema zur
+                                                   Definition solcher Standards, beispielsweise für die weiter unten vorgestellten IEEE-802.3-Standards.
+                                                   Jeder Standard deckt dabei immer nur Teilaspekte des OSI-Modells ab.
+                                                </p><a id="fb2f839e-311d-49bb-8905-549fb7d4728f" name="fb2f839e-311d-49bb-8905-549fb7d4728f"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Die Bedeutung der einzelnen Schichten des OSI-Modells</span></h4>
+                                                <ol class="paufz">
+                                                   <li><a class="indexterm" id="0901f1e7-81f1-4dc7-8293-d6d26560095d"></a><a class="indexterm" id="0fb306ce-0a65-46ae-aa2a-288b30851225"></a>Die <span class="cbegriff">Bitübertragungsschicht</span> oder auch <span class="cbegriff">physikalische Schicht</span> beschreibt nur, wie die reine Übertragung der Daten elektrisch beziehungsweise allgemein
+                                                      physikalisch vonstattengeht. OSI-basierte Netzwerkstandards beschreiben in dieser
+                                                      untersten Schicht die Struktur der Signale. Dazu gehören unter anderem folgende Aspekte:
+                                                   </li>
+                                                   <ul class="gp2">
+                                                     <li>zulässiger Amplitudenbereich</li>
+                                                     <li>Versand- und Empfangsmethoden für Bitfolgen</li>
+                                                     <li>Operationen zur Umwandlung dieser Bitfolgen in Daten für die nächsthöhere Schicht
+                                                        (und umgekehrt)
+                                                     </li>
+                                                     <li>Verarbeitungsgeschwindigkeit der Bitfolgen</li>
+                                                     <li>Start- und Stoppsignale</li>
+                                                     <li>Erkennung beziehungsweise Unterscheidung der Signale bei gemeinsam genutzten Medien</li>
+                                                     <li>Übertragungseigenschaften der Medien (Kabel, Lichtwellenleiter, Funk o. Ä.)</li>
+                                                     <li>Die Medien selbst sowie Netzwerkkarten oder Onboard-Netzwerkchips sind kein Bestandteil
+                                                         der Definitionen auf der ersten Schicht. Die Hersteller müssen selbst dafür Sorge
+                                                         tragen, dass ihre Produkte den Spezifikationen genügen.
+                                                     </li>
+                                                   </ul>
+                                                   <li>Die <span class="cbegriff">Sicherungsschicht</span> beschreibt alle Vorkehrungen, die dafür sorgen, dass aus den einzelnen
+                                                  zu übertragenden Bits, also dem reinen physikalischen Stromfluss, ein verlässlicher
+                                                  Datenfluss wird. Dazu gehören die beiden Teilaufgaben Media Access Control
+                                                  (MAC) – die Regelung des Datenverkehrs, wenn mehrere Geräte den gleichen Kanal
+                                                  verwenden – sowie Logical Link Control (LLC), wobei es um die Herstellung und Aufrechterhaltung
+                                                  von Verbindungen zwischen den Geräten geht.
+                                                  <br>
+                                                   Viele Protokolle dieser Schicht implementieren eine Fehlerkontrolle, bei Ethernet
+                                                   wird zum Beispiel CRC verwendet. In manchen Fällen wird auch Quality of Service (QoS),
+                                                   eine Art Prioritätsinformation, benutzt. In der Sicherungsschicht werden die Bitfolgen
+                                                   in Einheiten einer bestimmten Größe unterteilt und mit einem Header aus Metainformationen
+                                                   versehen. Je nach Standard werden auf dieser Ebene unterschiedliche Namen für diese
+                                                   Datenpakete verwendet. Bei Ethernet und Token Ring ist beispielsweise von »Frames«
+                                                   die Rede, bei ATM von »Zellen«. Der Payload (Nutzdateninhalt) eines Frames beziehungsweise
+                                                   einer Zelle beginnt in aller Regel mit dem Header eines hineinverschachtelten Pakets
+                                                   der nächsthöheren Schicht. Es kann aber auch vorkommen, dass Pakete verschiedener
+                                                   Protokolle der zweiten Schicht ineinander verschachtelt werden. Dies ist zum Beispiel
+                                                   bei PPP over Ethernet, PPP over ATM oder ATM over SDH der Fall.
+                                                  </li>
+                                                  <li>Die <span class="cbegriff">Netzwerkschicht</span> oder <span class="cbegriff">Vermittlungsschicht</span> definiert diejenigen Komponenten und
+                                                  Protokolle des Netzwerks, die an der indirekten Verbindung von Computern beteiligt
+                                                  sind. Hier ist sogenanntes <span class="cbegriff">Routing</span> erforderlich, das Weiterleiten von Daten in andere
+                                                  logische oder auch physikalisch inkompatible Netzwerke. So gehören zum Beispiel
+                                                  auch alle diejenigen Protokolle zur Netzwerkschicht, die die logischen Computeradressen
+                                                  der höheren Schichten in die physikalischen Adressen umsetzen, bei Ethernet zum
+                                                  Beispiel ARP. Auch auf der Netzwerkschicht werden die Daten in Pakete unterteilt, deren
+                                                  Namen sich je nach konkretem Protokoll unterscheiden. Das mit Abstand verbreitetste
+                                                  Protokoll dieser Ebene, das weiter unten ausführlich vorgestellte IP-Protokoll,
+                                                  bezeichnet sie als »IP-Datagramme«.
+                                                  </li>
+                                                  <li>Die Protokolle der <span class="cbegriff">Transportschicht</span> lassen sich in verbindungsorientierte Protokolle
+							wie TCP und verbindungslose Protokolle wie etwa UDP unterteilen. Auf dieser Schicht
+							werden vielfältige Aufgaben erledigt. Ein wichtiger Aspekt sind Multiplex-Mechanismen,
+							die die Anbindung der Datenpakete an konkrete Prozesse auf den kommunizierenden
+							Rechnern ermöglichen, bei TCP und UDP beispielsweise über Portnummern,
+							bei SPX über Connection-IDs. Verbindungsorientierte Transportprotokolle wie TCP
+							oder SPX sind zudem meist mit einer Fluss- und Fehlerkontrolle ausgestattet, um zu
+							gewährleisten, dass Pakete vollständig am Ziel ankommen und dort in der richtigen
+							Reihenfolge verarbeitet werden. Auch auf der vierten Schicht verwenden verschiedene
+							Protokolle jeweils eigene Bezeichnungen für die Datenpakete; so ist etwa von »UDPDatagrammen
+							«, »TCP-Sequenzen« und »SPX-Paketen« die Rede.
+                                                  </li>
+                                                  <li>Die <span class="cbegriff">Kommunikationssteuerungsschicht</span> oder Sitzungsschicht stellt die Kommunikation
+                                                  zwischen kooperierenden Anwendungen oder Prozessen auf verschiedenen Rechnern sicher.
+                                                  </li>
+                                                  <li>Die <span class="cbegriff">Darstellungs-</span> oder <span class="cbegriff">Präsentationsschicht</span> dient der Konvertierung und Übertragung
+                                                  von Datenformaten, Zeichensätzen, grafischen Anweisungen und Dateidiensten.
+                                                  </li>
+                                                  <li>Die <span class="cbegriff">Anwendungsschicht</span> schließlich definiert die unmittelbare Kommunikation zwischen
+                                                  den Benutzeroberflächen der Anwendungsprogramme, kümmert sich also um
+                                                  die Verwendung derjenigen Dienste über das Netzwerk, die Benutzer unmittelbar zu
+                                                  Gesicht bekommen.<span class="footnote"><a title="Halb scherzhaft wird der Anwender des vernetzten Rechners manchmal als achte Schicht bezeichnet, und Probleme, die durch fehlerhafte Benutzung zustande kommen, nennt man entsprechend »Layer-8-Fehler«.">[02]</a></span>
+                                                  </li>
+                                                </ol>
+                                                <h4 class="t4"><span class="cfett"> Unterschied zur Praxis</span></h4>
+                                                <p><a class="indexterm" id="ae3e611c-15cf-4a6f-abd9-b906c2b5c0dd"></a>Da das OSI-Modell eine Zusammenstellung von möglichen Fähigkeiten für viele verschiedene
+                                                   Arten von Netzwerken darstellt, kann es natürlich vorkommen, dass die eine oder andere
+                                                   Schicht in einem bestimmten Netzwerk wichtiger ist als eine andere oder dass zum Beispiel
+                                                   ein Protokoll Funktionen zweier Schichten abdeckt oder auch nur eine Teilfunktion
+                                                   einer Schicht erbringt. Um diese Umstände deutlich zu machen, wendet man häufig anders
+                                                   aufgeteilte Schichtenmodelle an mit meist weniger, selten mehr Schichten. Dies gerade
+                                                   dann, wenn es um die konkrete Beschreibung einer bestimmten Art von Netzwerk geht.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="3c45cc24-91d4-42f1-a548-ba8d92c81b00" name="3c45cc24-91d4-42f1-a548-ba8d92c81b00"></a><h3 class="t3"><span class="cfett">4.2.2</span><span class="cfett"> Das Schichtenmodell der Internetprotokolle</span><a href="#8900ed8c-b9bf-4822-8fc4-292ce800ab0b"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#fb2f839e-311d-49bb-8905-549fb7d4728f"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="eef1f4c2-2274-468e-a16b-b02dce6c3d0e"></a><a class="indexterm" id="7c07bf08-4eb4-4db8-be88-f644ee3e84be"></a><a class="indexterm" id="2f447425-ca1b-4f5f-8838-c131201ca5a5"></a><a class="indexterm" id="229d41e4-e490-4083-b828-bcd0cb8e68f3"></a>Im Bereich der TCP/IP-Netzwerkprotokolle, die unter dem Betriebssystem Unix und im
+                                                   Internet den Standard darstellen, wird zum Beispiel häufig ein Modell aus nur vier
+                                                   Schichten verwendet. Dies wird dem Wesen dieser Protokolle auch wesentlich eher gerecht
+                                                   als das OSI-Modell, denn die Internetprotokolle sind bereits einige Jahre älter als
+                                                   OSI. Es handelt sich um das Schichtenmodell des ursprünglichen ARPANETs, das vom US-Verteidigungsministerium
+                                                   finanziert wurde. Deshalb wird es meist als <span class="cbegriff">DoD-Modell</span> (»Department of Defense«), manchmal auch als <span class="cbegriff">DDN-Modell</span> (»Department of Defense Network«) bezeichnet.
+                                                </p>
+                                                <p>Die vier Schichten bei TCP/IP-Netzwerken nach dem DDN Standard Protocol Handbook sind:</p>
+                                                <ol class="paufz">
+                                                   <li>Netzzugangsschicht (Network Access Layer oder Link Layer)</li>
+                                                   <li>Internetschicht (Internet Layer)</li>
+                                                   <li>Host-zu-Host-Transportschicht (Host-to-Host Transport Layer oder einfach Transport
+                                                      Layer)
+                                                   </li>
+                                                   <li>Anwendungsschicht (Application Layer)</li>
+                                                </ol>
+                                                <p>Diese vier Schichten sind den konkreten Gegebenheiten von TCP/IP-Netzwerken angepasst,
+                                                   bei denen es zum Beispiel nur theoretisch möglich ist, von einer separaten Sitzungsschicht
+                                                   zu sprechen.
+                                                </p>
+                                                <p>Das OSI-Referenzmodell kann mit dem DDN-Schichtenmodell deshalb nur grob in Beziehung
+                                                   gesetzt werden. Tabelle 4.1 zeigt, wie ein solcher Vergleich ungefähr aussehen könnte.<a class="indexterm" id="7087397a-6f3b-44c6-ab30-2a7a6c1d9c2e"></a></p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <caption class="tabunter">
+                                                      <p class="ptabellenunter"><strong>Tabelle 4.1   </strong>Vergleich zwischen dem OSI-Referenzmodell und dem<br>DDN-Schichtenmodell der Internetprotokolle
+                                                      </p>
+                                                   </caption>
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf">
+                                                            
+                                                            
+                                                            
+                                                            <span class="cfett">OSI-Modell</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">DDN-Modell</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">7. Anwendungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" rowspan="3">4. Anwendungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">6. Darstellungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">5. Sitzungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">4. Transportschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">3. Host-zu-Host-Transportschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">3. Vermittlungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2. Internetschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2. Sicherungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext" rowspan="2">1. Netzzugangsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">1. Bitübertragungsschicht
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table><a id="8900ed8c-b9bf-4822-8fc4-292ce800ab0b" name="8900ed8c-b9bf-4822-8fc4-292ce800ab0b"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Die Bedeutung der Schichten des DDN-Modells</span></h4>
+                                                <ol class="paufz">
+                                                   <li><a class="indexterm" id="f7edec32-9aa0-4b6d-a7c5-a4c34117dd18"></a><a class="indexterm" id="5456a91a-b257-426a-9602-b75be5e27bec"></a><a class="indexterm" id="d219e1ed-6d5b-4d27-af08-d7c608d46047"></a>Die Netzzugangsschicht (Network Access Layer oder <span class="cbegriff">Link Layer</span>) beschreibt, wie die physikalische Datenübertragung erfolgt. Die Aufgaben, die auf
+                                                      dieser Schicht zu erledigen sind, werden durch viele recht unterschiedliche Protokolle
+                                                      erbracht, einfach deshalb, weil es kaum eine Sorte von Netzwerkhardware gibt, auf
+                                                      der die Internetprotokolle noch nicht implementiert worden wären. Die eigentlichen
+                                                      Kernprotokolle, zu denen besonders die Namensgeber der Protokollfamilie gehören &#8211;
+                                                      also das Transmission Control Protocol (TCP) und das Internet Protocol (IP) &#8211; kümmern
+                                                      sich überhaupt nicht um die physikalischen Verhältnisse. Damit dies möglich ist, müssen
+                                                      auf dieser untersten Schicht die Bitübertragung und die Transportsicherung zuverlässig
+                                                      zur Verfügung gestellt werden.
+                                                      <br>
+                                                      Auf diese Weise entspricht die Netzzugangsschicht der Internetprotokolle den beiden
+                                                      untersten Schichten von OSI.
+                                                  </li>
+                                                  <li>Die Internetschicht (Internet Layer), die im Wesentlichen der Vermittlungsschicht des
+							OSI-Modells ähnelt, kümmert sich um die logische Adressierung der Rechner im Netz,
+							durch die die grundsätzliche Identifizierbarkeit des jeweiligen Rechners sichergestellt
+							wird. Eine weitere wichtige Aufgabe auf dieser Ebene ist das Routing, also die Weiterleitung
+							von Daten über verschiedene physikalisch und/oder logisch getrennte Netze
+							hinweg. Grundlage dieser Tätigkeiten ist das IP-Protokoll (Internet Protocol). Es definiert
+							die IP-Adressen, 32 (in einer neueren Version 128) Bit breite Nummern, die den
+							einzelnen Rechnern zugewiesen werden und die der Unterscheidung der einzelnen
+							Netzwerke und der Rechner in diesen Netzen dienen. Außerdem versieht es jedes Datenpaket
+							mit einem Header, also einer Zusatzinformation, die insbesondere die Quelladresse
+							des sendenden Rechners und die Zieladresse des empfangenden Hosts enthält.
+							Ein Datenpaket dieser Ebene wird als Datagramm bezeichnet.
+                                                  </li>
+                                                  <li>
+							Die Host-zu-Host-Transportschicht (Host-to-Host Transport Layer) kümmert sich um den
+							zuverlässigen Datenaustausch zwischen den kommunizierenden Rechnern. Im Wesentlichen
+							sind hier zwei verschiedene Protokolle verantwortlich (neben anderen, selten
+							verwendeten). Diese beiden Protokolle werden jedoch niemals gleichzeitig, sondern
+							immer alternativ verwendet. Das einfachere und weniger robuste UDP (User Datagram
+							Protocol) stellt einen schlichten und wenig datenintensiven Mechanismus zur Verfügung,
+							der die direkte Nutzung der IP-Datagramme für die Host-zu-Host-Kommunikation
+							erlaubt. Hierbei wird keine virtuelle Verbindung zwischen den beiden Rechnern
+							hergestellt; es findet also keine Kontrolle über einen kontinuierlichen Datenstrom statt.
+							Das erheblich komplexere TCP (Transmission Control Protocol) hat zwar einen deutlich
+							größeren Overhead (Daten-Mehraufwand durch Verwaltungsinformationen) als UDP,
+							stellt aber dafür einen zuverlässigen Transportdienst dar: Es wird eine virtuelle Verbindung
+							zwischen den beiden Hosts hergestellt. Sie besteht darin, dass die Datenpakete
+							durchnummeriert werden und eine Übertragungskontrolle und eventuelle Neu-Übertragung
+							jedes einzelnen Pakets stattfinden. Ob eine Anwendung nun UDP oder TCP
+							verwendet, ist ihre eigene Entscheidung. Allgemein benutzen Dienste, die kontinuierlich
+							größere Datenmengen transportieren müssen, eher TCP, während etwa Verwaltungs-
+							und Konfigurationsdienste zu UDP tendieren.
+                                                   <br>
+                                                   Im Vergleich zum OSI-Modell nimmt die Host-zu-Host-Transportschicht insbesondere die
+                                                   Aufgaben der OSI-Transportschicht wahr; je nach konkretem Protokoll können auch Funktionen
+                                                   der Sitzungsschicht ausgemacht werden.
+                                                   <br>
+                                                   <a class="indexterm" id="8e4a2156-c9c2-44a1-9cae-a06ef21cea4b"></a>Der Begriff <span class="cbegriff">Host</span> (Gastgeber) bezeichnet übrigens jeden Computer, der an ein Netzwerk angeschlossen
+                                                   ist und mit anderen Geräten kommuniziert. Es ist keine Bezeichnung für einen expliziten
+                                                   Dienstleistungsrechner, dieser (oder vielmehr die darauf ausgeführte Software) wird
+                                                   <span class="cbegriff">Server</span> genannt. Der Host muss lediglich vom Router abgegrenzt werden, der Pakete nicht für
+                                                   sich selbst entgegennimmt, sondern an andere Netze weiterleitet. Da das Routing jedoch
+                                                   eine Ebene weiter unten stattfindet, ist es ein auf dieser Schicht unsichtbares Detail
+                                                   &#8211; die Transportschicht ist nur für Rechner relevant, die Daten für den Eigenbedarf
+                                                   benötigen.<span class="footnote"><a id="8ad91a27-fee9-4b92-925a-7a0983f7c1a6" title="Router verständigen sich allerdings auch mit Hilfe der weiter unten in diesem Kapitel vorgestellten Routing-Protokolle miteinander; diese Protokolle werden durchaus auf der Host-zu-Host-Transportschicht ausgeführt. Trotzdem ist dieses technische Detail für die eigentlichen Anwendungshosts uninteressant und unsichtbar.">[14]</a></span>
+                                                   </li>
+                                                   <li>Die Anwendungsschicht (Application Layer) schließlich definiert die Kommunikation
+							zwischen den Anwendungsprogrammen auf den einzelnen Rechnern; hier arbeiten
+							Protokolle wie HTTP für Webserver, FTP zur Dateiübertragung oder SMTP für den EMail-
+							Versand. Die Schicht entspricht im Wesentlichen der gleichnamigen obersten
+							Schicht des OSI-Referenzmodells, wobei auch einige Komponenten von dessen Darstellungsschicht
+							mit hineinspielen. Beispielsweise bedarf HTML-Code, der von einer
+							Webserver-Anwendung ausgeliefert wird, der Interpretation durch einen Browser; hier
+							entspräche der HTML-Code selbst eher der Darstellungsschicht, die Browseranwendung
+							aber der OSI-Anwendungsschicht. Sitzungsmanagement ist dagegen vom ursprünglichen
+							Design her gar nicht vorgesehen; falls es benötigt wird, muss es durch die
+							Anwendungen selbst bereitgestellt werden. In Kapitel 18, »Webserveranwendungen«,
+							erfahren Sie beispielsweise, wie Sie mit Hilfe der Programmiersprache PHP Websessions
+							verwalten.
+                                                   </li>
+                                                </ol>                                                   
+                                                   <div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="ce997c6d-b36a-488f-80c8-15b38047855d" name="ce997c6d-b36a-488f-80c8-15b38047855d"></a><h3 class="t3"><span class="cfett">4.2.3</span><span class="cfett"> Netzwerkkommunikation über die Schichten eines Schichtenmodells</span><a href="#f93e6f91-95b7-4717-91ec-a6bae491dc60"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#8900ed8c-b9bf-4822-8fc4-292ce800ab0b"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                   <p><a class="indexterm" id="687cd4ce-9786-46f6-bbd1-5189cbd13a4a"></a>In diesem Abschnitt wird erläutert, wie die Kommunikation über die Schichten von Schichtenmodellen
+                                                   funktioniert. Dazu werden zwei Beispiele angeboten: Das erste ist ein Alltagsbeispiel,
+                                                   das mit Computernetzwerken nichts zu tun hat, während das zweite ein einfaches Beispiel
+                                                   der Netzwerkkommunikation darstellt.
+                                                </p><a id="f93e6f91-95b7-4717-91ec-a6bae491dc60" name="f93e6f91-95b7-4717-91ec-a6bae491dc60"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Ein Alltagsbeispiel</span></h4>
+                                                <p><a class="indexterm" id="6e8a452e-9b63-4bed-8231-82445b607603"></a><a class="indexterm" id="90f94006-c4a3-437b-b1e6-44602cffe655"></a>Neben der Datenübertragung im Netzwerk lassen sich auch völlig andere Arten der Kommunikation
+                                                   in Schichten gliedern. Beispielsweise kann die Kommunikation zwischen Gesprächspartnern
+                                                   am Telefon folgendermaßen unterteilt werden:
+                                                </p>
+                                                <ol class="paufz">
+                                                   <li>Die beiden Telefone sind physikalisch über eine Telefonleitung miteinander verbunden.</li>
+                                                   <li>Die Verbindung zwischen den Telefonanschlüssen kommt dadurch zustande, dass einer
+                                                      der beiden Teilnehmer die eindeutige Nummer des anderen wählt und der andere das Gespräch
+                                                      annimmt.
+                                                   </li>
+                                                   <li>Über die Telefonleitung werden Informationen in Form von elektromagnetischen Impulsen
+                                                      übertragen, beim klassischen Telefonnetz analog, bei ISDN, Mobilfunk oder VoIP dagegen
+                                                      digital.
+                                                   </li>
+                                                   <li>An den beiden Endpunkten der Kommunikation sprechen die Gesprächspartner in ihre jeweilige
+                                                      Sprechmuschel hinein; die akustischen Signale werden in elektromagnetische Impulse
+                                                      umgewandelt (bei den digitalen Varianten kommt noch die Analog-digital-Wandlung hinzu).
+                                                      Umgekehrt hört ein Teilnehmer aus der Hörmuschel wiederum akustische Signale, die
+                                                      aus den übertragenen Impulsen zurückverwandelt wurden.
+                                                   </li>
+                                                   <li>Die akustischen Signale, die die Gesprächspartner miteinander austauschen, werden
+                                                      zu Silben, Wörtern und schließlich Sätzen kombiniert.
+                                                   </li>
+                                                   <li>Aus den einzelnen Bestandteilen der Sprache ergibt sich schließlich der eigentliche
+                                                      Inhalt der Nachrichten, die miteinander ausgetauscht werden.
+                                                   </li>
+                                                </ol>
+                                                <p>Möglicherweise besteht dieses Kommunikationsmodell sogar aus noch mehr Schichten:
+                                                   Angenommen, die beiden Gesprächspartner sind leitende Angestellte oder gar Direktoren
+                                                   eines großen Unternehmens. Dann wird in aller Regel auf beiden Seiten eine Sekretärin
+                                                   die Gesprächsvermittlung vornehmen, möglicherweise ist sogar noch eine Telefonzentrale
+                                                   involviert. Noch komplizierter wird es beispielsweise, wenn Dolmetscher mitwirken.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Höhere Schichten als Abstraktion</span></h4>
+                                                <p>Dieses einfache Beispiel zeigt deutlich, dass alle Ebenen, die sich oberhalb der untersten,
+                                                   also der physikalischen Ebene befinden, nur Abstraktionen darstellen, durch die den
+                                                   übertragenen Signalen jeweils ein neuer Sinnzusammenhang zugeordnet wird. Die eigentliche
+                                                   Verbindung erfolgt nämlich stets nur auf dieser untersten Ebene! Für jedes Schichtenmodell
+                                                   gilt daher zusammenfassend Folgendes:
+                                                </p>
+                                                <p>Die Daten, die über einen Kommunikationskanal übertragen werden sollen, werden auf
+                                                   der Seite des Senders zunächst Schicht für Schicht nach unten weitergereicht und jeweils
+                                                   mit den spezifischen Zusatzinformationen für diese Schicht versehen. Schließlich werden
+                                                   sie über die unterste Schicht, die eigentliche physikalische Verbindung, übertragen.
+                                                   Auf der Empfängerseite werden sie dann wieder schichtweise nach oben weitergeleitet.
+                                                   Jede Schicht ermittelt die für sie bestimmten Informationen und regelt die Weiterleitung
+                                                   an die nächsthöhere Schicht.
+                                                </p>
+                                                <p>Was in dem Telefonbeispiel geschieht, wird schematisch in Abbildung 4.1 dargestellt:
+                                                   Während die Gesprächspartner den Eindruck haben, in einem direkten Gespräch miteinander
+                                                   zu kommunizieren, geschieht in Wirklichkeit etwas erheblich Komplexeres: Die gesprochene
+                                                   Sprache (die eigentlich aus Silben beziehungsweise einzelnen Lauten besteht, die letztlich
+                                                   einfach nur Schallwellen sind) wird in eine andere Form von Information umgewandelt,
+                                                   über eine elektrische Leitung übertragen und auf der Empfängerseite wieder zusammengesetzt.
+                                                </p>
+                                                <p>Wichtig ist außerdem, dass jede Schicht immer nur die für sie selbst bestimmten Informationen
+                                                   auswertet. Beim Empfang von Daten haben die niedrigeren Schichten überhaupt erst dafür
+                                                   gesorgt, dass die Informationen auf der entsprechenden Schicht angekommen sind, die
+                                                   Spezialinformationen der höheren Schichten sind der aktuellen Schicht dagegen unbekannt.
+                                                   Sie muss lediglich anhand ihrer eigenen Informationen dafür sorgen, dass die Daten
+                                                   an die korrekte Stelle einer höheren Schicht ausgeliefert werden. Auf diese Weise
+                                                   ist jede Schicht virtuell mit der Schicht der gleichen Stufe auf der anderen Seite
+                                                   verbunden; das tatsächliche Zustandekommen dieser Verbindung ist für die jeweilige
+                                                   Schicht dagegen absolut unsichtbar.
+                                                </p><a href="bilder/04_001.png" rel="lightbox" title="Schichtenmodell eines Telefongesprächs. Die tatsächlicheVerbindung besteht nur auf der Ebene der Telefonleitung!"><img class="bild" border="1" src="bilderklein/klein04_001.png" alt="Abbildung"></a><p class="pbildunter"><strong>Abbildung 4.1   </strong>Schichtenmodell eines Telefongesprächs. Die tatsächlicheVerbindung besteht nur auf der Ebene der Telefonleitung!
+                                                </p><a id="25affd89-b1e1-4879-bf0a-0851bdf24d14" name="25affd89-b1e1-4879-bf0a-0851bdf24d14"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Ein Netzwerkbeispiel</span></h4>
+                                                <p><a class="indexterm" id="5f3733c3-f738-4965-a5d8-a09496f98086"></a>Dieses zweite Beispiel &#8211; der Versand einer E-Mail an Galileo Press &#8211; zeigt, wie sich
+                                                   die beim Telefonbeispiel erläuterten Sachverhalte wieder auf Netzwerke übertragen
+                                                   lassen. Schematisch geschieht Folgendes:
+                                                </p>
+                                                <ol class="paufz">
+                                                   <li>In meinem E-Mail-Programm, zum Beispiel Mozilla Thunderbird, verfasse ich den eigentlichen
+                                                      Inhalt der Mail, als Empfänger setze ich info@galileo-press.de ein. Nachdem ich alles fertig geschrieben habe, drücke ich auf den Absendeknopf.
+                                                   </li>
+                                                   <li>Da eine E-Mail eine in sich geschlossene Dateneinheit darstellt, die in ihrer ursprünglichen
+                                                      Reihenfolge beim Empfänger ankommen muss, wird der Transport durch das TCP-Protokoll
+                                                      übernommen, dessen eingebaute Datenflusskontrolle dafür sorgt, dass alle Daten vollständig
+                                                      und in der richtigen Reihenfolge übertragen werden.
+                                                   </li>
+                                                   <li>Die Datenpakete, die durch das TCP-Protokoll angelegt wurden, werden nun durch das
+                                                      IP-Protokoll mit der korrekten Absender- und Empfängeradresse versehen. Diese Adressen
+                                                      haben nichts mit den nur auf der Anwendungsebene wichtigen E-Mail-Adressen zu tun.
+                                                      Vielmehr geht es darum, dass mein Rechner die Daten an den zuständigen Mailserver
+                                                      beziehungsweise an einen Vermittlungsrechner versendet.
+                                                   </li>
+                                                   <li>Die fertig adressierten Datenpakete werden nun dem eigentlichen physikalischen Netzwerk
+                                                      anvertraut und entsprechend übertragen.
+                                                   </li>
+                                                </ol>
+                                                <p>Auf der Empfängerseite &#8211; das heißt auf dem Serverrechner, der das Postfach info@galileo-press.de verwaltet &#8211; kommen die Daten dann folgendermaßen an:</p>
+                                                <ol class="paufz">
+                                                   <li>Über die physikalische Netzwerkverbindung des Serverrechners treffen Datenpakete ein.</li>
+                                                   <li>Auf der Ebene des IP-Protokolls werden die Datenpakete nach den zuständigen Transportdiensten
+                                                      sortiert und an diese weitergereicht &#8211; die E-Mail wird dem TCP-Dienst übergeben.
+                                                   </li>
+                                                   <li>Der TCP-Dienst stellt fest, dass die entsprechenden Datenpakete für den Mailserver
+                                                      (gemeint ist das Programm, nicht der Rechner selbst) bestimmt sind, und reicht sie
+                                                      an diesen weiter.
+                                                   </li>
+                                                   <li>Der Mailserver wertet die E-Mail-Adresse des Empfängers aus und speichert die Mail
+                                                      in dem Postfach info@galileo-press.de. Dort kann sie jederzeit vom berechtigten Empfänger abgeholt werden.
+                                                   </li>
+                                                </ol>
+                                                <p>Die Übertragung der E-Mail vom empfangenden Server an das E-Mail-Programm des eigentlichen
+                                                   Empfängers funktioniert im Großen und Ganzen genauso, wenngleich auf der Anwendungsebene
+                                                   ein anderes Protokoll zum Einsatz kommt.
+                                                </p><a href="bilder/04_002.png" rel="lightbox" title="Übertragung einer E-Mail vom E-Mail-Programm des Absenders auf den Postfachserver des Empfängers. In der Regel sind allerdings mehrere Zwischenstationen beteiligt."><img class="bild" border="1" src="bilderklein/klein04_002.png" alt="Abbildung"></a><p class="pbildunter"><strong>Abbildung 4.2   </strong>Übertragung einer E-Mail vom E-Mail-Programm des Absenders auf den Postfachserver
+                                                   des Empfängers. In der Regel sind allerdings mehrere Zwischenstationen beteiligt.
+                                                </p>
+                                                <p>Abbildung 4.2 zeigt noch einmal schematisch, wie die Übertragung funktioniert. Mehr
+                                                   über die grundlegenden E-Mail-Protokolle erfahren Sie im Abschnitt »Verschiedene Internet-Anwendungsprotokolle«
+                                                   ab Seite 256.
+                                                </p><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_002.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_04_netzwerkgrundlagen_001.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_003.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

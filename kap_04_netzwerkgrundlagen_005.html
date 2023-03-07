@@ -1,0 +1,973 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_04_netzwerkgrundlagen_004.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_006.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_04_netzwerkgrundlagen_004.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_006.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navnav">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navnav">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navnav">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navnav">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navnav">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navnav">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navnav">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navnav">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navnav">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navnav">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navnav">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navnav">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navnav">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navnav">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navnav">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navnav">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navnav">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navh">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navh">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navh">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navh">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navnav">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navnav">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navnav">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navnav">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main"><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="b1ee1610-275b-4d27-be8e-c60d1e87e170" name="b1ee1610-275b-4d27-be8e-c60d1e87e170"></a><h2 class="t2"><span class="cfett">4.5</span><span class="cfett"> Datenfernübertragung</span><a href="#fbc272bc-1dbc-45af-8274-d2d225e92668"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h2>
+                                                <p>Nachdem im vorigen Abschnitt die verschiedenen Formen der LAN-Vernetzung und der WANs
+                                                   über Standleitungen beschrieben wurden, sollen nun diverse Verfahren der Datenfernübertragung
+                                                   (DFÜ) geschildert werden. Wie bereits angesprochen, wurde DFÜ bereits eingesetzt,
+                                                   als sie lediglich der Punkt-zu-Punkt-Kommunikation zwischen einzelnen Rechnern über
+                                                   eine direkte Telefonverbindung diente. Heute geht es in der Regel darum, den Zugang
+                                                   zu einem bestehenden Netzwerk oder (über einen kommerziellen Provider) zum Internet
+                                                   herzustellen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> DFÜ-Varianten</span></h4>
+                                                <p><a class="indexterm" id="e487fc77-eed0-4b7a-8348-4f8f6a43a1cd"></a><a class="indexterm" id="8f3f4d2e-e8bb-4918-8d81-1f67e7318790"></a><a class="indexterm" id="bbab72d2-5b30-41f3-8614-0a40a6125c85"></a>Die erste Generation der DFÜ-Hardware, der umständliche und störanfällige Akustikkoppler,
+                                                   muss hier nicht mehr beschrieben werden. Die drei wesentlichen Technologien sind heute
+                                                   Modems für den Netzwerkzugang über analoge Telefonleitungen, der Zugang über die digitale
+                                                   Telefonleitung ISDN sowie Hochfrequenz-Verbindungen über verschiedene DSL-Dienste.
+                                                   Diese verschiedenen Zugangsverfahren werden im Folgenden dargestellt.
+                                                </p>
+                                                <p>Eine Gemeinsamkeit aller DFÜ-Netzwerkverbindungen besteht in der Notwendigkeit, die
+                                                   Datenübertragung über diese Leitungen zu standardisieren und bestimmte Grundlagen
+                                                   für die Protokolle der Vermittlungsschicht zu schaffen. Dafür werden spezielle Protokolle
+                                                   verwendet, die den Netzzugang über relativ langsame serielle Leitungen ermöglichen.
+                                                   Das traditionelle Protokoll für die Vernetzung über Wählleitungen war SLIP (Serial
+                                                   Line Interface Protocol). Allerdings besitzt es eine Reihe organisatorischer und technischer
+                                                   Mängel und wurde deshalb weitgehend durch PPP (Point-to-Point Protocol) ersetzt.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Aufgaben von PPP</span></h4>
+                                                <p><a class="indexterm" id="fa7db84c-f852-4baf-ab9f-47161dce7039"></a><a class="indexterm" id="0ac10a65-c5e2-4012-8358-5cb7d4ec8cc9"></a>PPP kümmert sich um die Authentifizierung des Benutzers nach der Einwahl, indem Benutzername
+                                                   und Passwort übermittelt werden; anschließend verhandeln die beiden direkt miteinander
+                                                   verbundenen Punkte die eigentlichen Netzwerkdetails. Eine der wesentlichsten Fähigkeiten
+                                                   des Protokolls für Internetverbindungen besteht darin, dass der Einwahlknoten dem
+                                                   anwählenden Rechner automatisch eine IP-Adresse zuweisen kann, über die diese Netzwerkschnittstelle
+                                                   im gesamten Internet identifiziert wird.
+                                                </p>
+                                                <p>Im Einzelnen erfolgen bei PPP also die folgenden Schritte:</p>
+                                                <ul class="gp">
+                                                   <li>Wird eine Wählleitung (analog oder ISDN) verwendet, so stellt der Rechner des Benutzers
+                                                      über die entsprechende Schnittstelle eine Telefonverbindung her. Falls die Leitung
+                                                      besetzt sein sollte, werden spezielle frei konfigurierbare Maßnahmen getroffen; in
+                                                      der Regel erfolgt nach einer gewissen Wartezeit ein erneuter Wählversuch. Bei DSL-Leitungen
+                                                      wird ebenfalls die Verbindung aktiviert, auch wenn man dies nicht als »Wählen« im
+                                                      klassischen Sinne bezeichnen kann.
+                                                   </li>
+                                                   <li>Der Einwahlknoten verlangt eine Authentifizierung, in der Regel in Form von Benutzername
+                                                      und Passwort. Die meisten PPP-Implementierungen in modernen Betriebssystemen übermitteln
+                                                      diese Daten nach einmaliger Konfiguration automatisch, ohne Zutun des Benutzers.
+                                                   </li>
+                                                   <li>Nachdem die Daten überprüft wurden, erfolgen entweder die Ablehnung des Benutzers
+                                                      und der Verbindungsabbau, oder die Netzwerkparameter werden ausgehandelt. Auch wenn
+                                                      PPP als Netzzugangsgrundlage für alle möglichen Protokolle der Vermittlungsschicht
+                                                      dienen kann, wird heute fast nur noch TCP/IP aufgesetzt. Zu diesem Zweck weist der
+                                                      PPP-Knotenpunkt des Internetproviders der seriellen Verbindung auf der Einwahlseite
+                                                      eine IP-Adresse zu, eine im gesamten Internet einmalige Identifikationsnummer. Ihr
+                                                      Konzept wird im nächsten Abschnitt genau beschrieben.
+                                                   </li>
+                                                </ul><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="fbc272bc-1dbc-45af-8274-d2d225e92668" name="fbc272bc-1dbc-45af-8274-d2d225e92668"></a><h3 class="t3"><span class="cfett">4.5.1</span><span class="cfett"> Netzwerkzugang per Modem (analoge Telefonleitung)</span><a href="#ced18382-046a-4c36-9031-10b387105545"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#b1ee1610-275b-4d27-be8e-c60d1e87e170"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="13f84726-f390-41d2-8365-5b894a92a4c4"></a><a class="indexterm" id="bad61017-a556-4ae6-bf33-700b726b4db8"></a><a class="indexterm" id="f58508f4-d6a8-442e-aecb-f0af1fa492ae"></a><a class="indexterm" id="201cf5b2-2dac-4099-9f9d-5d3f2cc085c7"></a>Für Modems wurden im Laufe der Zeit viele verschiedene Standards entwickelt, die sich
+                                                   insbesondere bezüglich ihrer maximalen Datenübertragungsrate voneinander unterscheiden.
+                                                   Der aktuelle Standard heißt V.90 und überträgt bis zu 56.600 Bit/s. Gemessen an den
+                                                   üblichen Geschwindigkeiten fest verdrahteter Netzwerke ist das natürlich sehr langsam,
+                                                   aber kein Vergleich zu den Modem-Geschwindigkeiten vergangener Jahrzehnte. Rein physikalisch
+                                                   scheint mit 56,6 KBit/s die Leistungsgrenze erreicht zu sein; etwas höhere Übertragungsraten
+                                                   lassen sich durch die heutzutage häufig verwendete Datenkomprimierung erzielen &#8211; je
+                                                   nach übertragener Datenart etwa bis zur doppelten Leistung.
+                                                </p>
+                                                <p>Das Wort »Modem« ist eine Zusammensetzung aus den Abkürzungen für »Modulator« und
+                                                   »Demodulator«, weil es die digitalen Signale des Computers in frequenzmodulierte Analogimpulse
+                                                   umwandelt, diese über die Telefonleitung überträgt und am Ziel wieder zurückverwandelt.
+                                                   Zu diesem Zweck muss es auf der einen Seite mit dem Computer verbunden werden, zum
+                                                   Beispiel über USB, klassisch auch über die alte serielle Schnittstelle oder als PCI-Steckkarte.
+                                                   Auf der anderen Seite wird das Modem über einen TAE-Stecker an die Telefonbuchse angeschlossen.
+                                                   Praktisch sind in diesem Zusammenhang Dreifach-TAE-Dosen, die leicht nachgerüstet
+                                                   werden können: Sie verfügen über einen speziellen Anschluss (TAE-F) für ein Telefon
+                                                   in der Mitte und zwei Anschlüsse (TAE-N) für Zusatzgeräte &#8211; Faxgerät, Anrufbeantworter
+                                                   oder eben Modem &#8211; außen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Der Hayes-Befehlssatz</span></h4>
+                                                <p><a class="indexterm" id="0c5fb163-c1ae-4c82-9e5e-1560e4e465d4"></a><a class="indexterm" id="7e8aeae7-9d1f-4bb6-9137-f1d38e33ccb1"></a><a class="indexterm" id="ef98de98-d84b-45d7-a136-a638323cb546"></a>Das Modem wird vom Computer über ein einfaches ASCII-basiertes Protokoll gesteuert.
+                                                   Heutzutage verwenden praktisch alle Modems den sogenannten Hayes-Befehlssatz (benannt
+                                                   nach einem längst vergessenen Modem-Hersteller). Da die Befehle dieses Protokolls
+                                                   alle mit der Zeichenfolge »AT« beginnen, wird er mitunter auch als AT-Befehlssatz
+                                                   bezeichnet. Wichtige Befehle sind etwa folgende:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li><span class="clisting">ATDT &lt;Rufnummer&gt;</span>: DT steht für »Dial Tone« &#8211; eine Rufnummer wird im Tonwahlverfahren (Mehrfrequenzverfahren)
+                                                      angewählt.
+                                                   </li>
+                                                   <li><span class="clisting">ATDP &lt;Rufnummer&gt;</span>: »Dial Pulse« &#8211; eine Rufnummer wird im Pulswahlverfahren angewählt (heute sehr selten).
+                                                   </li>
+                                                   <li><span class="clisting">ATH</span>: »Hangup« &#8211; die Telefonverbindung wird unterbrochen, es wird »aufgelegt«.
+                                                   </li>
+                                                   <li><span class="clisting">ATZ</span>: Das Modem wird auf den Einschaltzustand zurückgesetzt (Reset).
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> Telefon-Wahlverfahren</span></h4>
+                                                <p><a class="indexterm" id="8433b212-2430-4786-bb70-1cc0792ea2ab"></a><a class="indexterm" id="bfb12368-4ce2-43a2-baae-2bc7edd89729"></a><a class="indexterm" id="0dba4d89-ba2e-4cb1-8def-4b6505f36c55"></a><a class="indexterm" id="107608ee-29ab-4d92-be40-e5e91d375186"></a><a class="indexterm" id="aec1ef6a-df04-45f6-82b0-6b27cc24ba3f"></a><a class="indexterm" id="f4842646-e7fe-489e-85af-f91bd08c092d"></a>Das Tonwahlverfahren verwendet mehrere Töne unterschiedlicher Frequenzen, die zusammen
+                                                   die verschiedenen Ziffern und Funktionen des Telefons repräsentieren. Das Pulswahlverfahren
+                                                   sendet dagegen eine Reihe von »Klicktönen« &#8211; einen für eine 1, zwei für eine 2 und
+                                                   so weiter, bis zehn für eine 0. Seitdem alle Vermittlungsstellen in den deutschen
+                                                   Telefonnetzen digital sind, benötigt niemand mehr das langsamere und unzuverlässigere
+                                                   Pulswahlverfahren. Verwechseln Sie übrigens digitale Vermittlung nicht mit digitaler
+                                                   Signalübertragung &#8211; Letztere findet beispielsweise bei ISDN statt, das im nächsten
+                                                   Abschnitt behandelt wird.
+                                                </p>
+                                                <p>Bevor eine Datenkommunikation überhaupt denkbar ist, müssen sich beide Seiten darüber
+                                                   einig sein, auf welche Weise sie die aufeinanderfolgenden einzelnen Bits überhaupt
+                                                   als Datenbits interpretieren sollen, was Datenbits, Stoppbits und eventuelle Parity-Bits
+                                                   angeht. Die meisten Internet-Einwahlpunkte verwenden heutzutage den Standard 8N1 (8
+                                                   Datenbits, kein Parity-Bit, 1 Stoppbit). Dies muss in den Modem-Konfigurationsdaten
+                                                   eingetragen werden. Eine Beschreibung der verschiedenen Formen der seriellen Datenübertragung
+                                                   finden Sie in Kapitel 3, »Hardware«.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Der Handshake</span></h4>
+                                                <p><a class="indexterm" id="ca624097-6aa5-49af-9fd1-7b4c427a9368"></a><a class="indexterm" id="f3557b1f-1b7c-4ebf-805d-33f001d9e38f"></a>Nach der Herstellung der eigentlichen Telefonverbindung findet der sogenannte Handshake
+                                                   (»Handschlag«) zwischen den beiden Gegenstellen statt. Es wird eine Übertragungskapazität
+                                                   ausgehandelt, die beide Seiten verwenden können. Erst nachdem die grundlegende Datenübertragung
+                                                   funktioniert, wird PPP eingesetzt, um die eigentliche Netzwerkverbindung über die
+                                                   Telefonverbindung herzustellen, wie weiter oben beschrieben wurde.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="ced18382-046a-4c36-9031-10b387105545" name="ced18382-046a-4c36-9031-10b387105545"></a><h3 class="t3"><span class="cfett">4.5.2</span><span class="cfett"> ISDN</span><a href="#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#fbc272bc-1dbc-45af-8274-d2d225e92668"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="d9079bd9-a177-4c70-83cb-9bc22aaa29d7"></a><a class="indexterm" id="70f69f3e-620b-4405-996a-4daf41e66941"></a><a class="indexterm" id="4eaa6f7c-308e-498d-b2d5-cdbd3cc7319d"></a>Das Integrated Services Digital Network (etwa »Digitalnetzwerk mit integrierten Diensten«)
+                                                   oder kurz ISDN wurde in den 1980er Jahren von verschiedenen europäischen Telefongesellschaften
+                                                   eingeführt; die aktivste von ihnen dürfte die in Deutschland damals noch zuständige
+                                                   Deutsche Bundespost gewesen sein. Es handelt sich im Prinzip um die Übertragung digitaler
+                                                   Signale über klassische Kupferdraht-Telefonleitungen. Einem reinen Telefonkunden bietet
+                                                   ISDN zunächst die folgenden unmittelbaren Vorteile:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Es werden zwei voneinander unabhängige Kanäle zur Verfügung gestellt; über beide kann
+                                                      gleichzeitig telefoniert, gefaxt oder Datenfernübertragung betrieben werden.
+                                                   </li>
+                                                   <li>Die Rufnummer eines Anrufers, der ebenfalls ISDN verwendet, wird übermittelt und im
+                                                      Display eines entsprechend ausgerüsteten Telefons angezeigt (dies funktioniert natürlich
+                                                      auch bei Standard-Telefonleitungen mit Digitalvermittlung).
+                                                   </li>
+                                                   <li>Während eine Verbindung besteht, kann ein weiterer Anruf angenommen werden. Entweder
+                                                      wird der jeweils andere Gesprächspartner in den Wartezustand versetzt (Makeln), oder
+                                                      der neue Anrufer wird mit dem bisherigen in dieselbe Verbindung aufgenommen (Dreierkonferenz).
+                                                   </li>
+                                                </ul>
+                                                <p>Inzwischen stehen die meisten dieser Dienste dank der flächendeckend digitalen Vermittlung
+                                                   in Deutschland auch Analogkunden zur Verfügung; lediglich die beiden separaten Kanäle
+                                                   bleiben ISDN vorbehalten. Im Übrigen erhalten ISDN-Benutzer üblicherweise drei unabhängige
+                                                   Rufnummern (bei einigen Telefongesellschaften sogar noch mehr), die frei auf die jeweiligen
+                                                   Geräte verteilt werden können.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Die ISDN-Kanäle</span></h4>
+                                                <p><a class="indexterm" id="70a588e4-ff86-44a3-9937-a523b9be51c1"></a>Technisch betrachtet werden sogar drei Kanäle zur Verfügung gestellt; die beiden B?Kanäle übertragen Telefongespräche, Faxe oder Daten mit jeweils 64 KBit/s, während der D?Kanal Dienstinformationen wie Rufnummernübermittlung oder Anklopfen mit 16 KBit/s überträgt. Für Internetverbindungen und andere Datenübertragungsmethoden besteht die Möglichkeit, beide B-Kanäle zu bündeln und auf diese Weise insgesamt eine Datenübertragungsrate von 128 KBit/s zu gewährleisten; natürlich entstehen dafür auch doppelte Kosten.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> ISDN anschließen</span></h4>
+                                                <p><a class="indexterm" id="319c9706-d93b-4f8b-b6b6-651f8adf3d15"></a><a class="indexterm" id="8336e052-0652-4138-9450-6d7fffd7de2c"></a>In der Praxis funktioniert ISDN folgendermaßen: An die normale TAE-Telefonsteckdose
+                                                   wird ein spezielles ISDN-Endgerät namens NTBA angeschlossen. Es stellt zwei sogenannte
+                                                   S<sub>0</sub>-Basisanschlüsse zur Verfügung. Diese verwenden die auch vom Twisted-Pair-Ethernet
+                                                   bekannten RJ-45-Stecker. An jeden dieser Anschlüsse kann ein ISDN-Endgerät angeschlossen
+                                                   werden, beispielsweise ein Telefon, ein Faxgerät oder ein ISDN-Adapter zur Computerdatenübertragung.
+                                                   Damit niemand seinen kompletten Telekommunikations-Gerätepark umstellen muss, werden
+                                                   als spezielle Form von ISDN-Endgeräten sogenannte TK-Anlagen angeboten, die wiederum
+                                                   den Anschluss analoger Endgeräte ermöglichen. Einige TK-Anlagen bieten auch durchgeschleifte
+                                                   S<sub>0</sub>-Anschlüsse an, beispielsweise um ISDN-Geräte an einer praktischeren Stelle anzuschließen.
+                                                </p>
+                                                <p>Natürlich sollten Sie nicht versuchen, ein Analogmodem an eine TK-Anlage anzuschließen
+                                                   &#8211; es würde nicht etwa nur den eigentlichen Vorteil der ISDN-Datenübertragung zunichte
+                                                   machen, sondern funktioniert gar nicht. Da die übertragenen Daten nach außen wie ISDN
+                                                   aussehen, würde die Gegenstelle ihre Antworten mit einer Übertragungsgeschwindigkeit
+                                                   übermitteln, die das Modem nicht verarbeiten kann.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> ISDN-Adapter</span></h4>
+                                                <p><a class="indexterm" id="853b0362-3fac-46e4-9f97-b56c86b8c298"></a>Um einen Computer mit ISDN zu verbinden, werden stattdessen verschiedene Formen von
+                                                   ISDN-Adaptern angeboten: als PCI-Steckkarten (früher gab es sogar ISA-Modelle), externe
+                                                   USB-Geräte oder PCMCIA-Geräte für Notebooks. Mittlerweile werden einige externe ISDN-Geräte
+                                                   auch mit integrierter TK-Anlagen-Funktion angeboten. Eine interne ISDN-Karte sieht
+                                                   genauso aus wie eine moderne Ethernet-Karte, und es kann leicht passieren, dass man
+                                                   das Twisted-Pair-Netzwerkkabel mit seinem baugleichen Stecker in die ISDN-Karte steckt
+                                                   und umgekehrt (selbstverständlich geschieht in diesem Fall gar nichts). Jedenfalls
+                                                   muss normalerweise ein ISDN-Kabel vom Anschluss des ISDN-Adapters zu einem S<sub>0</sub>-Anschluss verlaufen.
+                                                </p>
+                                                <p>Der Unterschied zwischen den Übertragungsraten eines heutigen Modems (56,6 KBit/s)
+                                                   und Ein-Kanal-ISDN (64 KBit/s) mag Ihnen nicht besonders groß erscheinen. Als jedoch
+                                                   das Internet für Privatkunden interessant zu werden begann, lag die Übertragungsrate
+                                                   der meisten Modems bei 9.600 oder 14.400 Bit/s; erst allmählich kamen Geräte mit 28.800
+                                                   Bit/s hinzu. Abgesehen davon besitzt ISDN noch heute einen weiteren Vorteil gegenüber
+                                                   Modem-Verbindungen: Der Verbindungsaufbau geht fast ohne Verzögerung vonstatten, während
+                                                   es bei Modems zu Wartezeiten von etlichen Sekunden kommen kann, bis die Leitung bereit
+                                                   ist.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Klassische ISDN-Datenübertragung</span></h4>
+                                                <p><a class="indexterm" id="c285aca1-0132-4c90-9581-5b65af423a10"></a>Neben der Verbindung zu einem Internetprovider, die mittlerweile wohl die häufigste
+                                                   über ISDN genutzte Dienstleistung ist, war über Jahre hinweg auch die direkte Verbindung
+                                                   zwischen Computern für die ISDN-Datenübertragung üblich. Sehr viele <a class="indexterm" id="cd600538-ce9a-4b6d-92f7-6a7c51561bcd"></a>Macintosh-Benutzer verwendeten hierfür regelmäßig die Software Leonardo, während Windows-Benutzern
+                                                   beispielsweise das Programm Fritz!Data zur Verfügung stand, das mit der in Deutschland
+                                                   besonders populären Fritz!Card der Berliner Firma AVM geliefert wurde. Auch viele
+                                                   Mailbox/BBS-Systeme wurden in der zweiten Hälfte der 1990er Jahre auf ISDN umgestellt
+                                                   oder um eine ISDN-Einwahlmöglichkeit erweitert.
+                                                </p>
+                                                <p>Insgesamt lässt sich feststellen, dass ISDN erst mit dem Aufkommen von Internetzugängen
+                                                   in Firmen und Privathaushalten wirklich populär wurde. Zuvor wurde es manchmal als
+                                                   Telefonleitung für Firmen eingesetzt, allerdings nicht annähernd so häufig, wie die
+                                                   Telefongesellschaften sich dies erhofft hatten. Als ISDN dann schließlich immer öfter
+                                                   benutzt wurde, reichte seine Übertragungsrate immer mehr Nutzern nicht mehr aus; das
+                                                   Bedürfnis nach multimediafähigen Breitband-Verbindungen wuchs deutlich. Dies führte
+                                                   zur Einführung der im nächsten Abschnitt vorgestellten DSL-Dienste.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" name="9fdf5ed9-a8dc-47bf-a96a-79178b0522fa"></a><h3 class="t3"><span class="cfett">4.5.3</span><span class="cfett"> DSL-Dienste</span><a href="#6dbf168f-77dd-47e6-989a-643f95ba0874"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#ced18382-046a-4c36-9031-10b387105545"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="6e547a14-09cd-4069-9755-82b2af8b2723"></a><a class="indexterm" id="1a84e477-8be1-4f58-8aa3-ade06f91490a"></a><a class="indexterm" id="a8697afa-9528-4480-8a20-3dadbea44a9f"></a>DSL ist die Abkürzung für »Digital Subscriber Line« (etwa »digitale Abonnement-Leitung«).
+                                                   Der Name soll verdeutlichen, dass es sich de facto um eine Standleitung anstelle einer
+                                                   Wählleitung handelt. Zur Einführung von DSL kam es, da es durch die allmähliche Verbesserung
+                                                   der Qualität von Telefonleitungen möglich wurde, Signale hoher Frequenz zu übertragen.
+                                                   Auch die meisten DSL-Dienste verwenden also genau wie Modem- und ISDN-Verbindungen
+                                                   die klassischen Kupferleitungen der Telefongesellschaften, die allerdings immer häufiger
+                                                   durch Glasfaserleitungen ersetzt oder ergänzt werden.
+                                                </p><a id="6dbf168f-77dd-47e6-989a-643f95ba0874" name="6dbf168f-77dd-47e6-989a-643f95ba0874"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> DSL-Varianten</span></h4>
+                                                <p><a class="indexterm" id="3bc5ed25-061b-40e6-8d1c-0101b628aac3"></a><a class="indexterm" id="68176979-ebaf-449e-ab84-e23fcc00704e"></a><a class="indexterm" id="cb902b91-4a77-4091-a47a-138132d8391b"></a><a class="indexterm" id="858f93a2-6e90-4657-9136-bbb8d7740e8d"></a>Es existieren zwei grundsätzliche Varianten von DSL: Bei <span class="cbegriff">Symmetric DSL</span> (SDSL) sind die Übertragungsraten für ankommende und ausgehende Daten identisch,
+                                                   bei <span class="cbegriff">Asymmetric DSL</span> (ADSL) ist die ankommende Übertragungsrate höher als die ausgehende. SDSL ist eher
+                                                   für mittlere bis große Unternehmen geeignet, die nicht nur permanent auf das Internet
+                                                   zugreifen, um im Web zu recherchieren oder ihre E-Mails zu lesen, sondern bei denen
+                                                   auch eine Menge Datenausgänge stattfinden &#8211; beispielsweise für den Vor-Ort-Betrieb
+                                                   eigener Web- oder Mailserver oder für den Direktzugriff auf das Firmennetzwerk durch
+                                                   externe Mitarbeiter. ADSL dagegen wird häufiger von Privatkunden oder kleineren Firmen
+                                                   eingesetzt, die recht hohe Datenmengen aus dem Internet herunterladen, aber nur verhältnismäßig
+                                                   wenige und eher kleine Uploads durchführen.
+                                                </p>
+                                                <p>Übliche ADSL-Angebote wie T-DSL der Deutschen Telekom stellten ursprünglich eine Download-Rate
+                                                   von 1.024 KBit/s und eine Upload-Rate von 128 KBit/s zur Verfügung, teilweise sogar
+                                                   noch weniger. Aktuelle ADSL-Anschlüsse des klassischen Typs sind dagegen mit Download-Geschwindigkeiten
+                                                   von 2 bis 8 MBit/s ausgestattet. Auch die umgekehrte Datenrate wurde entsprechend
+                                                   vervielfacht. Die neueren Typen <a class="indexterm" id="b6b8c8aa-c98d-40c2-a58b-9d98d69231a3"></a><a class="indexterm" id="2aaad9d8-6e17-4789-9826-e2fca3ee8e85"></a><a class="indexterm" id="77435547-f214-4c55-b823-40818e06a49b"></a>ADSL2 und ADSL2+, die allerdings eine nicht überall verfügbare hohe Leitungsqualität
+                                                   und spezielle Hardware benötigen, schaffen sogar 16 beziehungsweise 25 MBit/s im Download.
+                                                </p>
+                                                <p>SDSL-Lösungen werden von sehr vielen kommerziellen Providern angeboten und stellen
+                                                   je nach Bedarf viele verschiedene Übertragungsraten von 1.024 KBit/s bis hin zu mehreren
+                                                   MBit/s zur Verfügung. Sie sind deutlich teurer als ADSL-Angebote mit der gleichen
+                                                   oder gar mit einer höheren Übertragungsrate, weil die entsprechende Technik aufwendiger
+                                                   ist.
+                                                </p>
+                                                <p>Anders als bei Modem- oder ISDN-Angeboten werden die Gebühren für DSL-Anschlüsse in
+                                                   der Regel nicht nach der Nutzungsdauer berechnet, sondern als sogenannte Flatrate
+                                                   für beliebig lange Onlinezeiten. Einige Provider verwenden allerdings eine Volumenbeschränkung,
+                                                   das heißt, ohne Aufpreis darf monatlich nur eine bestimmte Datenmenge transferiert
+                                                   werden.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Seltenere Varianten</span></h4>
+                                                <p><a class="indexterm" id="53bfc215-55da-4c55-a047-779398aaf97c"></a><a class="indexterm" id="790ac8d4-4e8d-4116-bcc5-dd12d3df73af"></a>Neben den DSL-Angeboten, die über normale Telefonleitungen laufen, werden seit einiger
+                                                   Zeit auch spezielle Lösungen angeboten. Eine davon ist die Internetverbindung über
+                                                   das Glasfaserkabel des Kabelfernsehens. Da dieses Kabel für das Passivmedium Fernsehen
+                                                   erfunden wurde, besitzt es in seiner ursprünglichen Version keine Rückkanal-Fähigkeit.
+                                                   Es können Daten empfangen, aber nicht gesendet werden; noch nicht einmal die Anforderung
+                                                   einer URL kann abgesetzt werden. Erst allmählich wird der Rückkanal derjenigen Kabelnetze
+                                                   nachgerüstet, die die Deutsche Telekom bereits verkauft hat.
+                                                </p>
+                                                <p><a class="indexterm" id="6f11b6a4-e716-4be7-b341-88eb860b3886"></a><a class="indexterm" id="e1a31640-4cf9-4a1d-955e-e1a7ecdd1deb"></a>Eine andere Lösung ist besonders interessant für kleine Gemeinden, die so weit von
+                                                   der nächsten größeren Stadt entfernt liegen, dass sich eine Nachrüstung der bestehenden
+                                                   Telefonleitungen oder Fernsehkabelnetze nicht lohnt: die Kommunikation mit einem Satelliten
+                                                   über eine Parabolantenne. Diese Lösung bietet beispielsweise die Firma Teles unter
+                                                   dem Namen skyDSL an. Die Datenübertragungsrate beträgt bis zu 24.000 KBit/s. Über
+                                                   den Satelliten ist allerdings nur der Datenempfang möglich; Anfragen und andere Sendevorgänge
+                                                   erfolgen über Analogmodem, ISDN oder GSM-Mobilfunk.
+                                                </p><a id="c2688ff4-3c4f-4d40-9e12-b0a9cab29ef5" name="c2688ff4-3c4f-4d40-9e12-b0a9cab29ef5"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> ADSL anschließen</span></h4>
+                                                <p><a class="indexterm" id="d6e9bb9d-bf95-4529-ba59-0e8a26ba1522"></a><a class="indexterm" id="8963b9c4-d20d-4370-94be-b2f70717431d"></a>An den TAE-Anschluss eines ADSL-Kunden wird ein sogenannter <span class="cbegriff">Splitter</span> angeschlossen &#8211; eine Frequenzweiche, die die hochfrequenten DSL-Signale und die niedrigfrequenten
+                                                   normalen Telefonsignale voneinander trennt. Den Ausgang für die Telefonsignale bietet
+                                                   wiederum ein TAE-Anschluss, an den entweder ein Analog-Telefon oder ein NTBA angeschlossen
+                                                   wird, je nachdem, ob ADSL mit einem Analog- oder mit einem ISDN-Telefonanschluss kombiniert
+                                                   wird.
+                                                </p>
+                                                <p>Den Ausgang für die speziellen ADSL-Signale bietet eine Twisted-Pair-Buchse vom Typ RJ?11. An diesen Anschluss wird in der Regel ein ADSL-Modem angeschlossen, das dann über USB oder Twisted-Pair-Ethernet mit dem Computer verbunden wird. Natürlich ist die Bezeichnung »ADSL-Modem« technisch gesehen Unfug. Bei DSL findet keinerlei Analog-Digital-Umwandlung statt. Dennoch ist der Begriff »Modem« für das Gerät weitverbreitet, weil es den Computer mit einer seriellen Fernleitung verbindet. Beim Anschluss über eine Ethernet-Schnittstelle kommt eine spezielle PPP-Variante namens PPPoE (PPP over Ethernet) zum Einsatz.</p>
+                                                <p>Statt der reinen ADSL-Modems zum Anschluss eines einzelnen Rechners werden inzwischen
+                                                   meist DSL-Router verwendet, die gleich einem gesamten Netzwerk per Ethernet, WLAN
+                                                   oder beidem den Internetzugang bereitstellen. Inzwischen erlauben auch die meisten
+                                                   Provider den Einsatz solcher Router; früher waren die günstigsten Tarife dagegen vielfach
+                                                   auf einen Einzelrechner beschränkt.
+                                                </p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">
+                                                               
+                                                               
+                                                               
+                                                               Internetzugänge über Mobilfunk
+                                                               
+                                                               </span></td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p><a class="indexterm" id="f453ae66-c306-4245-96c2-4ddf1473d761"></a>Neben den hier behandelten stationären DFÜ-Verbindungen werden auch diejenigen über
+                                                               Mobilfunk immer wichtiger. Über die seit den 1990er Jahren errichteten <a class="indexterm" id="2748ff28-b1c3-4823-9edf-71effd5eda62"></a>GSM-Netze (in Deutschland beispielsweise D1, D2, E-Plus und so weiter) kam ursprünglich
+                                                               vor allem ein Verfahren namens <a class="indexterm" id="8a2a2254-09f1-4351-81b7-7c726f4c2327"></a><a class="indexterm" id="489b6326-bf79-438d-b052-fd7f632e4d9e"></a>GPRS (General Packet Radio Service) zum Einsatz; es wurde mehrfach in Details verbessert,
+                                                               bietet aber noch immer keine allzu hohen Datentransferraten &#8211; sie liegen bei 53,6
+                                                               KBit/s im Download und 26,8 KBit/s im Upload. Neuere Verfahren sind zum Teil erheblich
+                                                               schneller:
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li><a class="indexterm" id="b6c06b66-b97c-4d6d-ac1e-d42ffa2e78c4"></a><a class="indexterm" id="86b0d179-4079-4906-a008-946f283ce1a9"></a>EDGE: Download 217,6 KBit/s, Upload 108,8 KBit/s
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li><a class="indexterm" id="d5ddb9fa-54f0-455b-a6d2-7a6c6ff12587"></a><a class="indexterm" id="6c1e20dd-11a7-46a1-a648-b1a1381db81e"></a>UMTS: Download und Upload 384 KBit/s
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>
+                                                               <ul class="gp">
+                                                                  <li><a class="indexterm" id="9f78529e-837d-4494-8462-2303971dfbce"></a><a class="indexterm" id="f339bf08-cf78-45a6-acea-27af3a835f85"></a>HSPA: Download (HSDPA) 7,2 Mbit/s, Upload (HSUPA) 1,4 Mbit/s
+                                                                  </li>
+                                                               </ul>
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Mobilfunkzugänge können entweder für Web-, E-Mail- und andere Netzwerksoftware auf
+                                                               dem Mobiltelefon selbst verwendet werden, oder aber das Handy dient &#8211; beispielsweise
+                                                               über Bluetooth &#8211; als Mobilfunkmodem für einen Laptop. Speziell für UMTS oder HSPA
+                                                               gibt es auch eigenständige Netzwerkzugangsgeräte, die per USB an den Rechner angeschlossen
+                                                               werden und beinahe überall einen Internetzugang mit annehmbarer Geschwindigkeit bieten.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Um die Vorteile eines solchen Anschlusses wirklich zu nutzen, sollte aus Kostengründen
+                                                               ein Datenflatrate-Vertrag mit dem Mobilfunkanbieter abgeschlossen werden. Beachten
+                                                               Sie aber, dass diese Zugänge sehr oft eine Transfervolumenbeschränkung enthalten.
+                                                               Nachdem das Volumen für den entsprechenden Monat aufgebraucht ist, steht in der Regel
+                                                               nur noch eine langsamere Verbindung wie etwa EDGE zur Verfügung. Glücklicherweise
+                                                               verfügen praktisch alle modernen Smartphones auch über WLAN, so dass zu Hause oder
+                                                               am Arbeitsplatz meist keine Datenübertragung über Mobilfunk erforderlich ist.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">
+                                                            <p>Für den Urlaub oder ähnliche Gelegenheiten werden auch Prepaid-SIM-Karten oder USB-Sticks
+                                                               angeboten. Auf keinen Fall sollten Sie den Fehler machen, im Ausland ungeprüft das
+                                                               sogenannte Daten-Roaming Ihres Mobiltelefons zu aktivieren, da es geradezu irrational
+                                                               teuer ist (zum Beispiel 1 Euro pro 50 Kilobyte übertragener Daten). Verschiedene Initiativen
+                                                               der EU-Kommission, diese Tarife zu senken, zeigen erst allmählich Wirkung.
+                                                               
+                                                               
+                                                            </p>
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_005.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_04_netzwerkgrundlagen_004.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_006.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

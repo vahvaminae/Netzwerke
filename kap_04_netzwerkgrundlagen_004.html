@@ -1,0 +1,1970 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <meta name="title" content="Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen">
+      <meta name="author" content="Sascha Kersken ">
+      <meta name="publisher" content="Galileo Press 2011">
+      <meta name="copyright" content="Galileo Press 2011">
+      <meta name="Desription" content="IT-Handbuch für Fachinformatiker  - Der Ausbildungsbegleiter - 4 Netzwerkgrundlagen">
+      <meta name="robots" content="INDEX,FOLLOW">
+      <meta http-equiv="content-language" content="de">
+      <title>Galileo Computing :: IT-Handbuch für Fachinformatiker  - 4 Netzwerkgrundlagen</title>
+      <link rel="stylesheet" type="text/css" href="common/galileo_open.css">
+      <link rel="stylesheet" type="text/css" href="common/prettify.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="common/css/lightbox.css">
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/prototype.js"></script>
+      &nbsp; &nbsp; &nbsp;                  <script src="common/js/scriptaculous.js?load=effects,builder"></script>
+      &nbsp; &nbsp; &nbsp;                  <script type="text/javascript" src="common/js/lightbox.js"></script><link rel="prev" href="kap_04_netzwerkgrundlagen_003.html">
+      <link rel="next" href="kap_04_netzwerkgrundlagen_005.html"><script type="text/javascript" src="common/prettify.js"></script><script type="text/javascript" src="common/openwin.js"></script></head>
+   <body vlink="#000099" link="#000099" alink="#000099" onload="prettyPrint()">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+         <tr>
+            <td height="74" valign="bottom" colspan="2"><a href="http://www.galileocomputing.de/katalog/openbook"><img src="common/galileocomputing_openbook.gif" width="200" height="56" border="0" alt="Galileo Computing < openbook &gt;" title="Galileo Computing < openbook &gt;"></a></td>
+            <td width="80" height="74"><a href="http://www.galileocomputing.de"><img src="common/galileocomputing.gif" border="0" alt="Galileo Computing - Professionelle Bücher. Auch für Einsteiger." title="Galileo Computing - Professionelle Bücher. Auch für Einsteiger."></a></td>
+         </tr>
+      </table>
+      <div align="right"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Professionelle Bücher. Auch für Einsteiger.</a></div><br><table class="tbl" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tbody>
+            <tr>
+               <td width="190" valign="top">
+                  <table class="tbl1" border="0" cellpadding="3" cellspacing="0" width="190" align="left">
+                     <tbody>
+                        <tr>
+                           <td class="tbl2"><a class="nav" href="index.html">Inhaltsverzeichnis</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00a_geleitwort_001.html#597f1ee6-ac0c-487e-9ba4-9e22d3f40a06">Geleitwort des Fachgutachters</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_00b_vorwort_001.html#395ddb0a-a5ff-4350-bcf0-78f0b28df221">Vorwort</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_01_einfuehrung_001.html#1b706751-7172-4a94-9192-8d9ae2c50c4d">1 Einführung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_02_math_tech_001.html#af333bd5-613e-423c-ab64-736684e6b3b7">2 Mathematische und technische Grundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_03_hardware_001.html#51924695-e9ec-4706-9a26-1664b892074a">3 Hardware</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navh" href="#d602e742-24c8-42ee-8a56-56dc37698ce6">4 Netzwerkgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_05_os_konzepte_001.html#e86d1b7a-b430-419a-890c-0a5b4b72efd3">5 Betriebssystemgrundlagen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_06_windows_001.html#86542b27-36bf-4c38-a7ac-e39ef5ca66ed">6 Windows</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_07_linux_001.html#476d09ff-039b-4cdb-9287-f07c9159aacf">7 Linux</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_08_macosx_001.html#ae787a3b-03b9-47fe-b330-7ea6174abc4e">8 Mac OS X</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_09_grund_prog_001.html#d209e9ae-777c-40d3-9ab3-0d7fec083d78">9 Grundlagen der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_10_konz_prog_001.html#b674d614-c7d6-4bc6-8563-8109c4919c21">10 Konzepte der Programmierung</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_11_sw_engineering_001.html#a84d0427-aa5c-45ff-b8ba-67e9ec3ab9ac">11 Software-Engineering</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_12_datenbanken_001.html#1d595c5d-35a4-41bf-987e-1e29756a2fc5">12 Datenbanken</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_13_lamp_001.html#7663765a-6398-4810-a8b8-28947cfcd846">13 Server für Webanwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_14_internet_server_001.html#37db4b07-1ebe-49cc-a592-973cedbc1696">14 Weitere Internet-Serverdienste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_15_xml_001.html#7a5ea21c-656f-46dd-b364-e5d6e84b2293">15 XML</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_16_datei_dat_001.html#7fd9d29f-03af-4a65-acc7-46203b84709c">16 Weitere Datei- und Datenformate</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_17_html_001.html#6cf7147d-c2a9-449b-a6f8-17610208ee82">17 Webseitenerstellung mit (X)HTML und CSS</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_18_webserveranwendungen_001.html#fd4c2f7a-91f0-4b79-8e0a-3869087794d2">18 Webserveranwendungen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_19_javascript_ajax_001.html#5325e707-1d9d-4a0e-87c0-99913dbbd0b7">19 JavaScript und Ajax</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="kap_20_sicherheit_001.html#52506159-f2bc-409f-ac8a-eb9a75866ac5">20 Computer- und Netzwerksicherheit</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_a_glossar_001.html#662ee793-69f5-4957-b59a-763037708e31">A Glossar</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_b_dictionary_001.html#7d8c7e88-a30b-4772-88cf-358337f20daa">B Zweisprachige Wortliste</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="anhang_c_literatur_001.html#cd849581-ba91-4ade-afde-e5b91341ecdd">C Kommentiertes Literatur- und Linkverzeichnis</a></td>
+                        </tr>
+                         <tr>
+                           <td><a class="navnav" href="stichwort.html">Stichwort</a></td>
+                        </tr>
+			<tr>
+                           <td><br><a href="http://download2.galileo-press.de/openbook/galileocomputing_it_handbuch.zip" class="navnav"><strong>Download:</strong><br>- ZIP, ca. 26,3 MB</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav">Buch bestellen</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="navnav" href="#kommentar">Ihre Meinung?</a><br><br></td>
+                        </tr>                     </tbody>
+                  </table>
+               </td>
+               <td width="10"><img src="common/spacer10.gif" width="10" height="10" alt="Spacer"></td>
+               <td width="85%" valign="top">
+                  <div align="center">
+                     <table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                        <tbody>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%">
+                                             <div align="left"><a href="kap_04_netzwerkgrundlagen_003.html" class="navnav"> &lt;&lt; zurück</a></div>
+                                          </td>
+                                          <td width="49%">
+                                             <div align="center"><a href="http://www.galileocomputing.de/?GPP=opit5" class="navnav">Galileo
+                                                   Computing</a> / <a href="http://www.galileocomputing.de/katalog/openbook/?GPP=opit5" class="navnav">
+                                                   &lt;openbook&gt;</a> / <a href="index.html" class="navnav">IT-Handbuch</a></div>
+                                          </td>
+                                          <td width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_005.html" class="navnav">vor &gt;&gt; </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" valign="top">
+                                 <table width="100%" border="0" cellpadding="10" cellspacing="0" class="box">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="buchtitel">IT-Handbuch für Fachinformatiker </a><span class="autor"> von Sascha Kersken </span><br><span class="untertitel">Der Ausbildungsbegleiter</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td valign="top" width="211">
+                                             <dl>
+                                                <dt><a href="http://www.galileocomputing.de/2839?GPP=opit5" class="navnav"><img src="common/9783836217446.png" border="0" alt="Buch: IT-Handbuch für Fachinformatiker " title="Buch: IT-Handbuch für Fachinformatiker "></a></dt>
+                                                <dd><br><a href="http://www.galileocomputing.de/2839?GPP=opit5"><span class="autor"><strong>IT-Handbuch für Fachinformatiker </strong><br><pressinfo>Galileo Computing<br>ca. 1172 S., 5., aktualisierte und erweiterte Auflage, geb.<br>ca. 34,90 Euro, ISBN 978-3-8362-1744-6
+                                                         </pressinfo></span></a></dd>
+                                             </dl>
+                                          </td>
+                                          <td width="80%">
+                                             <table border="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td valign="baseline"><img src="common/pfeil_u.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="3" class="kap"><strong><a href="kap_04_netzwerkgrundlagen_001.html#d602e742-24c8-42ee-8a56-56dc37698ce6" class="navnav">4 Netzwerkgrundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_001.html#449de289-2c4f-4783-8b8a-1a195df70708" class="navnav">4.1 Grundlagen</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#7498c051-50b6-4fe4-9a66-3c8c1c948d2d" class="navnav">4.1.1 Was ist ein Netzwerk?</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_001.html#364c6cbb-83ad-482c-978c-75fffecc19c5" class="navnav">4.1.2 Entstehung der Netzwerke</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f91fd842-4cf9-413d-ac2c-5e9dd89242a6" class="navnav">4.2 Funktionsebenen von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#f2ff62d9-1bbe-4380-8537-ee0e0201ffb3" class="navnav">4.2.1 Das OSI-Referenzmodell</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#3c45cc24-91d4-42f1-a548-ba8d92c81b00" class="navnav">4.2.2 Das Schichtenmodell der Internetprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_002.html#ce997c6d-b36a-488f-80c8-15b38047855d" class="navnav">4.2.3 Netzwerkkommunikation über die Schichten eines Schichtenmodells</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_003.html#472620d2-f8fa-4448-8996-5a0266afc21f" class="navnav">4.3 Klassifizierung von Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#415ea361-b033-4d25-ae06-c74bfb07e564" class="navnav">4.3.1 Die Reichweite des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#fb95a793-5ef0-4453-90f8-fbe78ad9cf52" class="navnav">4.3.2 Die Netzwerktopologie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_003.html#b83eff4e-8003-4395-b0e6-443b01459ea1" class="navnav">4.3.3 Der Zentralisierungsgrad des Netzwerks</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_004.html#13af6871-73cc-4b69-b652-3ea1e294d876" class="navh">4.4 Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#ab58ba02-4517-4673-a71f-f3305103a5b5" class="navh">4.4.1 Die verschiedenen Ethernet-Standards</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#3b60d81e-fce3-4f4e-b290-16ce32890f70" class="navh">4.4.2 Token Ring</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#70d01b8d-3a80-42fc-be2c-5373b8e23959" class="navh">4.4.3 Drahtlose Netze</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_004.html#50e86953-116d-4a59-9c0c-d8df4a4d65bb" class="navh">4.4.4 Sonstige Zugangsarten</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_005.html#b1ee1610-275b-4d27-be8e-c60d1e87e170" class="navnav">4.5 Datenfernübertragung</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#fbc272bc-1dbc-45af-8274-d2d225e92668" class="navnav">4.5.1 Netzwerkzugang per Modem (analoge Telefonleitung)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#ced18382-046a-4c36-9031-10b387105545" class="navnav">4.5.2 ISDN</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_005.html#9fdf5ed9-a8dc-47bf-a96a-79178b0522fa" class="navnav">4.5.3 DSL-Dienste</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6e1e5ca4-c706-4678-8d49-32866f6858c1" class="navnav">4.6 Die TCP/IP-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#e3a89dc1-e1c1-4d3e-ac8a-b3db54255795" class="navnav">4.6.1 Netzzugang in TCP/IP-Netzwerken</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#c55c60d7-47c5-42a7-9082-66b2630b667f" class="navnav">4.6.2 IP-Adressen, Datagramme und Routing</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#7382bf39-a0a7-49d3-acd7-9a5168f30e3c" class="navnav">4.6.3 Transportprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#6fcd7355-34dc-420d-b672-1178b51db54b" class="navnav">4.6.4 Das Domain Name System (DNS)</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_006.html#1980253c-c8c4-428e-aaf6-a1d9d2c079b4" class="navnav">4.6.5 Verschiedene Internet-Anwendungsprotokolle</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_007.html#ce57e096-95f8-44f8-bbf4-a83937a19b40" class="navnav">4.7 Andere Protokollstapel</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#cff687a2-d361-4238-9c0c-a57b018f93e3" class="navnav">4.7.1 Die AppleTalk-Protokollfamilie</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#a767a4cf-580f-429e-8a02-66b670ab61d5" class="navnav">4.7.2 Novell IPX/SPX</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline"><strong><a href="kap_04_netzwerkgrundlagen_007.html#0855aa7d-2091-4fcd-8728-8e29d9390f3d" class="navnav">4.7.3 NetBEUI/SMB</a></strong></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td valign="baseline" width="10"></td>
+                                                      <td valign="baseline" width="10"><img src="common/pfeil_rechts5.gif" width="10" height="10" border="0" alt="Pfeil"></td>
+                                                      <td valign="baseline" colspan="2"><strong><a href="kap_04_netzwerkgrundlagen_008.html#6ad4bfae-d87e-47dd-9291-d53b3c5e1c5a" class="navnav">4.8 Zusammenfassung</a></strong></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table width="100%" cellpadding="20" cellspacing="0" border="0" bgcolor="#eeeeee">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <div class="main"><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="13af6871-73cc-4b69-b652-3ea1e294d876" name="13af6871-73cc-4b69-b652-3ea1e294d876"></a><h2 class="t2"><span class="cfett">4.4</span><span class="cfett"> Netzwerkkarten, Netzwerkkabel und Netzzugangsverfahren</span><a href="#ab58ba02-4517-4673-a71f-f3305103a5b5"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a></h2>
+                                                <p><a class="indexterm" id="d885ed3c-4f36-4019-b4de-122bcb5dc66f"></a><a class="indexterm" id="6c86b552-2044-4fcc-8ba8-c6360f638575"></a><a class="indexterm" id="d1db35f9-a3a1-40c0-a103-89aef289b186"></a>Im Laufe der Entwicklungsgeschichte der Netzwerke, die weiter oben in diesem Kapitel
+                                                   skizziert wurde, haben sich viele verschiedene Formen der Netzwerkhardware entwickelt.
+                                                   Jede von ihnen hatte zum Zeitpunkt ihrer Entstehung ihre Berechtigung, und dennoch
+                                                   haben sich einige auf breiter Front durchgesetzt, während andere schnell wieder vom
+                                                   Markt verschwunden sind. Die verbreitetste Art der Netzwerkhardware ist heute Ethernet
+                                                   in seinen vielfältigen Varianten.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Die IEEE-802-Standards</span></h4>
+                                                <p><a class="indexterm" id="5a8cb424-064f-4eb6-b4c6-9f0b570263ca"></a><a class="indexterm" id="8cf130a9-a17f-42a0-aa91-93fa62a5efd1"></a><a class="indexterm" id="e8ac0ba3-c0d5-49f2-8dbf-53c8b187201e"></a>Analog zu den oben beschriebenen Schichtenmodellen &#8211; vor allem dem standardisierten
+                                                   OSI-Referenzmodell &#8211; gibt es auch Standards, die speziell die Netzwerkhardware und
+                                                   den Netzzugang betreffen, also die beiden untersten Ebenen des OSI-Modells. Die umfangreichste
+                                                   Sammlung ist IEEE 802 des Institute of Electrical and Electronical Engineers. Die
+                                                   Nummer 802 bezeichnet Jahr und Monat der ursprünglichen Festlegung, nämlich den Februar
+                                                   1980. Innerhalb dieser Sammlung existiert eine Reihe verschiedener Unterstandards
+                                                   beziehungsweise Arbeitsgruppen. Zu den wichtigsten gehören 802.1 (allgemeine Netzwerkstandards),
+                                                   802.3 (Netzzugangsverfahren CSMA/CD, besonders Ethernet) und 802.11 (drahtlose Netze).
+                                                   Tabelle 4.2 zeigt die vollständige Liste. Einige dieser Standards werden im Folgenden
+                                                   näher beschrieben.
+                                                </p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <caption class="tabunter">
+                                                      <p class="ptabellenunter"><strong>Tabelle 4.2   </strong>Die IEEE-802-Arbeitsgruppen im Überblick
+                                                      </p>
+                                                   </caption>
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf">
+                                                            
+                                                            
+                                                            
+                                                            <span class="cfett">IEEE-Gruppe</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Bezeichnung</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.1
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Internetworking
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.2
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Logical Link Control (LLC)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.3
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">CSMA/CD, Ethernet
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.3u
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Fast Ethernet
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.3z
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Gigabit Ethernet über Glasfaser
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.3ab
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Gigabit Ethernet über Twisted Pair
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.4
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Token-Bus-Zugriffsverfahren
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.5
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Token-Ring-Zugriffsverfahren
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.6
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Metropolitan Area Network (MAN)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.7
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Breitbandübertragungstechnologie
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.8
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Glasfaserübertragungstechnologie
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.9
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">integrierte Sprach- und Datendienste
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.10
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Netzwerksicherheit
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">drahtlose Netze
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.12
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Demand-Priority-Verfahren
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.14
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Breitband-Kabelfernsehen (CATV)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.15
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Wireless Personal Area Network (WPAN)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.16
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Broadband Wireless Access (BWA)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.17
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Resilient Packet Ring (RPR)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.18
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Radio Regulatory Technical Advisory Group (RRTAG)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.19
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Coexistence TAG
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.20
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">drahtlose Breitbandnetze
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.21
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">medienunabhängiges Handover
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.22
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">drahtlose Regionalnetze (WRAN)
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.30
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">100BaseX, 100BaseT, Fast Ethernet
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="ab58ba02-4517-4673-a71f-f3305103a5b5" name="ab58ba02-4517-4673-a71f-f3305103a5b5"></a><h3 class="t3"><span class="cfett">4.4.1</span><span class="cfett"> Die verschiedenen Ethernet-Standards</span><a href="#c9280a8e-3f90-4512-9147-820b59a57885"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#13af6871-73cc-4b69-b652-3ea1e294d876"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="a6188670-683b-4e27-a7df-783989d1fd18"></a><a class="indexterm" id="d3bf5c06-bc0b-430d-a426-64087a8cddf6"></a>Ethernet ist heute der verbreitetste Standard für lokale Netze (LANs). Zehntausende
+                                                   von Hersteller weltweit unterstützen diese Art von Netzwerken mit ihrer Hard- und
+                                                   Software.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Identifikation per MAC-Adresse</span></h4>
+                                                <p><a class="indexterm" id="a058a6ed-fa82-4a6f-8aa5-572df37b6c18"></a><a class="indexterm" id="4ef249df-d2fe-4ef4-8b99-d7ba98b6bf39"></a><a class="indexterm" id="216bcfdd-e479-49ea-ba40-189426737972"></a>Jede Ethernet-Schnittstelle, also die Netzwerkkarte oder der fest eingebaute Anschluss,
+                                                   ist mit einer weltweit einmaligen Identifikationsnummer ausgestattet, der sogenannten
+                                                   <span class="cbegriff">MAC-Adresse</span> (für Media Access Control, einer der beiden Bestandteile der OSI-Netzzugangsschicht).
+                                                   Es handelt sich um eine 48 Bit lange Zahl, die in sechs hexadezimalen Blöcken zwischen
+                                                   0 und 255 (00 bis FF hex) geschrieben wird, zum Beispiel <span class="clisting">00-A0-C9-E8-5F-64</span>.
+                                                </p>
+                                                <p><a class="indexterm" id="292e7478-c84c-4f8f-a7ea-ec478962807c"></a><a class="indexterm" id="ec269fbc-67e3-43b3-8d44-a5889a1e6500"></a>Die Datenpakete &#8211; auf der Netzzugangsschicht <span class="cbegriff">Frames</span> genannt &#8211; werden mit den MAC-Adressen der sendenden und der empfangenden Station
+                                                   versehen und in der Regel an alle Stationen im Segment versandt. Jede Station überprüft
+                                                   daraufhin, ob die Daten für sie bestimmt sind. Im Übrigen kann man Ethernet-Schnittstellen
+                                                   auch in den »Promiscuous Mode« schalten, in dem sie ohne Unterschied alle Daten entgegennehmen.
+                                                   Auf diese Weise kann der gesamte Datenverkehr in einem Netzsegment überwacht werden.
+                                                </p>
+                                                <p>Die MAC-Adresse wird normalerweise nicht über das jeweilige Teilnetz hinaus weiterverbreitet.<span class="footnote"><a id="27d2a3d3-cf8b-4ca5-b33e-d70558f92719" title="Ausnahmen: Das weiter unten beschriebene IPX/SPX-Protokoll verwendet die MAC-Adresse auch für die Adressierung auf der Netzwerkschicht, und die IP-Weiterentwicklung IPv6 benutzt die MAC-Adresse als Teil der 128 Bit langen IP-Adresse.">[15]</a></span> Nach außen ergäbe ihre Verwendung auch keinen Sinn, da das nächste Teilnetz auf einer
+                                                   Route womöglich noch nicht einmal zum Ethernet-Standard gehört.
+                                                </p><a id="c9280a8e-3f90-4512-9147-820b59a57885" name="c9280a8e-3f90-4512-9147-820b59a57885"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Das Netzzugangsverfahren CSMA/CD</span></h4>
+                                                <p><a class="indexterm" id="605449b7-580e-46c2-b6d3-c11838b88fdd"></a><a class="indexterm" id="7352cefc-be7a-4f07-8b76-cd6e3d09877c"></a><a class="indexterm" id="166f8314-6025-49d4-9a65-3000563e45e0"></a>Es ist wichtig zu verstehen, dass mit dem Namen »Ethernet« gar keine einheitliche
+                                                   Netzwerkhardware bezeichnet wird. Vielmehr handelt es sich um einen Sammelnamen für
+                                                   diverse Netzwerkstandards, die ein bestimmtes Netzzugangsverfahren verwenden. Insofern
+                                                   sind alle Ethernet-Varianten auf der OSI-Schicht 2 identisch, unterscheiden sich aber
+                                                   auf der untersten Schicht.
+                                                </p>
+                                                <p><a class="indexterm" id="1b1591df-af4e-402a-9dfa-c44c6107d863"></a><a class="indexterm" id="0ba1fdcc-90cf-4b45-b950-585f2b2d7488"></a>Als der Vorläufer von Ethernet Ende der 60er Jahre des vorigen Jahrhunderts an der
+                                                   Universität von Hawaii konzipiert wurde (anfangs unter dem geografisch passenden Namen
+                                                   ALOHANet), handelte es sich zunächst um Datenfunk. Diesem Umstand ist übrigens auch
+                                                   der endgültige Name zu verdanken: »ether«, zu Deutsch Äther, ist das gedachte Medium,
+                                                   durch das sich Funkwellen fortpflanzen. Erst in den 1970er Jahren wurde dasselbe Netzzugangsverfahren
+                                                   auch für die Datenübertragung per Kabel eingesetzt, und zwar zunächst über Koaxialkabel.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> CSMA/CD-Schema</span></h4>
+                                                <p>Das gemeinsame Netzzugangsverfahren aller Ethernet-Formen trägt den Namen CSMA/CD:
+                                                   Carrier Sense Multiple Access with Collision Detection. Schematisch gesehen funktioniert
+                                                   dieses Verfahren wie folgt:
+                                                </p>
+                                                <ol class="paufz">
+                                                   <li>Ein Gerät, das Daten senden möchte, lauscht den Netzabschnitt ab, um festzustellen,
+                                                      ob dieser gerade frei ist, das heißt, ob gerade kein anderes Gerät sendet (Carrier Sense).
+                                                   </li>
+                                                   <li>Wurde in Schritt 1 festgestellt, dass der Netzabschnitt frei ist, beginnt die Station
+                                                      mit dem Senden der Daten. Möglicherweise hat auch eine andere Station festgestellt,
+                                                      dass das Netz frei ist, und beginnt gleichzeitig ebenfalls mit dem Senden (Multiple Access).
+                                                   </li>
+                                                   <li>Falls auf die beschriebene Art und Weise zwei Stationen gleichzeitig mit dem Senden
+                                                      begonnen haben, findet eine sogenannte <a class="indexterm" id="9f7b4f73-dba3-40d6-baa1-6e109ece93ee"></a>Datenkollision statt, die von den beteiligten Stationen entdeckt wird (Collision Detection). Eine Station, die eine Kollision bemerkt, stellt das Senden von Nutzdaten ein und
+                                                      versendet stattdessen eine Warnmeldung (Jam Signal).
+                                                   </li>
+                                                   <li>Eine Station, die wegen einer Datenkollision das Senden abgebrochen hat, beginnt nach
+                                                      einer zufällig gewählten Zeitspanne von wenigen Millisekunden erneut mit dem Senden.
+                                                      Genau diese Zufälligkeit der Zeitspanne, die nach einem komplizierten Verfahren berechnet
+                                                      wird, ist enorm wichtig, damit die beiden Stationen beim nächsten Versuch nicht wieder
+                                                      genau gleichzeitig mit dem Senden beginnen.
+                                                   </li>
+                                                </ol>
+                                                <p>Das große Problem von Ethernet besteht darin, dass das CSMA/CD-Verfahren umso ineffektiver
+                                                   wird, je frequentierter der jeweilige Netzabschnitt ist: Ab einem gewissen Grenzwert
+                                                   überschreitet die Anzahl der Datenkollisionen die Menge der Nutzdaten. Heutzutage
+                                                   umgeht man dieses Problem in der Regel durch die Verwendung sogenannter <span class="cbegriff">Switches</span>, die für zwei miteinander kommunizierende Stationen jeweils eine exklusive Punkt-zu-Punkt-Verbindung
+                                                   einrichten. Wo diese Möglichkeit aufgrund veralteter, inkompatibler Hardware nicht
+                                                   zur Verfügung steht, muss ein Netz mit viel Datenverkehr stattdessen segmentiert,
+                                                   das heißt in kleinere Abschnitte unterteilt werden.
+                                                </p><a id="d987e87e-6394-4d8c-a625-270e415d24c3" name="d987e87e-6394-4d8c-a625-270e415d24c3"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> Ethernet-Hardware</span></h4>
+                                                <p><a class="indexterm" id="d90c782e-7e71-48a1-aaf0-54bc1366eb4e"></a><a class="indexterm" id="37901ee9-2d7d-451a-b6b5-56767efce898"></a>Die Bezeichnungen der verschiedenen Arten der Hardware, die für Ethernet-Netzwerke
+                                                   verwendet werden, setzen sich aus der Übertragungsgeschwindigkeit des jeweiligen Netzes
+                                                   in MBit/s und einer spezifischen Bezeichnung für den Kabeltyp oder die maximal zulässige
+                                                   Kabellänge zusammen.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Koaxialkabel</span></h4>
+                                                <p><a class="indexterm" id="9daae9f9-6821-48a6-ac13-ae57e9561cc0"></a>Wie bereits erwähnt, waren Koaxialkabel die ersten für Ethernet verwendeten Kabel.
+                                                   Der Aufbau dieser Kabel ist folgender: Im Zentrum befindet sich ein leitender Draht,
+                                                   der von einer Isolationsschicht umgeben ist, darüber befindet sich ein weiterer Ring
+                                                   aus leitendem Metall und außen natürlich wiederum eine Isolationsschicht. Das bekannteste
+                                                   Alltagsbeispiel für ein Koaxialkabel ist ein handelsübliches Fernsehantennenkabel.
+                                                </p>
+                                                <p>Es gibt zwei Arten von Koaxialkabeln, die für Ethernet eingesetzt werden:</p>
+                                                <ul class="gp">
+                                                   <li>10Base2: dünnes schwarzes Koaxialkabel<br><a class="indexterm" id="2009fe4f-2446-4bb2-bf09-36beadb41622"></a><a class="indexterm" id="490bbd51-067d-4fa0-a4d2-97429800650f"></a>Die 10 steht für die maximale Datenübertragungsgeschwindigkeit des Netzes, in diesem
+                                                      Fall 10 MBit/s. Die nähere Spezifikation, die durch die 2 angegeben wird, betrifft
+                                                      die maximal zulässige Gesamtlänge eines 10Base2-Netzsegments von etwa 200 Metern (eigentlich
+                                                      200 Yard, was ca. 185 Metern entspricht). In einem Segment dürfen sich maximal 30
+                                                      Stationen befinden. Um eine größere Entfernung zu überbrücken oder mehr Stationen
+                                                      zu betreiben, muss eine Signalverstärkung durch sogenannte Repeater durchgeführt werden.
+                                                   </li>
+                                                </ul>
+                                                <p class="peg"><a class="indexterm" id="d268a66e-84e8-49e9-afce-208cbdeb453a"></a><a class="indexterm" id="642527f5-90c9-4eaa-a1bd-e554d27c9d1d"></a>Alternative Bezeichnungen für diese Ethernet-Form sind »Thinnet Coaxial« oder »Cheapernet«,
+                                                   weil es sich früher um die billigste Art der Vernetzung handelte.
+                                                </p>
+                                                <p class="peg">An der Netzwerkkarte wird an eine BNC-Buchse ein T-Adapter angeschlossen. An dessen
+                                                   beiden Seiten werden wiederum über BNC-Stecker die Koaxialkabel angeschlossen, die
+                                                   zu den T-Stücken der Netzwerkkarten der benachbarten Rechner führen. Der Mindestabstand
+                                                   zwischen zwei T-Stücken, das heißt die minimale Länge eines einzelnen Kabels, beträgt
+                                                   50 cm. Das Netzwerk ist in einer Bus-Topologie organisiert; die T-Stücke des ersten
+                                                   und des letzten Rechners im Netzwerk werden auf je einer Seite mit einem Abschlusswiderstand
+                                                   oder Terminator versehen.
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>10Base5: dickes gelbes Koaxialkabel<br><a class="indexterm" id="61ac73db-8fe2-4bdc-8c60-0b1b63f0142a"></a><a class="indexterm" id="220230fa-71f1-4b83-9302-3d501c488c84"></a>Der Vorteil dieser auch »<a class="indexterm" id="29834161-3f9b-4426-a28e-523593dec371"></a><a class="indexterm" id="90c18a7d-8d85-41ab-abae-3c23550130e0"></a>Thicknet Coaxial« genannten Variante besteht in der größeren zulässigen Länge des
+                                                      Netzsegments, nämlich &#8211; wie die Zahl 5 vermuten lässt &#8211; 500 Yard (knapp 460 m). Andererseits
+                                                      ist dieses erheblich dickere Kabel weniger flexibel als das dünnere 10Base2. Beispielsweise
+                                                      ist es schwieriger, solche Kabel durch verwinkelte Kabelkanäle zu ziehen.
+                                                   </li>
+                                                </ul>
+                                                <p class="peg">Auf dem Kabel sitzen bei dieser Ethernet-Form sogenannte <span class="cbegriff">Transceiver</span>, die über 15-polige Buchsen an die Netzwerkkarten angeschlossen werden. Zwischen
+                                                   zwei Transceivern muss ein Mindestabstand von 2,5 Metern eingehalten werden; das Kabel
+                                                   enthält ab Werk Markierungen in diesem Abstand. Die Transceiver werden an diesen Stellen
+                                                   einfach in das Kabel hineingebohrt (deshalb werden sie als »Vampirabzweige« bezeichnet).
+                                                   In einem Segment dürfen sich maximal 100 davon befinden. Auch dieses Netz ist busförmig,
+                                                   und beide Enden müssen durch Abschlusswiderstände terminiert werden.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Twisted-Pair-Kabel</span></h4>
+                                                <p><a class="indexterm" id="1cfde6d8-2a86-4ceb-a3aa-ed3a33816a94"></a><a class="indexterm" id="ac7cdf6c-cacb-43ed-8624-4123143ecc86"></a>Heutzutage wird Ethernet viel häufiger über Twisted-Pair-Kabel betrieben. Bei dieser
+                                                   Kabelsorte handelt es sich um einen verdrillten Kupfer-Zweidrahtleiter: Je zwei isolierte
+                                                   Kupferdrähte werden umeinandergewickelt. Dies verhindert die gegenseitige Beeinträchtigung
+                                                   der Signalqualität, die bei parallel zueinander verlaufenden Kabeln durch die elektromagnetischen
+                                                   Felder aufträte. In einem Twisted-Pair-Kabel verlaufen üblicherweise vier, manchmal
+                                                   auch acht solcher Doppeladern nebeneinander. Sie enden auf beiden Seiten in einem
+                                                   RJ-45-Stecker, der auch für ISDN-Anschlüsse verwendet wird. Bekannt sind solche Kabel
+                                                   vor allem durch ihre Verwendung als Telefonleitungen.
+                                                </p>
+                                                <p><a class="indexterm" id="d3c8345f-0d3e-4439-bbf4-353f616f5814"></a>Man unterscheidet zwei verschiedene Grundarten von Twisted-Pair-Kabeln: UTP oder Unshielded
+                                                   Twisted Pair ist ein nicht abgeschirmter Zweidrahtleiter, STP (Shielded Twisted Pair)
+                                                   ein abgeschirmter, der eine höhere Signalqualität aufweist, so dass er zum Beispiel
+                                                   größere Entfernungen überbrücken kann.
+                                                </p>
+                                                <p>Außerdem werden Twisted-Pair-Kabel in verschiedene Kategorien unterteilt, die unterschiedliche
+                                                   maximale Datenübertragungsraten zulassen. Diese sind in Tabelle 4.3 aufgelistet.
+                                                </p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <caption class="tabunter">
+                                                      <p class="ptabellenunter"><strong>Tabelle 4.3   </strong>Die verschiedenen Kategorien von Twisted-Pair-Kabeln
+                                                      </p>
+                                                   </caption>
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf">
+                                                            
+                                                            
+                                                            
+                                                            <span class="cfett">Kategorie</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Übertragungsrate</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Verwendungszweck</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">1
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">nicht festgelegt
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Telefonie
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">4 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">ISDN
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">3
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">10 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Ethernet; Token Ring
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">4
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">16 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">verschiedene
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">5
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">100 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">Fast Ethernet; allgemeiner Standard
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">6
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">200 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">verschiedene
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">7
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">600 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">verschiedene
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table>
+                                                <p>Alle über Twisted Pair verkabelten Arten von Ethernet weisen eine sternförmige Topologie
+                                                   auf, zumindest im physischen Sinn: Alle Stationen werden jeweils über ein eigenständiges
+                                                   Kabel an einen zentralen Verteiler angeschlossen. Der Vorteil dieser Form der Vernetzung
+                                                   besteht grundsätzlich darin, dass der Ausfall einer einzelnen Verbindung zwischen
+                                                   einem Rechner und dem Verteiler nicht zur Unterbrechung des gesamten Netzes führt,
+                                                   wie es beim busförmigen Koaxialkabel-Ethernet der Fall ist.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Hub versus Switch</span></h4>
+                                                <p><a class="indexterm" id="60fbacd7-3fc5-45ca-a19e-8a2d92250eac"></a><a class="indexterm" id="5ba2ddab-b3ce-4dfd-b996-cfb52bf1bd04"></a><a class="indexterm" id="551ac0f1-e4e1-465f-b2e5-e4eab6f9c4ee"></a><a class="indexterm" id="28e2f33d-d5a8-4525-aae7-390803f5fea7"></a>Der zentrale Verteiler wird in seiner einfacheren Form <span class="cbegriff">Hub</span> genannt, die etwas teurere, aber leistungsfähigere Bauweise heißt <span class="cbegriff">Switching Hub</span> oder kurz <span class="cbegriff">Switch</span>. Die innere Struktur des Hubs ist letztlich busförmig, so dass es genau wie bei der
+                                                   Vernetzung über Koaxialkabel zu Datenkollisionen kommen kann. Ein Switch stellt dagegen
+                                                   für zwei Stationen, die miteinander kommunizieren möchten, eine exklusive Punkt-zu-Punkt-Verbindung
+                                                   bereit. Dies geschieht dadurch, dass ein Switch die MAC-Adressen aller Schnittstellen
+                                                   zwischenspeichert, an die er bereits Daten ausgeliefert hat, und auf diese Weise die
+                                                   restlichen Stationen nicht mehr mit Daten behelligen muss, die gar nicht für sie bestimmt
+                                                   sind. Da die Preise für Netzwerkzubehör in den letzten Jahren stark gesunken sind,
+                                                   gibt es eigentlich keinen Grund mehr, etwas anderes als einen Switch einzusetzen.
+                                                </p>
+                                                <p>Bei einem Hub teilen sich alle Stationen die gesamte Übertragungsgeschwindigkeit,
+                                                   beim Switch steht sie dagegen jeder einzelnen Verbindung zur Verfügung.
+                                                </p>
+                                                <p><a class="indexterm" id="9f69f568-fafe-493d-a17b-2beff03baf26"></a><a class="indexterm" id="41d7c789-e5c3-4287-8dd9-4b6b5552178d"></a>Im Übrigen gibt es besondere Hubs, die als <span class="cbegriff">Bridges</span> bezeichnet werden. Sie verbinden Ethernet-Netzwerke verschiedenen Typs miteinander,
+                                                   beispielsweise besitzen sie eine Reihe von RJ-45-Ports für Twisted-Pair-Kabel und
+                                                   zusätzlich einen Anschluss für 10Base2-BNC-Kabel; oder sie unterstützen einfach verschiedene
+                                                   maximale Übertragungsgeschwindigkeiten.
+                                                </p>
+                                                <p>Hubs oder Switches weisen in der Regel 5 bis 24 Anschlüsse (Ports) auf, an die jeweils
+                                                   ein Gerät angeschlossen werden kann. Um Netzwerke mit mehr Geräten zu betreiben, sind
+                                                   diese Geräte kaskadierbar: Die meisten Hubs oder Switches besitzen einen speziellen
+                                                   Port, den sogenannten Uplink-Port, der über ein Kabel mit einem normalen Port eines
+                                                   weiteren Verteilers verbunden werden kann. Bei vielen Hubs/Switches kann ein einzelner
+                                                   Port über einen Schalter zwischen »Normal« und »Uplink« umgeschaltet werden.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Zwei-Rechner-Netzeohne Hub</span></h4>
+                                                <p><a class="indexterm" id="d4488022-0fc6-4ff3-a6ce-6d80104fddb9"></a><a class="indexterm" id="2bfa884b-86d4-4a9d-9bce-03ee5082b2f2"></a>Die einzige Ausnahme von der allgemeinen Regel, dass ein Hub oder Switch benötigt
+                                                   wird, bildet der Sonderfall, in dem nur zwei Rechner miteinander vernetzt werden sollen:
+                                                   Die beiden Stationen können unmittelbar über ein sogenanntes Crosslink-Kabel verbunden
+                                                   werden. Dieses spezielle Kabel besitzt überkreuzte Anschlusspaare anstelle der geradlinig
+                                                   verlaufenden bei normalen Twisted-Pair-Kabeln.
+                                                </p>
+                                                <p>Historisch betrachtet existieren zwei Arten von Ethernet über Twisted Pair, die unterschiedliche
+                                                   Übertragungsgeschwindigkeiten unterstützen:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>10<a class="indexterm" id="14078360-9af5-4f7e-842a-107a9356fa65"></a><a class="indexterm" id="1ae10e8b-6b45-4bad-9db5-1defd12d60fb"></a>BaseT: Die Datenübertragungsrate beträgt 10 MBit/s.
+                                                   </li>
+                                                   <li>100<a class="indexterm" id="308c5662-221b-4b13-aa2e-dc2f47796248"></a><a class="indexterm" id="cd0de08c-082f-4531-b1a0-97a715c58dd7"></a><a class="indexterm" id="a542ca24-6b18-4522-994c-3f7f49d60653"></a>BaseT (auch Fast Ethernet genannt): Daten werden mit bis zu 100 MBit/s übertragen;
+                                                      hierzu sind mindestens UTP-Kabel der Kategorie 5 erforderlich. Genauer gesagt gibt
+                                                      es zwei Unterarten: 100BaseTX ist voll kompatibel mit 10BaseT, so dass das Netz schrittweise
+                                                      umgerüstet werden kann. 100BaseT4 verwendet dagegen alle vier Kupferdrahtpaare eines
+                                                      Twisted-Pair-Kabels und ist mit den anderen Standards inkompatibel; in der Praxis
+                                                      spielt es keine Rolle mehr.
+                                                   </li>
+                                                </ul>
+                                                <p>Die meisten Netzwerkkarten, Hubs und Switches, die heute verkauft werden, unterstützen
+                                                   beide Übertragungsraten. Der zu verwendende Wert kann bei vielen Netzwerkkarten per
+                                                   Software eingestellt werden, häufiger wird er automatisch gewählt. Natürlich sollten
+                                                   Sie prinzipiell darauf achten, keine reine 10-MBit-Hardware mehr zu kaufen. Aber möglicherweise
+                                                   hat 100-MBit-Hardware der ersten Generation, die nicht auf 10 MBit/s heruntergeschaltet
+                                                   werden kann, sogar noch schlimmere Einschränkungen zur Folge. Zwar ist es bei normalen
+                                                   Standard-PCs ein Leichtes, die Netzwerkkarte gegen ein neueres Modell auszutauschen,
+                                                   um die Kompatibilität zu einer aktualisierten Netzwerkumgebung aufrechtzuerhalten,
+                                                   aber bei anderen Geräten wie beispielsweise Netzwerkdruckern oder kompakten Router-Boxen
+                                                   ist das eventuell nicht möglich. Solche Geräte sind mit einem reinen 100er-Netz eventuell
+                                                   nicht mehr kompatibel.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Neue Ethernet-Versionen</span></h4>
+                                                <p><a class="indexterm" id="90116a7b-a956-4a47-8dfc-b2c151ee16ce"></a><a class="indexterm" id="676027fa-8299-4398-b379-a869c15af787"></a><a class="indexterm" id="842addea-516e-41e9-889c-0c740ac5248e"></a><a class="indexterm" id="86be25cb-6640-48c6-ac79-8823bef9d6e4"></a><a class="indexterm" id="3fbb70ba-a0aa-4202-943a-e36f279aba02"></a>Noch neuere Formen von Ethernet erreichen Übertragungsraten von 1.000 MBit/s (Gigabit-Ethernet),
+                                                   entweder über Lichtwellenleiter (1000BaseFL für »Fiber Logic«) oder über mehradrige
+                                                   Twisted-Pair-Kabel (1000BaseTX). Bereits entwickelt, aber noch nicht weitverbreitet,
+                                                   sind Ethernet-Varianten mit 10 oder gar 100 GBit/s &#8211; anfangs nur über verschiedene
+                                                   Arten von Lichtwellenleitern, aber inzwischen ebenfalls über Twisted Pair.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="3b60d81e-fce3-4f4e-b290-16ce32890f70" name="3b60d81e-fce3-4f4e-b290-16ce32890f70"></a><h3 class="t3"><span class="cfett">4.4.2</span><span class="cfett"> Token Ring</span><a href="#70d01b8d-3a80-42fc-be2c-5373b8e23959"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#d987e87e-6394-4d8c-a625-270e415d24c3"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="2467cf49-77f0-4293-8c28-9def0ae8ad5b"></a><a class="indexterm" id="1f152e20-64a8-43f1-9ba5-843919227cf1"></a>Das Token-Ring-Netzwerk wurde ursprünglich 1972 von IBM konzipiert. Es besitzt grundsätzlich
+                                                   eine ringförmige Topologie, wobei dies heute nur noch den logischen Aufbau betrifft,
+                                                   während die physikalische Topologie sternförmig ist: Die Rechner werden über die bei
+                                                   Ethernet beschriebenen Twisted-Pair-Kabel an einen speziellen Token-Ring-Hub angeschlossen;
+                                                   innerhalb dieses Gerätes sind die Anschlüsse ringförmig miteinander verbunden.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Token Passing</span></h4>
+                                                <p><a class="indexterm" id="b272b92e-33fe-4674-96e9-9b89d7fd0ddb"></a><a class="indexterm" id="8fd5c843-9420-46ed-8772-98f52a09ded2"></a>Die Datenübertragungsrate von Token Ring betrug anfangs 4 MBit/s, wurde jedoch später
+                                                   auf 16 MBit/s erhöht. Auch wenn diese Geschwindigkeiten im Vergleich zu Fast Ethernet
+                                                   sehr gering erscheinen, kann Token Ring in gewisser Hinsicht dennoch damit konkurrieren.
+                                                   Es verwendet ein wesentlich ausgeklügelteres Netzzugangsverfahren als Ethernet, das
+                                                   Token-Passing-Verfahren. Dieses funktioniert schematisch gesehen folgendermaßen:
+                                                </p>
+                                                <ol class="paufz">
+                                                   <li>In Datenstromrichtung reichen die einzelnen Stationen ein spezielles Datenmuster weiter,
+                                                      das sogenannte Frei-Token.
+                                                   </li>
+                                                   <li>Eine Station kann nur senden, wenn sie das Token erhalten hat. Sie wandelt das Frei-Token
+                                                      in ein Besetzt-Token um, hängt die zu übertragenden Daten an und sendet sie in Datenstromrichtung
+                                                      weiter.
+                                                   </li>
+                                                   <li>Die Empfängerstation sendet nach erfolgreichem Empfang der Daten eine Bestätigung
+                                                      an den Absender.
+                                                   </li>
+                                                   <li>Nach Erhalt der Bestätigung erzeugt der ursprüngliche Absender ein neues Frei-Token
+                                                      und versendet es wiederum in Datenstromrichtung.
+                                                   </li>
+                                                </ol>
+                                                <p>Durch dieses Konzept können in einem solchen Netz grundsätzlich keine Datenkollisionen
+                                                   auftreten. Andere Probleme müssen dagegen speziell behandelt werden:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Eine Station muss in der Lage sein, zu erkennen, dass ihr Nachfolger in Datenstromrichtung
+                                                      ausgefallen ist, um einen neuen Nachfolger zu bestimmen. Dazu wartet sie nach der
+                                                      Weitergabe des Tokens eine bestimmte Zeitspanne &#8211; die sogenannte Slot-Time &#8211; auf eine
+                                                      Bestätigung ihres Nachfolgers. Bleibt diese aus, so sendet sie ein neues Token aus.
+                                                      Wird auch dieses nicht bestätigt, so versendet die Station ein spezielles Who_Follows-Frame
+                                                      (»Wer folgt«) mit der Adresse ihres bisherigen Nachfolgers. Jeder Rechner kontrolliert
+                                                      diese Adresse; derjenige, um dessen Vorgänger es sich handelt, sendet ein Set_Successor-Frame
+                                                      (»Setze Nachfolger«) an den ursprünglichen Absender, der diesen Rechner als seinen
+                                                      neuen Nachfolger einträgt.
+                                                   </li>
+                                                   <li>Es muss die Möglichkeit geben, nachträglich hinzugekommene Rechner in den Ring aufzunehmen.
+                                                      Dazu sendet die Station, die gerade das Token besitzt, von Zeit zu Zeit eine Solicit_Successor-Anfrage
+                                                      aus. Eine neu in Betrieb genommene Station ist in der Lage, normale Frames zu empfangen,
+                                                      kann jedoch nur auf dieses spezielle Frame antworten, und zwar mit der Set_Successor-Meldung.
+                                                   </li>
+                                                   <li>Falls mehrere Stationen gleichzeitig dem Netz beitreten möchten und deshalb auf dieselbe
+                                                      Solicit_Successor-Anfrage antworten, versendet deren Absender ein Resolve_Contention-Frame
+                                                      (»Beendet Auseinandersetzung«). Daraufhin berechnet jeder Rechner aus seiner Adresse
+                                                      eine spezifische Wartezeit, so dass die Stationen letztlich nacheinander bei späteren
+                                                      Solicit_Successor-Anfragen dem Netzwerk beitreten.
+                                                   </li>
+                                                </ul>
+                                                <p>Heute werden kaum noch neue Token-Ring-Netzwerke eingerichtet, im LAN-Bereich wird
+                                                   fast nur noch Ethernet eingesetzt. Die Technik, die sich als nächste allgemein durchzusetzen
+                                                   scheint, sind drahtlose Netzwerke nach IEEE 802.11, die im nächsten Abschnitt behandelt
+                                                   werden.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="70d01b8d-3a80-42fc-be2c-5373b8e23959" name="70d01b8d-3a80-42fc-be2c-5373b8e23959"></a><h3 class="t3"><span class="cfett">4.4.3</span><span class="cfett"> Drahtlose Netze</span><a href="#50e86953-116d-4a59-9c0c-d8df4a4d65bb"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#3b60d81e-fce3-4f4e-b290-16ce32890f70"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p><a class="indexterm" id="12f3bccb-436f-41e0-b2ed-9be2362d329e"></a><a class="indexterm" id="b53c177c-faca-4bad-9ba5-0ad4e4db4761"></a><a class="indexterm" id="978586b7-76f0-480a-8e67-26c6f558ddf4"></a><a class="indexterm" id="bed15928-23a6-4eaa-9d80-834763479f38"></a>Schon seit sehr langer Zeit werden über drahtlose Technologien wie Funk, Mikrowellen,
+                                                   Satellit oder Infrarot nicht nur Sprache, Radio- und Fernsehsignale, sondern auch
+                                                   Daten übertragen. Die digitale (!) Datenübertragung per Funk war sogar die erste Anwendung
+                                                   der drahtlosen Nachrichtentechnik überhaupt: Der Funkpionier <a class="indexterm" id="e2dbc762-cd92-40aa-9542-336da0b5523e"></a>Guglielmo Marconi erfand die drahtlose Telegrafie mit Hilfe des binären Morse-Alphabets<span class="footnote"><a id="9ce7195e-453d-4454-93e9-d1d610d9d3fc" title="Ganz und gar binär ist das Morsealphabet übrigens nicht: Neben »Lang« und »Kurz« muss die Pause zwischen zwei Zeichen als drittes mögliches Signal betrachtet werden, da die einzelnen Zeichen (übrigens gemäß ihrer Häufigkeit in englischen Texten) aus unterschiedlich vielen Einzelsignalen bestehen.">[16]</a></span> lange vor dem Sprechfunk.
+                                                </p>
+                                                <p><a class="indexterm" id="c29bdbe4-cfe8-4564-9c1a-ffe3027a50dd"></a>Im Bereich der Netzwerke gibt es immer mehr Anwendungsfälle, bei denen sich der Einsatz
+                                                   drahtloser Techniken anbietet. Die folgenden Beispiele können als Anhaltspunkte dienen:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>In Privathaushalten wird WLAN inzwischen häufiger eingesetzt als kabelbasierte Netze.
+                                                      Da viele Menschen Laptops und/oder WLAN-fähige Mobiltelefone haben, ist dies auch
+                                                      viel praktischer. Für den Internetzugang kommen entsprechend oft WLAN-DSL-Router zum
+                                                      Einsatz, die eine Verbindung zwischen dem Internet und den Endgeräten vermitteln.
+                                                   </li>
+                                                   <li>In einem Unternehmen werden viele Außendienstmitarbeiter beschäftigt. Sie sind mit
+                                                      Notebooks ausgestattet und kommen nur gelegentlich in die Firmenzentrale.
+                                                   </li>
+                                                   <li>Eine Firma zieht in ein denkmalgeschütztes Haus ein, an dessen Bausubstanz nichts
+                                                      geändert werden darf &#8211; an das Verlegen von Kabelkanälen oder gar das Aufstemmen von
+                                                      Wänden für die Vernetzung ist nicht zu denken.
+                                                   </li>
+                                                   <li>Zwischen zwei Gebäuden eines Unternehmens verläuft eine öffentliche Straße; für die
+                                                      Überbrückung durch ein Kabel müsste ein langfristiges Genehmigungsverfahren mit ungewissem
+                                                      Ausgang eingeleitet werden.
+                                                   </li>
+                                                   <li>Auf LAN-Partys (Treffen von Netzwerkspielern), Messen, Kongressen oder ähnlichen Veranstaltungen
+                                                      müssen Unmengen von Computern für kurze Zeit vernetzt werden.
+                                                   </li>
+                                                </ul>
+                                                <p><a class="indexterm" id="dde3c2d3-75e6-4dff-aec8-31560210611e"></a>Für den Betrieb drahtloser Netzwerke kommen die verschiedensten Übertragungsmethoden
+                                                   zum Einsatz. Sie lassen sich nach folgenden Kriterien unterscheiden oder für den praktischen
+                                                   Einsatz auswählen:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>Welche maximale Entfernung zwischen zwei Stationen muss überbrückt werden?</li>
+                                                   <li>Besteht zwischen den einzelnen Standorten Sichtkontakt, oder befinden sich Wände oder
+                                                      andere Hindernisse zwischen ihnen?
+                                                   </li>
+                                                   <li>Soll eine freie Funkfrequenz genutzt werden, oder kann es auch eine lizenzpflichtige
+                                                      sein (Letzteres kann teuer werden)?
+                                                   </li>
+                                                   <li>Sind die vernetzten Geräte selbst stationär oder mobil?</li>
+                                                </ul>
+                                                <p>Diese diversen Auswahlkriterien zeigen bereits, dass es so etwas wie »das« drahtlose
+                                                   Netz nicht gibt. Für jeden Anwendungszweck bieten sich verschiedene Lösungen an, die
+                                                   sorgfältig geprüft werden müssen.
+                                                </p>
+                                                <p><a class="indexterm" id="a9774540-ff65-46bd-ad22-8777e97017db"></a><a class="indexterm" id="1cd8626e-c27b-4099-8162-34ce36ff5dd6"></a><a class="indexterm" id="294ab81e-3459-4392-87db-2431e1041ce4"></a><a class="indexterm" id="7b2c08fc-c772-4d6c-9844-2d5a16e5ea91"></a><a class="indexterm" id="59c0baeb-37e0-4144-9997-ac987c4ce5c9"></a><a class="indexterm" id="158b1bae-56e2-4492-917d-58f3984b8348"></a>Genau wie bei der verkabelten Konkurrenz lassen sich auch hier verschiedene Kategorien
+                                                   von Reichweiten unterscheiden. Das WLAN (Wireless LAN, auch <a class="indexterm" id="b2f42130-0ced-4755-8899-889fd9c5eb39"></a><a class="indexterm" id="192912f9-9c68-4ebe-98fc-d13d1edc4878"></a>WiFi genannt) nach IEEE 802.11 ist ein drahtloses Netz für den Nahbereich, also für
+                                                   die Vernetzung innerhalb einer einzelnen Institution. Das WWAN (Wireless Wide Area
+                                                   Network) dagegen ist ein drahtloses Fernnetzwerk. Dazu zählen unter anderem Satellitenverbindungen.
+                                                </p>
+                                                <p>In diesem Abschnitt wird nur das 802.11-kompatible WLAN beschrieben, da es sich seit
+                                                   seiner Einführung 1997 sehr schnell verbreitet hat und heute von allen Wireless-Technologien
+                                                   am häufigsten eingesetzt wird. 802.11 besteht aus mehreren Unterstandards, die sich
+                                                   in den Punkten Frequenzspektrum, Übertragungsrate und Funktechnologie unterscheiden.
+                                                   Sie alle werden jedoch über Funk betrieben; eine ursprünglich ebenfalls spezifizierte
+                                                   Infrarotvariante hat sich nicht durchgesetzt. Infrarot wird größtenteils für den drahtlosen
+                                                   Anschluss von Peripheriegeräten wie Mäusen oder Tastaturen verwendet. Tabelle 4.4
+                                                   zeigt eine Übersicht über die wichtigsten gebräuchlichen 802.11-Varianten.
+                                                </p>
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="3">
+                                                   <caption class="tabunter">
+                                                      <p class="ptabellenunter"><strong>Tabelle 4.4   </strong>Verschiedene Varianten von IEEE 802.11
+                                                      </p>
+                                                   </caption>
+                                                   <tbody>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf">
+                                                            
+                                                            
+                                                            
+                                                            <span class="cfett"><a class="indexterm" id="3cfa9325-d397-49a1-9ec9-02df94c1cc4d"></a><a class="indexterm" id="842fcaad-7600-4adf-a00e-5077011045fa"></a><a class="indexterm" id="39fc8585-3fa3-4f7f-8cd2-4524515f8a1f"></a><a class="indexterm" id="82b8a691-bc8a-469a-b0b6-86af9b3becb7"></a><a class="indexterm" id="efef810a-3ba0-4fb0-a853-ab296bd7cac0"></a>Standard</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Frequenzbereich</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Übertragungsrate</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellenkopf"><span class="cfett">Funktechnik</span>
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2,4 GHz
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">1 oder 2 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">FHSS/DSSS
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11a
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">5 GHz
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">bis zu 54 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">OFDM
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11b
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2,4 GHz
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">5,5/11/22 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">HR/DSSS
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11g
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2,4 GHz
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">bis zu 54 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">OFDM
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                      <tr>
+                                                         
+                                                         
+                                                         <td class="tabellentext">802.11n6
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">2,4 und 5 GHz
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">bis zu 600 MBit/s
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                         <td class="tabellentext">MIMO
+                                                            
+                                                            
+                                                         </td>
+                                                         
+                                                         
+                                                      </tr>
+                                                      
+                                                      
+                                                   </tbody>
+                                                </table>
+                                                <p><a class="indexterm" id="5ab5c030-e03a-4e82-980e-64ca97913402"></a>Die Trägerfrequenz von 2,4 GHz wird vor allem deshalb am häufigsten verwendet, weil
+                                                   sie nicht lizenzpflichtig ist. Es handelt sich nämlich um diejenige Frequenz, mit
+                                                   der Mikrowellenherde arbeiten, da diese Wellenlänge Wassermoleküle am effektivsten
+                                                   erhitzt.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Frequency Hopping</span></h4>
+                                                <p><a class="indexterm" id="7c1b35e4-1fba-45aa-b9ae-ec2c6488fc48"></a><a class="indexterm" id="68a31386-30e8-43c4-a464-cfa010001d4f"></a>Die diversen Funkverfahren arbeiten alle mit verschiedenen Varianten der Frequency-Hopping-Methode,
+                                                   die auch im Mobilfunk eingesetzt wird: Nach einem bestimmten Schema werden die Funkwellen
+                                                   über mehrere Frequenzen übertragen, die mehrmals in der Sekunde wechseln. Dies ist
+                                                   erheblich weniger störanfällig als die Verwendung einer einzelnen Frequenz. Die grundlegende
+                                                   Technik wurde Mitte der 1930er Jahre von der österreichischen Schauspielerin <a class="indexterm" id="61ae2fa6-2846-45c6-947d-d7f0ceacbdf8"></a>Hedy Lamarr erfunden. Ihr damaliger Ehemann war Rüstungsfabrikant, und diese Funktechnik
+                                                   sollte helfen, Torpedos der Alliierten fernzusteuern, ohne dass die Signale abgefangen
+                                                   und verfälscht werden konnten. Im Einzelnen werden folgende Verfahren unterschieden:
+                                                </p>
+                                                <ul class="gp">
+                                                   <li>FHSS (Frequency Hopping Spread Spectrum): Die Frequenzen wechseln nach einem zufälligen
+                                                      Muster.
+                                                   </li>
+                                                   <li>DSSS (Direct Sequence Spread Spectrum): Es werden erheblich mehr Einzelfrequenzen
+                                                      verwendet; die Verteilung erfolgt nach einem komplexen mathematischen Verfahren.
+                                                   </li>
+                                                   <li>HR/DSSS (High Rate Direct Sequence Spread Spectrum): Entspricht DSSS mit speziellen
+                                                      Erweiterungen, die eine höhere Übertragungsrate ermöglichen.
+                                                   </li>
+                                                   <li>OFDM (Orthogonal Frequency Division Multiplexing): Jeder Kanal wird in mehrere Teilkanäle
+                                                      unterteilt, die Signale werden über alle Teilkanäle parallel übertragen. Aus diesem
+                                                      Grund ist OFDM das Übertragungsverfahren mit der höchsten Datenrate, andererseits
+                                                      aber auch das aufwendigste, so dass die entsprechende Hardware noch vor wenigen Jahren
+                                                      vergleichsweise teuer war.
+                                                   </li>
+                                                   <li>MIMO (Multiple Input/Multiple Output): Im Wesentlichen eine nochmals verbesserte OFDM-Variante,
+                                                      die wiederum erheblich höhere Übertragungsraten ermöglicht. Die Datenübertragung kann
+                                                      gleichzeitig über mehrere Frequenzbänder erfolgen.
+                                                   </li>
+                                                </ul>
+                                                <h4 class="t4"><span class="cfett"> WLAN-Hardware</span></h4>
+                                                <p><a class="indexterm" id="28f0f8be-645b-4475-b2cf-526fc8e6b651"></a>Der größte Teil der Wireless-LAN-Hardware, der momentan verkauft wird, basiert auf den Standards 802.11b und 802.11g (die meisten Geräte unterstützen wahlweise beide). Die Preise für Hardware dieser Variante sind in den letzten Jahren stark gefallen. Ein WLAN-Adapter ist inzwischen ab etwa 20 &euro; erhältlich, sowohl als PCI-Karte als auch als PCMCIA- oder USB-Adapter. Außerdem sind Notebooks (und meist auch Desktop-PCs) ab Werk standardmäßig mit einer WLAN-Schnittstelle ausgestattet. Vorreiter dürften das PowerBook und das iBook von Apple gewesen sein; Apple fördert diese Technologie unter dem Namen AirPort seit vielen Jahren.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> CSMA/CA</span></h4>
+                                                <p><a class="indexterm" id="4c835cd7-4930-40d8-ba25-d33fc08a2128"></a><a class="indexterm" id="123c493f-f16c-4902-8e27-ce89d91e7dcd"></a><a class="indexterm" id="86b2b365-e911-41c2-b0ea-5476895866ce"></a>Als Netzzugangsverfahren in 802.11-Netzen kommt CSMA/CA zum Einsatz (Carrier Sense
+                                                   Multiple Access with Collision Avoidance) &#8211; wie der Name vermuten lässt, werden Datenkollisionen
+                                                   von vornherein vermieden. Anders als bei CSMA/CD sendet eine Station, die ein freies
+                                                   Übertragungsmedium (in diesem Fall den entsprechenden Funkkanal) vorfindet, nicht
+                                                   einfach ihre Daten, sondern eine Sendeanforderung (RTS). Daraufhin warten andere sendebereite
+                                                   Stationen; und die erste Station, die das RTS gesendet hat, sendet ihre Daten, nachdem
+                                                   ihr die Empfängerstation ihre Empfangsbereitschaft (CTS) signalisiert hat. Abgeschlossen
+                                                   wird die Datenübertragung durch ein ACK-Signal, daraufhin kann die nächste Station
+                                                   ihren Sendewunsch bekanntgeben.
+                                                </p>
+                                                <p><a class="indexterm" id="e6e78f4d-21fa-4ba3-9dbb-0e3be47e2651"></a><a class="indexterm" id="a38c338c-27f3-4ccd-a7b3-cdeb2d5281f1"></a>Das einfachste denkbare 802.11-WLAN besteht nur aus mehreren Rechnern mit entsprechender
+                                                   Schnittstelle, die auf direktem Weg miteinander kommunizieren. Ein solcher Aufbau
+                                                   wird als <span class="cbegriff">Basic Service Set </span>(BSS) bezeichnet. Die Entfernung zwischen zwei beliebigen Stationen darf die maximale
+                                                   Reichweite des Funksignals nicht überschreiten, da jede Station die Signale nur senden
+                                                   und empfangen, aber nicht verstärken und weiterleiten kann. Da ein solches Netzwerk
+                                                   nicht mit anderen Netzen kommunizieren kann, wird es als <span class="cbegriff">unabhängiges BSS</span> (Independent BSS oder kurz IBSS) bezeichnet. Derartige Netzwerke sind sinnvoll für
+                                                   die sogenannte Ad-hoc-Vernetzung temporärer Zusammenkünfte wie Messen oder LAN-Partys.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> Access Points</span></h4>
+                                                <p><a class="indexterm" id="75d6372f-cbf0-4848-bbaa-f2190a885098"></a><a class="indexterm" id="73325703-375e-4aba-a691-104e092ce9db"></a>Ein wenig komplexer wird der Aufbau eines BSS, wenn ein Access Point hinzugefügt wird.
+                                                   Im Grunde funktioniert ein Access Point wie ein Ethernet-Hub, denn sobald er vorhanden
+                                                   ist, kommunizieren die Stationen nicht mehr direkt miteinander, sondern senden die
+                                                   Frames an den Access Point, der sie an den gewünschten Empfänger weitergibt. Die Identifikation
+                                                   der einzelnen Stationen erfolgt wie bei Ethernet anhand einer 48 Bit langen MAC-Adresse.
+                                                   Ein BSS mit einem Access Point wird als <span class="cbegriff">Infrastruktur-BSS</span> bezeichnet. Für die Reichweite des Netzes ist nur noch die Entfernung zwischen einer
+                                                   Station und dem Access Point ausschlaggebend.
+                                                </p>
+                                                <p>Die wichtigste Aufgabe eines Access Points besteht in seiner Funktion als Bridge.
+                                                   Er verbindet das WLAN mit einem Backbone-Netzwerk &#8211; meistens Twisted-Pair-Ethernet.
+                                                   Auf diese Weise kann das WLAN mit stationären Teilen des Netzes verbunden werden oder
+                                                   Zugang zu Servern und Routern erhalten, ohne dass diese selbst mit WLAN-Schnittstellen
+                                                   ausgestattet werden müssten.
+                                                </p>
+                                                <p><a class="indexterm" id="dfe64bc5-213b-4365-ba2c-33635a59b113"></a><a class="indexterm" id="fe6fa8b5-6c48-4ae9-8c53-d836ebc199a1"></a>Im Übrigen bildet ein Verbund aus miteinander vernetzten Access Points (entweder ebenfalls
+                                                   über Funk oder über Ethernet) ein sogenanntes <span class="cbegriff">Extended Service Set</span> (ESS). Eine Station kann sich innerhalb eines ESS frei bewegen, weil die Access Points
+                                                   einander darüber auf dem Laufenden halten, welche Stationen sich gerade in ihrem Bereich
+                                                   befinden. Eine Station kann immer nur genau mit einem Access Point verbunden sein;
+                                                   sobald das Signal eines anderen Access Points stärker wird als das des bisherigen,
+                                                   meldet die Station sich bei ihrem alten Access Point ab und bei dem neuen an. Auf
+                                                   diese Weise werden Frames immer über den jeweils aktuellen Access Point an eine Station
+                                                   gesendet.
+                                                </p>
+                                                <p>Ein zusätzlicher Nutzen von Access Points besteht darin, dass sie in der Lage sind,
+                                                   Frames zu puffern, die an bestimmte Stationen adressiert sind. Gerade Notebooks schalten
+                                                   im Standby-Modus oft auch die WLAN-Schnittstelle ab, um Strom zu sparen; sobald die
+                                                   Verbindung wieder aufgebaut wird, werden die zwischengespeicherten Frames ausgeliefert.
+                                                </p>
+                                                <p>Das ESS-Modell wird immer häufiger für öffentlich verfügbare Netzwerkzugänge eingesetzt.
+                                                   In Bahnhöfen, Flughäfen oder Gaststätten stehen öffentlich zunehmend WLAN-Access-Points
+                                                   (auch <span class="cbegriff">Hotspots</span> genannt) zur Verfügung, in die sich Notebook-Benutzer ohne weiteres einwählen können.
+                                                   Mittlerweile werden sogar die ersten Innenstädte fast flächendeckend mit einander
+                                                   überlappenden Access Points ausgestattet. Irgendwann könnte ein ähnlich dichtes Netz
+                                                   entstehen, wie es die Mobilfunkzellen inzwischen bilden.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> WLAN-Sicherheit</span></h4>
+                                                <p><a class="indexterm" id="7f8ab40f-e1f9-4747-a887-cb18ea878c9a"></a>Eine der größten Herausforderungen beim Einsatz von Wireless-Technologien bleibt die
+                                                   Sicherheit. Es ist zwar auch nicht weiter schwierig, das Signal von Ethernet-Kabeln
+                                                   abzuhören, aber immerhin ist es vergleichsweise einfach, den physikalischen Zugang
+                                                   zu ihnen zu kontrollieren. Bei WLAN kann dagegen im Grunde genommen jeder die Signale
+                                                   mit einer kompatiblen Antenne auffangen und analysieren, um unberechtigt Informationen
+                                                   zu erhalten oder gar zu manipulieren. Das gilt umso mehr, als man die Grenzen der
+                                                   Funkreichweite niemals ganz genau auf die Größe des zu vernetzenden Gebäudes oder
+                                                   Geländes abstimmen kann; es ist also durchaus möglich, die Funkwellen außen zu empfangen.
+                                                </p>
+                                                <p>Um ein Mindestmaß an Sicherheit zu gewährleisten, bot die ursprüngliche 802.11-Spezifikation
+                                                   eine optionale Verschlüsselung der Frames an. Allerdings ist diese Methode nicht besonders
+                                                   sicher; Sicherheitsexperten haben bereits bewiesen, dass die Verschlüsselung verhältnismäßig
+                                                   leicht zu knacken ist. Schon der Name dieser Technik, <a class="indexterm" id="5676d040-3644-4c49-a130-fed9adb1e5d3"></a><a class="indexterm" id="afb30d01-d16c-4169-98e1-b643abbb5700"></a><a class="indexterm" id="b333d423-22d4-40e8-8e4f-237d0ce959bd"></a>WEP (Wired Equivalent Privacy), sagt allzu deutlich aus, dass es nicht um mehr geht,
+                                                   als etwa dasselbe Maß an Sicherheit zu gewährleisten wie beim rein physikalischen
+                                                   Schutz verkabelter Netzwerke. Der Hauptverwendungszweck besteht auch gar nicht in
+                                                   der Geheimhaltung, sondern in der Abgrenzung eines Wireless-Netzes von benachbarten
+                                                   Netzen: Es ist ärgerlich, wenn jedes vorbeifahrende Fahrzeug, in dem sich zufälligerweise
+                                                   ein Laptop mit 802.11-Schnittstelle befindet, diesen vorübergehend automatisch ins
+                                                   Netz einbucht und wieder daraus verschwindet. Dies lässt sich allerdings zuverlässiger
+                                                   verhindern, indem der Access Point mit einer Whitelist zugelassener MAC-Adressen konfiguriert
+                                                   wird.
+                                                </p>
+                                                <p>Inzwischen stehen mit<a class="indexterm" id="f336bafa-e85f-46ca-a799-537f504582fb"></a><a class="indexterm" id="b78bc985-4bb2-4885-ab31-c0649f5d6def"></a><a class="indexterm" id="49fadcc3-301a-4194-9c0d-e5ae0f61ee76"></a> WPA und WPA2 (WiFi Protected Access) stark verbesserte WLAN-Verschlüsselungsverfahren
+                                                   zur Verfügung.
+                                                </p><br><div align="center"><a href="#top"><img src="common/jupiters.gif" border="0" alt="Galileo Computing - Zum Seitenanfang"></a></div><a id="50e86953-116d-4a59-9c0c-d8df4a4d65bb" name="50e86953-116d-4a59-9c0c-d8df4a4d65bb"></a><h3 class="t3"><span class="cfett">4.4.4</span><span class="cfett"> Sonstige Zugangsarten</span><a href="#4ffaaee2-48e1-4a24-af3b-71bf10f0de57"><img src="common/down.gif" width="15" height="15" border="0" alt="Zur nächsten Überschrift"></a><a href="#70d01b8d-3a80-42fc-be2c-5373b8e23959"><img src="common/top.gif" width="15" height="15" border="0" alt="Zur vorigen Überschrift"></a></h3>
+                                                <p>Einige weitere Formen von Netzwerkhardware und Netzzugang sollen hier kurz erwähnt,
+                                                   aber nicht weiter vertieft werden. Es handelt sich zum Teil um nicht mehr gebräuchliche,
+                                                   zum Teil aber auch um seltene Zugangsverfahren.
+                                                </p><a id="4ffaaee2-48e1-4a24-af3b-71bf10f0de57" name="4ffaaee2-48e1-4a24-af3b-71bf10f0de57"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> ATM</span></h4>
+                                                <p><a class="indexterm" id="b8fe1c29-5ecd-41ff-be97-30b96bd6faaa"></a><a class="indexterm" id="cf9bac0e-6629-4ad2-8488-ccf89159dc9d"></a>Der Asynchronous Transfer Mode (ATM) verwendet als physikalisches Trägermedium Telefonleitungen.
+                                                   Es handelt sich um einen Standard für Breitband-WAN-Verbindungen, der seit Anfang
+                                                   der 1990er Jahre von Telefongesellschaften angeboten wird. Die Vernetzung erfolgt
+                                                   über ATM-Switches, die genau wie Ethernet-Switches direkte Verbindungen zwischen den
+                                                   Stationen herstellen und auf diese Weise eine feste Übertragungsrate garantieren.
+                                                   Bei ATM beträgt diese 155 MBit/s.
+                                                </p>
+                                                <h4 class="t4"><span class="cfett"> TCP/IP über ATM</span></h4>
+                                                <p>ATM wurde kurz vor dem Siegeszug des Internets und der TCP/IP-Netze eingeführt und
+                                                   definierte ursprünglich nicht nur Hardware- und Netzzugangsstandards, sondern auch
+                                                   eigene Vermittlungs- und Transportverfahren, die mit IP-Netzen inkompatibel sind.
+                                                   Insbesondere scheiterte IP-Datentransport über ATM an der außerordentlich geringen
+                                                   ATM-Datenpaketgröße, die gerade einmal 53 Byte beträgt: 48 Byte Nutzdaten und ein
+                                                   nur 5 Byte großer Header.
+                                                </p>
+                                                <p>Dies macht ATM besonders schnell und flexibel, gerät aber für TCP/IP zu einem fast
+                                                   unüberwindbaren Hindernis, da oft noch nicht einmal ein IP-Paket-Header in ein ATM-Paket
+                                                   hineinpasst. Die IP-Pakete müssen auf komplizierte Art und Weise fragmentiert und
+                                                   am Ziel wieder zusammengesetzt werden. Zu diesem Zweck wurde eine Reihe von konkreten
+                                                   Verfahren entwickelt. Deshalb spielt ATM heute durchaus eine gewisse Rolle im Bereich
+                                                   der Breitband-Internetzugänge für Unternehmen, praktischere und kostengünstigere Technologien
+                                                   wie das im nächsten Abschnitt vorgestellte DSL liefen ihm jedoch sehr schnell den
+                                                   Rang ab.
+                                                </p>
+                                                <p>In Backbones spielt ATM dagegen noch eine gewisse Rolle, aber selbst dort erfolgt
+                                                   allmählich ein Umstieg auf Technologien wie Gigabit Ethernet. Selbst Cisco Systems
+                                                   als wichtigster Hersteller von Backbone-Technologien rät seinen Kunden inzwischen
+                                                   zur Migration von ATM nach Ethernet: http://www.cisco.com/warp/public/cc/pd/si/casi/ca2900xl/index.shtml.
+                                                </p><a id="ff898ba6-8844-45da-b0d4-fdce6dc8f43b" name="ff898ba6-8844-45da-b0d4-fdce6dc8f43b"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> FDDI</span></h4>
+                                                <p><a class="indexterm" id="5dd39684-4948-4a17-ad8a-9f76a57a3dd7"></a><a class="indexterm" id="849949e3-39ce-4908-b4b9-eb30be536cb3"></a>Das Fiber Distributed Data Interface (FDDI) ist ein LAN- und WAN-Standard, der Glasfaserkabel
+                                                   verwendet. Als dieser Standard Anfang der 1990er Jahre konzipiert wurde, sollte er
+                                                   hauptsächlich als Backbone-Netz für Ethernet in Firmen eingesetzt werden, wurde jedoch
+                                                   in manchen Umgebungen auch als normales LAN eingeführt. Wie Token Ring ist FDDI in
+                                                   einer ringförmigen Topologie angeordnet. Allerdings existieren zwei unabhängige Ringe,
+                                                   von denen einer als Ersatzring fungiert, falls der Hauptring ausfällt. Genauer gesagt
+                                                   verläuft die Datenstromrichtung des zweiten Rings andersherum als die des ersten,
+                                                   so dass ein größerer Ring aus dem Zusammenschluss von beiden gebildet werden kann,
+                                                   falls ein bestimmtes Stück ausfällt.
+                                                </p>
+                                                <p>Innerhalb eines FDDI-Rings können bis zu 500 Stationen betrieben werden. Der maximale
+                                                   Umfang des gesamten Rings beträgt 100 Kilometer, wobei jedoch spätestens alle 2 Kilometer
+                                                   ein Repeater eingesetzt werden muss. Die Übertragungsrate beträgt 100 MBit/s. Eine
+                                                   noch höhere Geschwindigkeit ist erreichbar, wenn beide Ringe parallel für die Datenübertragung
+                                                   verwendet werden, dann allerdings ohne zusätzliche Ausfallsicherheit.
+                                                </p>
+                                                <p>Als Netzzugangsverfahren wird eine spezielle Form von Token Passing eingesetzt, das
+                                                   Timed-Token-Protokoll. Bei dieser Variante wird unmittelbar, nachdem eine Station
+                                                   mit dem Senden begonnen hat, wieder ein neues Frei-Token erzeugt, so dass gleichzeitig
+                                                   mehrere Datenübertragungsvorgänge im Netz stattfinden können.
+                                                </p><a id="89fbc927-7f89-4eaf-bd19-41c109c29f09" name="89fbc927-7f89-4eaf-bd19-41c109c29f09"></a><h4 class="t4"><span class="cfett"></span><span class="cfett"> ARCNet</span></h4>
+                                                <p><a class="indexterm" id="c6cd7e09-abd3-43d0-8307-5771246d1f99"></a><a class="indexterm" id="a5dc8c10-efc9-4627-a11d-f813e496b096"></a>Bei Attached Resource Computer Network (ARCNet) handelt es sich um eine bereits in
+                                                   den 1970er Jahren entwickelte proprietäre LAN-Lösung der Firma Datapoint. Daher existiert
+                                                   für sie kein IEEE-Standard. In Büronetzwerken wird ARCNet so gut wie gar nicht eingesetzt,
+                                                   es konnte sich jedoch einen Platz im Bereich der Industrie erobern, wo es insbesondere
+                                                   zur Vernetzung von Steuercomputern dient.
+                                                </p>
+                                                <p>Es wird über Twisted-Pair-Kabel und Hubs in einer Stern-Topologie betrieben; die maximale
+                                                   Datenübertragungsrate beträgt 2,5 MBit/s. Ein neuerer Standard, ARCNet Plus, beherrscht
+                                                   20 MBit/s. Als Netzzugangsverfahren wird Token Passing verwendet.
+                                                </p><br><hr><a name="kommentar"></a><h3>Ihr Kommentar</h3>
+                                                <p>Wie hat Ihnen das &lt;openbook&gt; gefallen? Wir freuen uns immer über Ihre freundlichen
+                                                   und kritischen Rückmeldungen.
+                                                </p>
+                                                <form action="http://www.galileo-press.de/feedback/openbook" method="post" style="text-align: center; margin-top: 10px;"><input type="hidden" name="openbookurl" value="kap_04_Netzwerkgrundlagen_004.html"><input type="hidden" name="buchtitel" value="IT-Handbuch für Fachinformatiker "><input type="hidden" name="Kapitel" value="4 Netzwerkgrundlagen"><table border="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td><label for="name">Name</label><br></td>
+                                                            <td><input type="text" name="name" id="name" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td><label for="email">E-Mail</label><br></td>
+                                                            <td><input type="text" name="email" id="email" size="40"><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td valign="top"><label for="comment">Ihr Kommentar</label><br></td>
+                                                            <td><textarea name="comment" id="comment" rows="10" cols="40"></textarea><br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td></td>
+                                                            <td><input type="submit" value="Kommentar absenden"></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </form>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td width="100%" class="start" colspan="1" height="22" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="25%"><a href="kap_04_netzwerkgrundlagen_003.html" class="navnav"> &lt;&lt; zurück</a></td>
+                                          <td width="49%">
+                                             <div align="center"><a class="navnav" href="#">&lt;top&gt;</a></div>
+                                          </td>
+                                          <td align="right" width="25%">
+                                             <div align="right"><a href="kap_04_netzwerkgrundlagen_005.html" class="navnav">vor &gt;&gt;
+                                                   </a></div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+<tr><td><br><br><hr align="center" width="70%"><br><div align="center">
+<p class="standard"><b>Copyright © Galileo Press 2011</b><br>Für Ihren privaten Gebrauch dürfen Sie die Online-Version natürlich ausdrucken. Ansonsten unterliegt das &lt;openbook&gt; denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.</p><br><a href="http://www.galileocomputing.de/">[Galileo Computing]</a><br><br>Galileo Press, Rheinwerkallee 4, 53227 Bonn, Tel.: 0228.42150.0, Fax 0228.42150.77, <a href="mailto:info@galileo-press.de">info@galileo-press.de</a></div><br><br>
+</tr></td>                        </tbody>
+                     </table>
+                  </div>
+               </td>
+               <td width="10" valign="top"></td>
+               <td width="160" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="160">
+                  <tbody><tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">
+                  &nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5" class="autor">
+                  <strong>Zum Katalog</strong></a>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2">
+                  <img src="common/leer.gif" border="0" height="1" width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><a href="http://www.galileocomputing.de/2839?GPP=opit5">
+                  <img src="common/9783836217446.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: IT-Handbuch für Fachinformatiker" title="Zum
+                  Katalog: IT-Handbuch für Fachinformatiker">
+                  <br/><br/><br/><br/><br/><br/><br/><strong>IT-Handbuch für Fachinformatiker</strong><br/><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="">Jetzt bestellen</a><br/><br/>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Ihre Meinung?</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td>Wie hat Ihnen das &lt;openbook&gt; gefallen?<br/><a href="#kommentar"><img src="common/pfeil_rechts5.gif"
+                  border="0" alt="">Ihre Meinung</a>
+                  <br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2">&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/?GPP=opit5"
+                  class="autor"><strong>Buchempfehlungen</strong></a></td>
+                  </tr>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>                  <tr>
+                                   <a href="http://www.galileocomputing.de/2672?GPP=opit5">
+                  <img src="common/9783836218023.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Java ist auch eine Insel" title="Zum Katalog: Java ist auch eine Insel"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Java ist auch<br/>&nbsp;eine Insel</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2516?GPP=opit5">
+                  <img src="common/9783836216975.png" width="122" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Android 3" title="Zum Katalog: Android 3"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Android 3</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2963?GPP=opit5">
+                  <img src="common/9783836218221.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Linux" title="Zum Katalog: Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2751?GPP=opit5">
+                  <img src="common/9783836217651.png" width="131" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Ubuntu GNU/Linux" title="Zum Katalog: Ubuntu GNU/Linux"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Ubuntu<br/>&nbsp;GNU/Linux</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2286?GPP=opit5">
+                  <img src="common/9783836215282.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Windows Server 2008 R2" title="Zum Katalog: Windows Server 2008 R2"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Windows Server<br/>&nbsp;2008 R2</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2428?GPP=opit5">
+                  <img src="common/9783836216456.png" widtsh="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: PHP & MySQL" title="Zum Katalog: PHP & MySQL"><br/><br/><br/><br/><br/><br/><br/>&nbsp;PHP &amp; MySQL</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2322?GPP=opit5">
+                  <img src="common/9783836215527.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: Visual C# 2010" title="Zum Katalog: Visual C# 2010"><br/><br/><br/><br/><br/><br/><br/>&nbsp;Visual C# 2010</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2132?GPP=opit5">
+                  <img src="common/9783836214117.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C von A bis Z" title="Zum Katalog: C von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                                   <a href="http://www.galileocomputing.de/2156?GPP=opit5">
+                  <img src="common/9783836214292.png" width="124" height="100" border="0" align="left"
+                  hspace="4" vspace="8" alt="Zum Katalog: C++ von A bis Z" title="Zum Katalog: C++ von A bis Z"><br/><br/><br/><br/><br/><br/><br/>&nbsp;C++&nbsp;von A bis Z</a><br/><br/></td>
+                  </tr>
+                  <tr>
+                  <td><img src="common/leer.gif" height="2" width="1" border="0"></td>
+                  </tr>
+                  <tr>
+                  <td>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody><tr>
+                  <td class="start" height="20" colspan="2"><span class="autor"><strong>&nbsp;Shopping</strong></span></td>
+                  </tr>
+                  <tr>
+                  <td valign="top" class="tbl4" width="2"><img src="common/leer.gif" border="0" height="1"
+                  width="1"></td>
+                  <td valign="top">
+                  <table cellspacing="3">
+                  <tbody><tr>
+                  <td><b>Versandkostenfrei</b> bestellen in Deutschland und Österreich<br/><a href="http://www.galileocomputing.de/hilfe/Shop/?GPP=opit5"><img
+                  src="common/pfeil_rechts5.gif" border="0" alt="Info">Info</a><br/><br/></td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+                  </td>
+                  </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
